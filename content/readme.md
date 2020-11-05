@@ -177,7 +177,6 @@ Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften k√
 
 Demo:
 
-
 - [Text Font Size](/demo/text-font-size)
 
 ### Schriftfarben
@@ -205,7 +204,7 @@ Es gibt sechs headign Typen:
 
 Was ist dabei zu beachten? 
 
-- Mehrer H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist
+- Mehrere H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist
 - Keine Heading Levels √ºberspringen
 
 
@@ -245,6 +244,8 @@ Semantisch korrekt: `<p>Ich bin ein Text in einem p<p>`
 Demo:
 
 - [Text Paragraph](/demo/text-p)
+
+- [Text Paragraph Empty](/demo/text-p-empty)
 
 
 

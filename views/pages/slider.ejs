@@ -1,9 +1,25 @@
 <%- include('../partials/head')-%>
-<a href="/presentation/<%- next %>">Next</a>
-<a href="/presentation/<%- prev %>">Prev</a>
-		
-<%- content %>
-<%- include('../partials/footer')-%>
+
+<div class="mb-40">
+    <%- content %>
+</div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
+    <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
+        <a href="/presentation/<%- prev %>" class="p-6">Prev</a>
+        <a href="/presentation/<%- next %>" class="p-6">Next</a>
+    </div>
+    <p class="text-center">
+        <small>
+            Accessibility / Barrierefreiheit
+        </small>
+    </p>
+</footer>
+</main>
+</body>
+</html>
+
 
 		
-	
