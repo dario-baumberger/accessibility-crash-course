@@ -457,7 +457,10 @@ Beim Verwenden des `<img>` muss zwingen ein `alt` Attribut mit einem Wert angege
 
 
 
+Demo:
 
+- [Table Fake (Bad)](/demo/table-fake)
+- [Table 1](/demo/table-1)
 
 
 
