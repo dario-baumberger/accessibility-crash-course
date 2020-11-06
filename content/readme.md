@@ -252,7 +252,7 @@ Demo:
 ### Link:
 
 > Was ist ein Link? 
->
+
 
 Semantisch nicht korrekt: `<div onclick="window.location.href='/';">Klick mich</div>` 
 
