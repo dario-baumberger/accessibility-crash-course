@@ -294,6 +294,30 @@ Demo:
 
 `text-decoration: underline` wird vom Screenreader nicht beachtet (text-decoration grundsätzlich).
 
+### Listen
+
+Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgeben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder spezieller darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur verfügung:
+
+- `<ul>` ungeordnete Liste 
+- `<ol>` geordnete Liste
+
+Neben dem korrekten Listen Element benötigen wir auch noch Listenelemente:
+
+`<ol>` und `<ul>` mit `<li>` Child Elementen.
+
+#### Orderd List `<ol>`
+
+Mit Nummerierung. Zu verwenden beiwpielsweise bei einer Anleitung, bei welcher eine gewisse Reihenfolge vorausgesetzt wird.
+
+#### Unorderd List `<ul>`
+
+Mit Bulletpoints. Zu verwenden wenn die Reihenfolge der Listen Elemente irrelevant ist.
+
+Navigationen und Menus müssen neben der Navigations-Rolle auch als Liste ausgewiesen werden.
+
+------
+
+
 ### Tabellen
 
 Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abbonements.
@@ -415,28 +439,6 @@ Links:
 
 > Wie machen wir dann eine Tabelle responsive?!
 
-### Listen
-
-Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgeben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder spezieller darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur verfügung:
-
-- `<ul>` ungeordnete Liste 
-- `<ol>` geordnete Liste
-
-Neben dem korrekten Listen Element benötigen wir auch noch Listenelemente:
-
-`<ol>` und `<ul>` mit `<li>` Child Elementen.
-
-#### Orderd List `<ol>`
-
-Mit Nummerierung. Zu verwenden beiwpielsweise bei einer Anleitung, bei welcher eine gewisse Reihenfolge vorausgesetzt wird.
-
-#### Unorderd List `<ul>`
-
-Mit Bulletpoints. Zu verwenden wenn die Reihenfolge der Listen Elemente irrelevant ist.
-
-Navigationen und Menus müssen neben der Navigations-Rolle auch als Liste ausgewiesen werden.
-
-------
 
 
 

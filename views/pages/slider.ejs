@@ -17,6 +17,20 @@
         </small>
     </p>
 </footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        console.log(event.key)
+        // CTRL + S combo
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/presentation/<%- next %>";
+        }
+        // CTRL + L combo
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/presentation/<%- prev %>";
+        }
+    });
+</script>
 </main>
 </body>
 </html>
