@@ -290,9 +290,9 @@ Demo:
 
 - [Text Italic / Kursiv](/demo/text-italic-cursive)
 
-### Unterstrichen
+### Text Styling
 
-` text-decoration: underline` wird vom Screenreader nicht beachtet (text-decoration grundsätzlich).
+`text-decoration: underline` wird vom Screenreader nicht beachtet (text-decoration grundsätzlich).
 
 ### Tabellen
 

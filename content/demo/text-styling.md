@@ -1,6 +1,4 @@
 # Text Styling
-## CSS Styles
-
 
 <div class="flex flex-wrap">
 <div class="w-1/6">
@@ -88,7 +86,3 @@
 ```
 </div>
 </div>
-
-Demo: 
-
-- [Text Styling CSS](/demo/text-styles)
