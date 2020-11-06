@@ -1,12 +1,14 @@
-# Tabellen
-## Tabellen Elemente
+# Table
 
 <table>
-	<tr>
+	<thead>
+  	<tr>
 		<th>Produkt</th>
 		<th>Preis</th>
 	</tr>
-	<tr>
+  </thead>
+	<tbody>
+  	<tr>
 		<th>Gala Apfel</th>
 		<td>CHF 0.85</td>
 	</tr>
@@ -18,15 +20,25 @@
 		<th>Gala Diwa</th>
 		<td>CHF 0.90</td>
 	</tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Durchscnittspreis</th>
+      <td>CHF 0.8666667</td>
+    </tr>
+  </tfoot>
 </table>
 
 ``` html
 <table>
-	<tr>
+	<thead>
+  	<tr>
 		<th>Produkt</th>
 		<th>Preis</th>
 	</tr>
-	<tr>
+  </thead>
+	<tbody>
+  	<tr>
 		<th>Gala Apfel</th>
 		<td>CHF 0.85</td>
 	</tr>
@@ -38,10 +50,12 @@
 		<th>Gala Diwa</th>
 		<td>CHF 0.90</td>
 	</tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Durchscnittspreis</th>
+      <td>CHF 0.8666667</td>
+    </tr>
+  </tfoot>
 </table>
 ```
-
---- 
-
-Demo: 
-- [Table 2](/demo/table-2)

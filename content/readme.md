@@ -347,9 +347,9 @@ Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut:
 </table>
 ```
 
-- Eine Tabelle hat `x` Tabellenzeilen/Tablerows `<tr>`
-- Jede Tabellenzeile kann `x` Spalten `<td>` beinhalten
-- Tabellenheader werden innerhalb der Zeile als `<th>` markiert
+- Eine `<table>` hat `x` Tabellenzeilen/Tablerows `<tr>`
+- Jede `<tr>` kann `x` Spalten `<td>` beinhalten
+- Tabellenheader werden innerhalb eines `<tr>`  als `<th>` markiert (statt `td`)
 
 
 
@@ -384,7 +384,7 @@ Tabellen Struktur
 
 - `<thead>` Kopfbereich einer Tabelle, kann mehrere Zeilen beinhalten
 - `<tbody>` Inhaltsbereich einer Tabelle, kann mehrere Zeilen beinhalten
-- `<tfooter>` Fussbereich einer Tabelle, kann mehrere Zeilen beinhalten
+- `<tfoot>` Fussbereich einer Tabelle, kann mehrere Zeilen beinhalten
 
 ```html
 <table>
@@ -408,12 +408,12 @@ Tabellen Struktur
 		<td>CHF 0.90</td>
 	</tr>
   </tbody>
-  <tfooter>
+  <tfoot>
     <tr>
-      <td>Durchscnittspreis</td>
-      <td>CHF 0.8666667</td>
+      <th>Durchscnittspreis</th>
+      <th>CHF 0.8666667</th>
     </tr>
-  </tfooter>
+  </tfoot>
 </table>
 ```
 

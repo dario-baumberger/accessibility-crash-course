@@ -35,13 +35,23 @@ app.get('/', function (req, res) {
   })
 
   app.get('/presentation/:name', function (req, res) {
-	const slide = req.params.name;
+	let slide = req.params.name;
+	let pre;
+	let next;
+
+	if(parseInt(slide) <= 0){
+		slide = 0;
+		prev = 0;
+		next = 1;
+	}else{
+		prev = parseInt(slide) -1;
+		next = parseInt(slide) +1;
+	}
+
 	const content = md('slides/'+slide)
-	const prev = parseInt(slide) -1;
-	const next = parseInt(slide) +1;
+
   res.render('pages/slider', {'content': content, 'prev': prev, 'next': next})
 })
-
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
