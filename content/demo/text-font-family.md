@@ -1,5 +1,10 @@
 # Text Font Family
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+</style>
+
+
 <div class="flex flex-wrap">
 <div class="w-1/6">
 	<p>
@@ -7,12 +12,12 @@
 	<p>
 </div>
 <div class="w-2/6">
-	<p style="font-family: cursive;">lorem ipsum dolor</p>
+	<p style="font-family: 'Homemade Apple', cursive;">lorem ipsum dolor</p>
 </div>
 <div class="w-3/6">
 
 ``` html
-	<p style="font-family: cursive;">lorem ipsum dolor</p>
+	<p style="font-family: 'Homemade Apple', cursive;">lorem ipsum dolor</p>
 ```
 </div>
 <div class="w-1/6">
