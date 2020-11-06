@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npx tailwindcss build src/css/styles.css -o public/css/styles.css",
+    "start": "node app.js"
   },
   "author": "Dario Baumberger",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "marked": "^1.2.3"
+    "marked": "^1.2.3",
+    "tailwindcss": "^1.9.6"
   }
 }

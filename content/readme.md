@@ -313,7 +313,7 @@ Mit Nummerierung. Zu verwenden beiwpielsweise bei einer Anleitung, bei welcher e
 
 Mit Bulletpoints. Zu verwenden wenn die Reihenfolge der Listen Elemente irrelevant ist.
 
-Navigationen und Menus müssen neben der Navigations-Rolle auch als Liste ausgewiesen werden.
+Navigationen und Menus müssen neben der Navigations-Rolle oder ```<nav>``` auch als Liste ausgewiesen werden.
 
 ------
 
