@@ -1,7 +1,4 @@
-# Forms
-## Inputs
-
-
+# Inputs with Labels
 
 <div class="flex flex-wrap">
 <div class="w-1/6">
@@ -63,9 +60,3 @@
 ```
 </div>
 </div>
-
----
-
-Demo:
-
-- [Input Labels](/demo/form-inputs-labels)

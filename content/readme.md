@@ -497,6 +497,10 @@ Die erste Variante bietet grundsätzlich mehr Möglichkeiten. Die zweite Option 
 Labels dienen dazu um ein Eingabefeld zu beschreiben. Zudem wird bei einem Klick auf ein Label auch gleich ein Klick im auf dem dazugehörigen Eingabefeld ausgelöst.
 
 
+Demo:
+
+- [Images Img Tag](/demo/form-inputs-labels)
+
 
 Links:
 
