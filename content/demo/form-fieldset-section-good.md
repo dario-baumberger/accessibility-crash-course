@@ -1,5 +1,4 @@
-# Forms
-## Fieldset - Formularabschnitte (Good)
+# Feldset - Good
 
 <form>
   <fieldset>
@@ -60,9 +59,3 @@
   </fieldset>
 </form>
 ```
-
----
-
-Demo:
-
-- [Form Section Good](/demo/form-fieldset-section-good)

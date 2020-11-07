@@ -1710,6 +1710,10 @@ video {
   text-decoration:underline
 }
 
+.w-3\/4{
+  width:75%
+}
+
 .w-2\/5{
   width:40%
 }

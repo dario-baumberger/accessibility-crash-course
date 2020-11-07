@@ -1,11 +1,10 @@
-# Forms
-## Fieldset - Formularabschnitte (Good)
+# Fieldset Section - Bad (no fieldset)
 
 <form>
-  <fieldset>
-    <legend>
+  <div>
+    <p>
       Empfänder
-    </legend>
+    </p>
     <div>
       <label for="recipientFirstName">Vorname</label>
       <input type="text" style="border: 1px solid black;" id="recipientFirstName">
@@ -14,11 +13,11 @@
       <label for="recipientLastName">Nachname</label>
       <input type="text" style="border: 1px solid black;" id="recipientLastName">
     </div>
-  </fieldset>
-  <fieldset>
-    <legend>
+  </div>
+  <div>
+    <p>
       Rechnungsadresse
-    </legend>
+    </p>
     <div>
       <label for="paymentFirstName">Vorname</label>
       <input type="text" style="border: 1px solid black;" id="paymentFirstName">
@@ -27,15 +26,15 @@
       <label for="paymentLastName">Nachname</label>
       <input type="text" style="border: 1px solid black;" id="paymentLastName">
     </div>
-  </fieldset>
+  </div>
 </form>
 
 ```html
 <form>
-  <fieldset>
-    <legend>
+  <div>
+    <p>
       Empfänder
-    </legend>
+    </p>
     <div>
       <label for="recipientFirstName">Vorname</label>
       <input type="text" style="border: 1px solid black;" id="recipientFirstName">
@@ -44,11 +43,11 @@
       <label for="recipientLastName">Nachname</label>
       <input type="text" style="border: 1px solid black;" id="recipientLastName">
     </div>
-  </fieldset>
-  <fieldset>
-    <legend>
+  </div>
+  <div>
+    <p>
       Rechnungsadresse
-    </legend>
+    </p>
     <div>
       <label for="paymentFirstName">Vorname</label>
       <input type="text" style="border: 1px solid black;" id="paymentFirstName">
@@ -57,12 +56,6 @@
       <label for="paymentLastName">Nachname</label>
       <input type="text" style="border: 1px solid black;" id="paymentLastName">
     </div>
-  </fieldset>
+  </div>
 </form>
 ```
-
----
-
-Demo:
-
-- [Form Section Good](/demo/form-fieldset-section-good)

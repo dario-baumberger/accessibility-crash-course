@@ -1,5 +1,4 @@
-# Forms
-## Fieldset - Groups (Bad)
+# Fieldset - Bad (no fieldset)
 
 <form>
     <div>
@@ -38,9 +37,3 @@
     </div>
 </form>
 ```
-
----
-
-Demo:
-
-- [Form Group Bad](/demo/form-fieldset-group-bad)

@@ -515,6 +515,7 @@ Fieldset werden verwendet um Gruppen Innerhalb eines Formulares semantisch auszu
 - Ein `<fieldset>` ist nur innerhalb einer `<form>` valid.
 - Ein `<fieldset>` benötigt zwingen einen `<legend>` als Child-Element.
 
+
 Links:
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
@@ -573,34 +574,23 @@ Radiobuttons oder Checkboxen setzen sich jeweils zusammen aus einem Input und ei
 
 Man könnte alle Radiobuttons und Labels einzelen ausgeben und als Label jeweils etwas in der Art wie "Farbe Blau" setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als  Farbe Gruppe ausgewiesen sind:
 
-```html
+``` html
 <form>
-  <div>
-      <label for="model">Model</label>
-      <select type="text" id="model">
-        <option>Bitte wählen</option>
-        <option value="1">iPhone Xs</option>
-        <option value="2">iPhone X</option>
-        <option value="3">iPhone 5s</option>
-	    </select>
-    </div>
-  <fieldset>
-    <legend>
-      Farbe
-    </legend>
-    <div>
-      <input type="radio" value="red" id="red" name="color">
-      <label for="red">Red</label>
-    </div>
-    <div>
-      <input type="radio" value="spacegrey" id="spacegrey" name="color">
-      <label for="spacegrey">Space Grey</label>
-    </div>
-    <div>
-      <input type="radio" value="rose" id="rose" name="color">
-      <label for="rose">Rose</label>
-    </div>
-  </fieldset>
+    <fieldset>
+        <legend>Jackenfarbe</legend>
+        <div>
+            <input type="radio" name="color" id="input1">
+            <label for="input1">Grün</label>
+        </div>
+        <div>
+            <input type="radio" name="color" id="input2">
+            <label for="input2">Blau</label>
+        </div>
+        <div>
+            <input type="radio" name="color" id="input3">
+            <label for="input3">Schwarz</label>
+        </div>
+    </fieldset>
 </form>
 ```
 
@@ -611,6 +601,11 @@ Bei einfachen Checkboxen wie bspw. AGB akzeptieren, ist dies nicht nötig - da h
 
 
 Links: 
+
+Demo:
+
+- [Form Group Bad](/demo/form-fieldset-bad)
+- [Form Group Good](/demo/form-fieldset-good)
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
 
@@ -634,7 +629,8 @@ aria-label
 
 Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for) verknüpft, kann es sein, dass das Label nicht mehr vorgelesen wird. 
 
-
+Links:
+- [https://w3c.github.io/using-aria/#do](https://w3c.github.io/using-aria/#do)
 
 ### Tabindex
 
