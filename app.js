@@ -53,6 +53,7 @@ app.get('/', function (req, res) {
   res.render('pages/slider', {'content': content, 'prev': prev, 'next': next})
 })
 
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 }) 
