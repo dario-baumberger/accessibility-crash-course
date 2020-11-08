@@ -702,6 +702,8 @@ Sprint von Heading zu Heading
 
 Sprint von Link zu Link
 
+[https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
+
 ### Texte nur für Screenreader
 
 Wir müssen den Text visuelle verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. `display: none;` und `visibility: hidden;` können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit eine CSS Klasse lösen könnte.
