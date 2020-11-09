@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/static/css/styles.css" rel="stylesheet">
+
+	</head>
+	<body>
+	
+		
+<main class="flex min-h-screen flex-col">
+	<div class="container m-auto mt-20">
+
+		<div class="mb-40 mx-auto max-w-screen-lg">
+			<div class="markdown-body"><h1 id="feldset---good">Feldset - Good</h1>
+<form>
+  <fieldset>
+    <legend>
+      Empfänder
+    </legend>
+    <div>
+      <label for="recipientFirstName">Vorname</label>
+      <input type="text" style="border: 1px solid black;" id="recipientFirstName">
+    </div>
+    <div>
+      <label for="recipientLastName">Nachname</label>
+      <input type="text" style="border: 1px solid black;" id="recipientLastName">
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Rechnungsadresse
+    </legend>
+    <div>
+      <label for="paymentFirstName">Vorname</label>
+      <input type="text" style="border: 1px solid black;" id="paymentFirstName">
+    </div>
+    <div>
+      <label for="paymentLastName">Nachname</label>
+      <input type="text" style="border: 1px solid black;" id="paymentLastName">
+    </div>
+  </fieldset>
+</form>
+
+<pre><code class="language-html">&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;
+      Empfänder
+    &lt;/legend&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;recipientFirstName&quot;&gt;Vorname&lt;/label&gt;
+      &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;recipientFirstName&quot;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;recipientLastName&quot;&gt;Nachname&lt;/label&gt;
+      &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;recipientLastName&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;
+      Rechnungsadresse
+    &lt;/legend&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;paymentFirstName&quot;&gt;Vorname&lt;/label&gt;
+      &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;paymentFirstName&quot;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;paymentLastName&quot;&gt;Nachname&lt;/label&gt;
+      &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;paymentLastName&quot;&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+</div>
+		</div>
+
+
+	</div>
+	<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
+		<p class="text-center">
+			<small>
+				Accessibility / Barrierefreiheit
+			</small>
+		</p>
+	</footer>
+</main>
+</body>
+</html>
+
+
+

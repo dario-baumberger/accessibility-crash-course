@@ -21,17 +21,13 @@ app.set('view engine', 'ejs');
  
 app.get('/', function (req, res) {
 	const content = md('readme')
-	res.render('pages/home', {'content': content})
-  })
-
-  app.get('/demo', function (req, res) {
-	res.render('pages/examples')
+	res.render('pages/index', {'content': content})
   })
 
   app.get('/demo/:name', function (req, res) {
 	  console.log(req.params)
 	  const content = md('demo/'+req.params.name, 'max-w-screen-lg')
-	res.render('pages/home', {'content': content})
+	res.render('pages/demo', {'content': content})
   })
 
   app.get('/presentation/:name', function (req, res) {

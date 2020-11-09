@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/static/css/styles.css" rel="stylesheet">
+
+	</head>
+	<body>
+	
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="tabindex">Tabindex</h1>
+<div tabindex="0">Div Focusable</div>
+<div>Div Not Focusable</div>
+<div>
+<button>Button Focusable</button>
+</div>
+<div>
+<button tabindex="-1">Button Not Focusable</button>
+</div>
+
+<br>
+<br>
+
+<pre><code>&lt;div tabindex=&quot;0&quot;&gt;Div Focusable&lt;/div&gt;
+&lt;div&gt;Div Not Focusable&lt;/div&gt;
+&lt;div&gt;
+&lt;button&gt;Button Focusable&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;button tabindex=&quot;-1&quot;&gt;Button Not Focusable&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
+    <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
+        <a href="/presentation/132" class="p-6">Prev</a>
+        <a href="/presentation/134" class="p-6">Next</a>
+    </div>
+    <p class="text-center">
+        <small>
+            Accessibility / Barrierefreiheit
+        </small>
+    </p>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/presentation/134";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/presentation/132";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		

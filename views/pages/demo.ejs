@@ -1,12 +1,23 @@
-<html class="text-lg" lang="de">
-	<head>
-		<title>Accessibility / Barrierefreiheit Crash Course</title>
-		<link href="/static/css/styles.css" rel="stylesheet">
-
-	</head>
-	<body>
-	<%- include('header')-%>
-
-	<main class="flex min-h-screen flex-col">
+<%- include('../partials/head')-%>
+<main class="flex min-h-screen flex-col">
 	<div class="container m-auto mt-20">
-		
+
+		<div class="mb-40 mx-auto max-w-screen-lg">
+			<%- content %>
+		</div>
+
+
+	</div>
+	<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
+		<p class="text-center">
+			<small>
+				Accessibility / Barrierefreiheit
+			</small>
+		</p>
+	</footer>
+</main>
+</body>
+</html>
+
+
+

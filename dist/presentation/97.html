@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/static/css/styles.css" rel="stylesheet">
+
+	</head>
+	<body>
+	
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="tabellen">Tabellen</h1>
+<h2 id="tabellen-elemente">Tabellen Elemente</h2>
+<table>
+    <tr>
+        <th>Produkt</th>
+        <th>Preis</th>
+    </tr>
+    <tr>
+        <td>Gala Apfel</td>
+        <td>CHF 0.85</td>
+    </tr>
+    <tr>
+        <td>Gala Jazz</td>
+        <td>CHF 0.90</td>
+    </tr>
+    <tr>
+        <td>Gala Diwa</td>
+        <td>CHF 0.90</td>
+    </tr>
+</table>
+
+<pre><code class="language-html">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Produkt&lt;/th&gt;
+        &lt;th&gt;Preis&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Gala Apfel&lt;/td&gt;
+        &lt;td&gt;CHF 0.85&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Gala Jazz&lt;/td&gt;
+        &lt;td&gt;CHF 0.90&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Gala Diwa&lt;/td&gt;
+        &lt;td&gt;CHF 0.90&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<hr>
+<p>Demo: </p>
+<ul>
+<li><a href="/demo/table-1">Table 1</a></li>
+</ul>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
+    <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
+        <a href="/presentation/96" class="p-6">Prev</a>
+        <a href="/presentation/98" class="p-6">Next</a>
+    </div>
+    <p class="text-center">
+        <small>
+            Accessibility / Barrierefreiheit
+        </small>
+    </p>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/presentation/98";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/presentation/96";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		
