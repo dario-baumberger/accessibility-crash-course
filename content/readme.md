@@ -1,6 +1,6 @@
 # Accessibility / Barrierefreiheit
 
-Von Grobabrieb für Einsteiger bis zu fortegschritteneren Themen.
+Von Grobabrieb für Einsteiger bis zu fortgeschritteneren Themen.
 Fühl dich frei, dir bekannte Theme zu überspringen.
 
 ## Tools für diesen Crash Kurs
@@ -39,17 +39,17 @@ Quellen:
 - [https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
 
 
-Für Bund, Bundesnahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der Eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für Bline Personen nicht immer ganz einfach ist). Das Zertifikat kann als "Aushängeschild" verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
+Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online-Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für blind Personen nicht immer ganz einfach ist). Das Zertifikat kann als "Aushängeschild" verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
 
 ## Für wen?
-In erster Linie für Eingeschränkte Personen. Ja gut ok, aber wer alles gehört zu eingeschränkten Personen? Unter anderen folgende:
+In erster Linie für eingeschränkte Personen. Ja, gut ok, aber wer alles gehört zu eingeschränkten Personen? Unter anderen folgende:
 - Komplett Blinde Personen
 - Personen mit anderen Sehschwächen
 - Taube Personen
 - Gelähmte Personen
 - Motorisch eingeschränkte Personen
 - Analphabeten
-- Stummepersonen
+- Stumme Personen
 - Verunfallte Personen
 - Und für dich!
 
@@ -64,7 +64,7 @@ In erster Linie für Eingeschränkte Personen. Ja gut ok, aber wer alles gehört
 
 Beginnen wir mit etwas einfacherem, das sollte sicher noch für alle verständlich sein.
 
-Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerfüehrung. Wir alle verbinden automatisch gewisse farben mit gewissen Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teil intuitiv auf diese Farben (Verkehrsampel). So ist beispielweise ein grüner Löschen Button für uns komisch. Ein roter Löschen Button hingegen ist für uns logisch.
+Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerführung. Wir alle verbinden automatisch gewisse Farben mit gewissen Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teil intuitiv auf diese Farben (Verkehrsampel). So ist beispielsweise ein grüner Löschen-Button für uns komisch. Ein roter Löschen-Button hingegen ist für uns logisch.
 
 Demo: 
 - [Button empty (Bad)](/demo/colors-button-empty)
@@ -141,7 +141,7 @@ Quellen:
 (Nicht abschliessende Liste)
 
 - Semantische Elemente geben dem Element eine Bedeutung.
-- Alles was mit semantischen Elementen gemacht werden kann, ist auch mit nicht semantischen Elementen machbar (man sollte das jedoch nicht tun)
+- Alles, was mit semantischen Elementen gemacht werden kann, ist auch mit nicht semantischen Elementen machbar (man sollte das jedoch nicht tun)
 
 
 
@@ -155,7 +155,7 @@ Links:
 
 ## Text / Schrift
 
-*Was ist eingetlich alles Text?*
+*Was ist eigentlich  alles Text?*
 
 Wichtig zu beachten bei der Behandlung von Textinhalten ist, dass die semantischen Strukturen innerhalb von
 Textinhalten in HTML explizit ausgezeichnet werden. Überschriften als Überschriften `<hx>`, Absätze als
@@ -186,7 +186,7 @@ Demo:
 ### Schriftfarben
 
 
-Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der Farbe `#efefef` auf  weissem Hintergrund `#ffffff` (Contrast Ratio 1.14:1) ist selbst für gut sehende nicht wirklich lesbar. Bei der Berechnung des Kontrast spielen nicht nut die Hintergrund- und die Vordergrund-Farbe eine Rolle, sondern auch die Schriftgrösse.
+Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der Farbe `#efefef` auf weissem Hintergrund `#ffffff` (Contrast Ratio 1.14:1) ist selbst für gut sehende nicht wirklich lesbar. Bei der Berechnung des Kontrastes spielen nicht nur die Hintergrund- und die Vordergrund-Farbe eine Rolle, sondern auch die Schriftgrösse.
 
 Demo: 
 
@@ -198,7 +198,7 @@ Links:
 
 ### Headings / Überschriften
 
-Es gibt sechs headign Typen:
+Es gibt sechs Headign Typen:
 
 1. `<h1>`
 2. `<h2>`
@@ -211,7 +211,7 @@ Es gibt sechs headign Typen:
 
 *Was ist dabei zu beachten?* 
 
-- Mehrere H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist. (SEO Spezailisten und Accessibillity Spezialisten sind sich dort teilweise nicht einig. Je nach Applikation bspw. bei einer Anwendung hinter einem Login, spielt SEO wohl keine all zu grosse Rolle mehr.)
+- Mehrere H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist. (SEO Spezialisten und Barrierefreiheit Spezialisten sind sich dort teilweise nicht einig. Je nach Applikation bspw. bei einer Anwendung hinter einem Login, spielt SEO wohl keine allzu grosse Rolle mehr.)
 - Keine Heading Levels überspringen
 
 
@@ -234,7 +234,7 @@ Demo:
 
 Leere `<p>` Elemente werden durch assistive Technologien und Suchmaschinen als leere Paragraphen
 interpretiert und sind somit semantisch besetzt (Teils Screenreader abhängig). Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
-der visuellen Gestaltung sondern der semantischen Strukturierung von Inhalten.
+der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.
 
 
 
@@ -263,7 +263,7 @@ Demo:
 - Verlinken von Seiten
 - window.location verändern
 
-*Welche Möglichkeiten gibt es um das zu machen?*
+*Welche Möglichkeiten gibt es, um das zu machen?*
 
 - `<a>`
 - Java Script
@@ -276,7 +276,7 @@ Semantisch korrekt: `<a href="/">Klick mich<a>`
 
 
 
-`<a>` wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt . Ein `<div>` kann auch klickbar gemacht werden, auch das "verlinken" ist möglich. Browser und Screenreader erkennen zudem mit einem `<a>` Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus Cursor (Pointer). Mit JavaScript und CSS alleine ist nicht alles getan. Die Verwendung der semantisch korrekten Elemente ist wichtig und bietet oft standart Verhalten, welche wir selber bauen müssten.
+`<a>` wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt . Ein `<div>` kann auch klickbar gemacht werden, auch das "verlinken" ist möglich. Browser und Screenreader erkennen zudem mit einem `<a>` Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus Cursor (Pointer). Mit JavaScript und CSS alleine ist nicht alles getan. Die Verwendung, der semantisch korrekten Elemente ist wichtig und bietet oft standard Verhalten, welche wir selber bauen müssten.
 
 Web Frameworks wie Angular oder React bieten eigene Handlers an. Diese Router Handler fügen in der Regel auch gleich ein 'href="blah"' Attribut auf dem entsprechenden Element ein. Für Screenreader ist so klar, um was es sich handelt: Ein Link mit Ziel XY. Die Browser markieren besuchte Links zusätzlich noch als besucht. Auf diese Informationen kann der Screenreader auch zugreifen.
 
@@ -293,7 +293,7 @@ Demo:
 - `<bold>` ist **kein** semantisches HTML Tag. 
 - `<strong>` ist **ein** semantisches HTML Tag.
 
-Leider wird die semantische Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt die klar.  
+Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.  
 
 Demo: 
 
@@ -308,7 +308,7 @@ Link:
 - `<i>` ist **kein** semantisches HTML Tag. 
 - `<em>` ist **ein** semantisches HTML Tag.
 
-Leider wird die semantische Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt die klar.
+Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.
 
 Demo: 
 
@@ -324,7 +324,7 @@ Link:
 
 ### Listen
 
-Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgeben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder spezieller darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur verfügung:
+Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgehoben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder anders darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur Verfügung:
 
 - `<ul>` ungeordnete Liste 
 - `<ol>` geordnete Liste
@@ -335,24 +335,24 @@ Neben dem korrekten Listen Element benötigen wir auch noch Listenelemente:
 
 #### Orderd List `<ol>`
 
-Mit Nummerierung. Zu verwenden beiwpielsweise bei einer Anleitung, bei welcher eine gewisse Reihenfolge vorausgesetzt wird.
+Mit Nummerierung. Zu verwenden beispielsweise bei einer Anleitung, bei welcher eine gewisse Reihenfolge vorausgesetzt wird.
 
 #### Unorderd List `<ul>`
 
-Mit Bulletpoints. Zu verwenden wenn die Reihenfolge der Listen Elemente irrelevant ist.
+Mit Bulletpoints. Zu verwenden, wenn die Reihenfolge der Listen Elemente irrelevant ist.
 
-Navigationen und Menus müssen neben der Navigations-Rolle oder ```<nav>``` auch als Liste ausgewiesen werden.
+Navigationen und Menüs müssen neben der Navigations-Rolle oder ```<nav>``` auch als Liste ausgewiesen werden.
 
 ------
 
 
 ### Tabellen
 
-Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abbonements.
+Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abonnements.
 
-Tabellen dürfen auf keinen Fall für den Aufbau bzw. Styling für Tabellen verwendet werden. Das ist ein Relikt aus der Vergangenheit (aussnahme Newsletter)!
+Tabellen dürfen auf keinen Fall für den Aufbau bzw. Styling für Tabellen verwendet werden. Das ist ein Relikt aus der Vergangenheit (Ausnahme Newsletter)!
 
-Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut: 
+Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut: 
 
 ```html
 <table>
@@ -404,7 +404,7 @@ Tabellen können jedoch mehr als nur eine Zeile mit Tableheadings beinhalten. Bs
 </table>
 ```
 
-Jede Zeile hat hier ein eigenes Heading. Das führt dazu, dass wir die Daten in der Tabelle besser gergleichen können.
+Jede Zeile hat hier ein eigenes Heading. Das führt dazu, dass wir die Daten in der Tabelle besser vergleichen können.
 
 
 
@@ -447,7 +447,7 @@ Tabellen Struktur
 
 
 
-Bei Tabellen ist auch noch zu beachten das CSS Einfluss auf die semantische Bedeutung hat. Tabellen sind grundsätzlich `display: table;`. Ändert man den Display Wert bspw. auf `display: flex;`, so handelt es sich nicht mehr um eine Tabelle (Abhängig von der Technologie). 
+Bei Tabellen ist auch noch zu beachten, dass CSS Einfluss auf die Semantik hat. Tabellen sind grundsätzlich `display: table;`. Ändert man den Display-Wert bspw. auf `display: flex;`, so handelt es sich nicht mehr um eine Tabelle (Abhängig von der Technologie). 
 
 
 
@@ -481,7 +481,7 @@ Semantisches Bild: `<img src="https://picsum.photos/200/300" alt="Random Image" 
 
 `<img>` werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS `background-image` kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken. 
 
-Beim Verwenden des `<img>` muss zwingen ein `alt` Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assitive Technologien. Da Screenreader keinen Bilder bzw. Bildinhalte vorlesen, wir der Alt-Text ausgegeben.
+Beim Verwenden des `<img>` muss zwingen ein `alt` Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assitive Technologien. Da Screenreader keine Bilder bzw. Bildinhalte vorlesen, wird der Alt-Text ausgegeben.
 
 
 
@@ -522,7 +522,7 @@ Label und Input können auf zwei Arten miteinander verknüpft werden:
 
 Die erste Variante bietet grundsätzlich mehr Möglichkeiten. Die zweite Option wird eher selten verwendet.
 
-Labels dienen dazu um ein Eingabefeld zu beschreiben. Zudem wird bei einem Klick auf ein Label auch gleich ein Klick im auf dem dazugehörigen Eingabefeld ausgelöst.
+Labels dienen dazu, um ein Eingabefeld zu beschreiben. Zudem wird bei einem Klick auf ein Label auch gleich ein Klick im auf dem dazugehörigen Eingabefeld ausgelöst.
 
 
 Demo:
@@ -538,7 +538,7 @@ Links:
 
 ### Fieldset (Gruppen)
 
-Fieldset werden verwendet um Gruppen Innerhalb eines Formulares semantisch auszuweisen. 
+Fieldset werden verwendet, um Gruppen innerhalb eines Formulars semantisch auszuweisen. 
 
 - Ein `<fieldset>` ist nur innerhalb einer `<form>` valid.
 - Ein `<fieldset>` benötigt zwingen einen `<legend>` als Child-Element.
@@ -552,7 +552,7 @@ Links:
 
 ### Komplexerre Inputs / Gruppen & Formularabschnitte
 
-Es gibt verschiedene Arten von Gruppierungen innerhalb eines Formulares. Beide werden mit dem `<fieldset>` und `<legend>` ausgewisen.
+Es gibt verschiedene Arten von Gruppierungen innerhalb eines Formulars. Beide werden mit dem `<fieldset>` und `<legend>` ausgewiesen.
 
 - Formularabschnitte
 - Input Gruppen:
@@ -561,7 +561,7 @@ Es gibt verschiedene Arten von Gruppierungen innerhalb eines Formulares. Beide w
 
 #### Formularabschnitte
 
-Gruppieren von zusammengehörenden Inputs bspw. Benutzerdaten: Email, Benutzername, Passwort und Kontaktdaten: Strasse, Hausnummer, PLZ, Ort etc. Oder bspw. bei einem Bestellformular gibt es möglicherweisse zweimal ein Eingabefeld für eine Strasse, da man einen Versandadresse und eine Rechnungsadresse haben kann. Würde man diese Felder nicht gruppieren, würde der Screenreader Benutzer nur zuhören bekommen, dass er eine Strasse eingeben muss. Da er womöglich fünf Tabs vorher schon eine Strasse ausgefüllt hat, kann das irritierend sein. Mal abgesehen davon, dass er nicht weiss ob er nun die Rechnung oder das Paket erhält.
+Gruppieren von zusammengehörenden Inputs bspw. Benutzerdaten: E-Mail, Benutzername, Passwort und Kontaktdaten: Strasse, Hausnummer, PLZ, Ort etc. Oder bspw. bei einem Bestellformular gibt es möglicherweise zweimal ein Eingabefeld für eine Strasse, da man eine Versandadresse und eine Rechnungsadresse haben kann. Würde man diese Felder nicht gruppieren, würde der Screenreader Benutzer nur zuhören bekommen, dass er eine Strasse eingeben muss. Da er womöglich fünf Tabs vorher schon eine Strasse ausgefüllt hat, kann das irritierend sein. Mal abgesehen davon, dass er nicht weiss, ob er nun die Rechnung oder das Paket erhält.
 
 ```html
 <form>
@@ -598,9 +598,9 @@ Gruppieren von zusammengehörenden Inputs bspw. Benutzerdaten: Email, Benutzerna
 
 #### Input Gruppen
 
-Radiobuttons oder Checkboxen setzen sich jeweils zusammen aus einem Input und einem Label. In der Praxis kommen Checkboxen oder Radiobuttons aber vorallem dann zum Einsatz, wenn man eine Auswahl machen muss. Bspw. Farbauswahl eines Smartphones.
+Radiobuttons oder Checkboxen setzen sich jeweils zusammen aus einem Input und einem Label. In der Praxis kommen Checkboxen oder Radiobuttons aber vor allem dann zum Einsatz, wenn man eine Auswahl machen muss. Bspw. Farbauswahl eines Smartphones.
 
-Man könnte alle Radiobuttons und Labels einzelen ausgeben und als Label jeweils etwas in der Art wie "Farbe Blau" setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als  Farbe Gruppe ausgewiesen sind:
+Man könnte alle Radiobuttons und Labels einzeln ausgeben und als Label jeweils etwas in der Art wie "Farbe Blau" setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als Farbe Gruppe ausgewiesen sind:
 
 ``` html
 <form>
@@ -624,7 +624,7 @@ Man könnte alle Radiobuttons und Labels einzelen ausgeben und als Label jeweils
 
 
 
-Bei einfachen Checkboxen wie bspw. AGB akzeptieren, ist dies nicht nötig - da hat es ja nur eine Checkbox.
+Bei einfachen Checkboxen wie bspw. AGB akzeptieren, ist dies nicht nötig - da hat es nur eine Checkbox.
 
 
 
@@ -655,18 +655,20 @@ Overlays / Dialoge / Modals
 
 aria-label
 
-Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for) verknüpft, kann es sein, dass das Label nicht mehr vorgelesen wird. 
+Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for Attribut) verknüpft, kann es sein, dass das Label nicht mehr vorgelesen wird. 
 
 Links:
 - [https://w3c.github.io/using-aria/#do](https://w3c.github.io/using-aria/#do)
 
 ### Tabindex
 
-Mit dem `tabindex` Attribut können wir die Fokusreihenfolge innerhalb des Doms manipullieren. Wird verwenden um zusätzliche Tab-Stops im DOM hinzuzufügen oder um Elemente nicht fokussierbar zu machen.
+Mit dem `tabindex` Attribut können wir die Fokus-Reihenfolge innerhalb des Doms manipulieren. Wird verwenden, um zusätzliche Tab-Stopps im DOM hinzuzufügen oder um Elemente nicht fokussierbar zu machen.
 
 - `tabindex="-1"` Das Element ist nicht fokussierbar
-- `tabindex="0"` Das Element ist fokussierbar. Das Element behält seine Position in der Tabreihenfolge entsprechend seiner Position in DOM bei.
-- `tabindex="1"` Das Element ist fokussierbar. Das Element verliert seine Position in der Tabreihenfolge und wird "hinten angehängt". Dieses Verhalten ist bei allen Werten >= 1. Der Wert des Attributes bestimmt die neuen Reihenfolge. Zuerst werden alle "normal fokussierbaren" und tabindex="0" Elemente durchgegangen, anschliessen die Reihenfolge entsprechend des Attributwertes. (Sollte man nicht verwenden, macht grundsätzlich eher mehr kaputt als es hilft).
+- `tabindex="0"` Das Element ist fokussierbar. Das Element behält seine Position in der Tab-Reihenfolge entsprechend seiner Position in DOM bei.
+- `tabindex="1"` Das Element ist fokussierbar. Das Element verliert seine Position in der Tab-Reihenfolge und wird "hinten angehängt". Dieses Verhalten ist bei allen Werten >= 1. Der Wert des Attributes bestimmt die neue Reihenfolge. Je nachdem, wo man sich auf der Seite befindet, werden die Elemente wie folgt durchgegangen: Fokus auf einem Element in der normalen Tab-Reihenfolge: Zuerst werden alle "normal fokussierbaren" und tabindex="0" Elemente durchgegangen, anschliessen die Reihenfolge entsprechend des Attribut-Wertes. Ist man bspw. im URL-Feld, werden alle tabindex >= 1 durchgegangen.
+
+ (Sollte man nicht verwenden, macht grundsätzlich eher mehr kaputt als es hilft).
 
 
 
@@ -678,19 +680,19 @@ Links:
 
 ## CSS Einfluss
 
-CSS hat zum Teil direkten Einfluss auf die semantische Bedeutung von Elementen, jedoch nicht überall.
+CSS hat zum Teil direkten Einfluss auf die Semantik von Elementen, jedoch nicht überall.
 
 `display: none;` Entfernt das Element für den Screenreader aus dem DOM
 
 `display: block;` Fügt das Element für den Screenreader in dem DOM
 
-`visibility: hidden;` Entfernt das Element für den Screenreader aus dem DOM  
+`visibility: hidden;` Entfernt das Element für den Screenreader aus dem DOM 
 
 `visibility: visible;` Fügt das Element für den Screenreader in dem DOM
 
 
 
-Text Styling wie `text-decoration`, `font-weight` haben allerdings keinen Einfluss!
+Text Styling wie `text-decoration`, `font-weight`  allerdings keinen Einfluss!
 
 
 
@@ -708,7 +710,7 @@ Text Styling wie `text-decoration`, `font-weight` haben allerdings keinen Einflu
 
 #### Focus Mode
 
-Die Steuerung des Screenreaders wird via "Tab" / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stopt bzw. fokusiert jedes fokussierbare Element (Tab-Stop). Fokussierbar sind grundsätzlich alle arten von Eingabefeldern (`<input>`, `<textarea>`, etc.) und Schaltflächen (`<button>`, `<a>`). Zusätzliche Tab-Stop können via HTML oder JavaScript hinzugefügt werden: Setzen des `tabindex` Attributes. 
+Die Steuerung des Screenreaders wird via "Tab" / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stoppt bzw. fokussiert jedes fokussierbare Element (Tab-Stopp). Fokussierbar sind grundsätzlich alle arten von Eingabefeldern (`<input>`, `<textarea>`, etc.) und Schaltflächen (`<button>`, `<a>`). Zusätzliche Tab-Stopp können via HTML oder JavaScript hinzugefügt werden: Setzen des `tabindex` Attributes. 
 
 
 
@@ -716,7 +718,7 @@ Die Steuerung des Screenreaders wird via "Tab" / Tabulator ausgeführt. Der Scre
 
 #### Browse Mode
 
-Die Steuerung des Screenreaders wird via Pfeiltasten ausgeführt. Der Screenreader sprint so von Text-Element zu Text-Element.
+Die Steuerung des Screenreaders wird via Pfeiltasten ausgeführt. Der Screenreader springt so von Text-Element zu Text-Element.
 
 
 
@@ -734,7 +736,7 @@ Sprint von Link zu Link
 
 ### Texte nur für Screenreader
 
-Wir müssen den Text visuelle verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. `display: none;` und `visibility: hidden;` können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit eine CSS Klasse lösen könnte.
+Wir müssen den Text visuelle verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. `display: none;` und `visibility: hidden;` können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit einer CSS Klasse lösen könnte.
 
 ```css
 .sr-only {
