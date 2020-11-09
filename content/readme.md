@@ -3,6 +3,12 @@
 Von Grobabrieb für Einsteiger bis zu fortgeschritteneren Themen.
 Fühl dich frei, dir bekannte Theme zu überspringen.
 
+<br />
+
+---
+
+<br />
+
 ## Tools für diesen Crash Kurs
 Die Demos schaust du dir am besten mit folgenden Tools an. Einige Probleme sind nicht immer gleich auf den ersten Blick nur im Browser Fenster ersichtlich.
 - [Wave Browser Extension](https://wave.webaim.org/extension/)
@@ -10,6 +16,12 @@ Die Demos schaust du dir am besten mit folgenden Tools an. Einige Probleme sind 
 - [Colorblinding](https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa?hl=en)
 
 Siehe auch noch [Steuerung Screenreader](#steuerung)
+
+<br />
+
+---
+
+<br />
 
 ## Wieso ?!
 - Gesetzliche Rahmenbedingungen in der Schweiz
@@ -20,6 +32,8 @@ Siehe auch noch [Steuerung Screenreader](#steuerung)
 - Grössere Zielgruppen
 - Eigennutzen
 
+<br />
+
 ### Bund, Kantone und Gemeinden
 > Bereits in der Bundesverfassung wird festgehalten, dass niemand diskriminiert werden darf aufgrund einer Behinderung. Das im Jahr 2004 in Kraft getretene Behindertengleichstellungsgesetz regelt weitergehend auch die Dienstleistungen des Gemeinweisens. Diese müssen auch zugänglich für Menschen mit Behinderungen angeboten werden. Darunter fallen auch die Internetangebote von Bund, Kantonen und Gemeinden. [...]
 
@@ -27,6 +41,8 @@ Siehe auch noch [Steuerung Screenreader](#steuerung)
 
 Quellen:
 - [https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
+
+<br />
 
 ### Private
 > Die Verpflichtungen von privaten Dienstleistungsanbietern gehen weniger weit. Ihnen ist es untersagt, Menschen mit Behinderungen bei der Inanspruchnahme von Dienstleistungen zu diskriminieren, d.h. eine Dienstleistung allein wegen einer Behinderung zu verweigern. Anders als der Staat sind Private jedoch nicht verpflichtet, bei ihren Dienstleistungsangeboten aktiv auf die besonderen Bedürfnisse von Menschen mit Behinderungen Rücksicht zu nehmen. Es gibt damit auch keine rechtliche Verpflichtung von Privaten, ihre Internet-Angebote behindertengerecht auszugestalten.
@@ -41,6 +57,12 @@ Quellen:
 
 Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online-Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für blind Personen nicht immer ganz einfach ist). Das Zertifikat kann als "Aushängeschild" verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
 
+<br />
+
+---
+
+<br />
+
 ## Für wen?
 In erster Linie für eingeschränkte Personen. Ja, gut ok, aber wer alles gehört zu eingeschränkten Personen? Unter anderen folgende:
 - Komplett Blinde Personen
@@ -53,12 +75,24 @@ In erster Linie für eingeschränkte Personen. Ja, gut ok, aber wer alles gehör
 - Verunfallte Personen
 - Und für dich!
 
+<br />
+
+---
+
+<br />
+
 ## Wen betrifft das?
 - Entwicklung
 - UX
 - Designer
 - Product Owners
 - Sponsoren / Budget Verantwortliche
+
+<br />
+
+---
+
+<br />
 
 ## Farben
 
@@ -119,7 +153,11 @@ Quellen:
 
 
 
-------
+<br />
+
+---
+
+<br />
 
 
 
@@ -149,8 +187,11 @@ Links:
 
 - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
+<br />
+
 ------
 
+<br />
 
 
 ## Text / Schrift
@@ -165,7 +206,8 @@ Struktur aus dem HTML-Code ersichtlich ist. Visuelle Hervorhebung umfasst Schrif
 Unterstreichungen, Nummerierungen, Einfärbungen, vergrösserte Abstände aber auch spezielle
 Positionierungen von Inhalten, z.B. durch Info-Kästen.
 
-
+<br />
+<br />
 
 ### Schriftarten
 
@@ -175,6 +217,9 @@ Demo:
 
 - [Text Font Family](/demo/text-font-family)
 
+<br />
+<br />
+
 ### Schriftgrössen
 
 Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften können nicht von allen Menschen gelesen werden. 
@@ -182,6 +227,9 @@ Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften k�
 Demo:
 
 - [Text Font Size (Wave Toolbar)](/demo/text-font-size)
+
+<br />
+<br />
 
 ### Schriftfarben
 
@@ -195,6 +243,8 @@ Demo:
 Links:
 - [Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
+<br />
+<br />
 
 ### Headings / Überschriften
 
@@ -228,7 +278,8 @@ Demo:
 - [Text Heading Structure (Bad) (Wave Toolbar)](/demo/text-h-structure-bad)
 - [Text Heading Structure (Good) (Wave Toolbar)](/demo/text-h-structure-good)
 
-
+<br />
+<br />
 
 ### Text / Paragraph
 
@@ -254,7 +305,8 @@ Demo:
 
 - [Text Paragraph Empty (Screenreader)](/demo/text-p-empty)
 
-
+<br />
+<br />
 
 ### Link:
 
@@ -288,6 +340,9 @@ Demo:
 
 [Link (Screenreader & Navigieren)](/demo/link)
 
+<br />
+<br />
+
 ### Bold/Strong
 
 - `<bold>` ist **kein** semantisches HTML Tag. 
@@ -302,6 +357,9 @@ Demo:
 Link: 
 
 - [https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
+
+<br />
+<br />
 
 ### Italic/Kursiv
 
@@ -318,11 +376,20 @@ Link:
 
 - [https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
 
+<br />
+<br />
+
 ### Text Styling / CSS Styles
 
 `text-decoration: underline` wird vom Screenreader nicht beachtet (text-decoration grundsätzlich).
 
-### Listen
+<br />
+
+---
+
+<br />
+
+## Listen
 
 Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgehoben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder anders darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur Verfügung:
 
@@ -333,17 +400,25 @@ Neben dem korrekten Listen Element benötigen wir auch noch Listenelemente:
 
 `<ol>` und `<ul>` mit `<li>` Child Elementen.
 
-#### Orderd List `<ol>`
+<br />
+
+### Orderd List `<ol>`
 
 Mit Nummerierung. Zu verwenden beispielsweise bei einer Anleitung, bei welcher eine gewisse Reihenfolge vorausgesetzt wird.
 
-#### Unorderd List `<ul>`
+<br />
+
+### Unorderd List `<ul>`
 
 Mit Bulletpoints. Zu verwenden, wenn die Reihenfolge der Listen Elemente irrelevant ist.
 
 Navigationen und Menüs müssen neben der Navigations-Rolle oder ```<nav>``` auch als Liste ausgewiesen werden.
 
-------
+<br />
+
+---
+
+<br />
 
 
 ### Tabellen
@@ -468,10 +543,14 @@ Links:
 
 > Wie machen wir dann eine Tabelle responsive?!
 
+<br />
+
+---
+
+<br />
 
 
-
-### Bilder:
+## Bilder:
 
 "Visuelles" Bild: `<div style="background-image: url('https://picsum.photos/200/300');"></div>`
 
@@ -491,16 +570,20 @@ Demo:
 - [Table 1](/demo/table-1)
 
 
+<br />
 
+---
+
+<br />
 
 
 ## Formulare
 
 `<form>` zeichnet semantisch ein Formular aus. 
 
+<br />
 
-
-## Inputs and Labels
+### Inputs and Labels
 
 `<input>` benötigen zwingen ein `<label>`.
 
@@ -534,7 +617,7 @@ Links:
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
-
+<br />
 
 ### Fieldset (Gruppen)
 
@@ -548,16 +631,16 @@ Links:
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
 
+<br />
 
-
-### Komplexerre Inputs / Gruppen & Formularabschnitte
+#### Komplexerre Inputs / Gruppen & Formularabschnitte
 
 Es gibt verschiedene Arten von Gruppierungen innerhalb eines Formulars. Beide werden mit dem `<fieldset>` und `<legend>` ausgewiesen.
 
 - Formularabschnitte
 - Input Gruppen:
 
-
+<br />
 
 #### Formularabschnitte
 
@@ -594,7 +677,7 @@ Gruppieren von zusammengehörenden Inputs bspw. Benutzerdaten: E-Mail, Benutzern
 </form>
 ```
 
-
+<br />
 
 #### Input Gruppen
 
@@ -637,15 +720,15 @@ Demo:
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
 
+<br />
 
+### Disabled
 
-#### Disabled
-
-
+<br />
 
 ------
 
-
+<br />
 
 ## Aria-Attribute, Role-Attribute und Tabindex-Attribut
 
@@ -659,6 +742,12 @@ Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Lab
 
 Links:
 - [https://w3c.github.io/using-aria/#do](https://w3c.github.io/using-aria/#do)
+
+<br />
+
+---
+
+<br />
 
 ### Tabindex
 
@@ -676,7 +765,11 @@ Links:
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
 
+<br />
 
+---
+
+<br />
 
 ## CSS Einfluss
 
@@ -694,9 +787,15 @@ CSS hat zum Teil direkten Einfluss auf die Semantik von Elementen, jedoch nicht 
 
 Text Styling wie `text-decoration`, `font-weight`  allerdings keinen Einfluss!
 
+<br />
 
+---
+
+<br />
 
 ## Screenreader
+
+<br />
 
 ### Programme:
 
@@ -706,21 +805,21 @@ Text Styling wie `text-decoration`, `font-weight`  allerdings keinen Einfluss!
 - VoiceOver (iOS / iPasOS, vorinstallier)
 - Android (vorinstallier)
 
+<br />
+
 ### Steuerung
 
 #### Focus Mode
 
 Die Steuerung des Screenreaders wird via "Tab" / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stoppt bzw. fokussiert jedes fokussierbare Element (Tab-Stopp). Fokussierbar sind grundsätzlich alle arten von Eingabefeldern (`<input>`, `<textarea>`, etc.) und Schaltflächen (`<button>`, `<a>`). Zusätzliche Tab-Stopp können via HTML oder JavaScript hinzugefügt werden: Setzen des `tabindex` Attributes. 
 
-
-
-
+<br />
 
 #### Browse Mode
 
 Die Steuerung des Screenreaders wird via Pfeiltasten ausgeführt. Der Screenreader springt so von Text-Element zu Text-Element.
 
-
+<br />
 
 #### Shortcuts
 
