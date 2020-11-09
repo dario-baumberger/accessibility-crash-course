@@ -14,7 +14,7 @@ let md = function (filename) {
     return html;
 };
 
-function ejs2html(path, information, name = path.split("/").pop().split('.')[0], dist = __dirname+'/dist') {
+function ejs2html(path, information, name = path.split("/").pop().split('.')[0], dist = __dirname+'/docs') {
 
 
     fs.readFile(path, 'utf8', function (err, data) {
@@ -63,7 +63,7 @@ for (i = 0; i < files.length; i++) {
     }
 
     var content = md('slides/' + i)
-   ejs2html(__dirname + '/views/pages/slider.ejs', {'content': content, 'prev': prev, 'next': next}, i, 'dist/presentation/');
+   ejs2html(__dirname + '/views/pages/slider.ejs', {'content': content, 'prev': prev, 'next': next}, i, 'docs/presentation/');
 }
 
 ///////////////////
@@ -71,7 +71,6 @@ for (i = 0; i < files.length; i++) {
 
 let demos = fs.readdirSync(__dirname + '/content/demo')
 
-console.log(demos)
 
 for (i = 0; i < demos.length; i++) {
 
@@ -81,7 +80,6 @@ for (i = 0; i < demos.length; i++) {
 
     var content = md('demo/' +  name)
 
-    console.log(name, content)
 
-   ejs2html(__dirname + '/views/pages/demo.ejs', {'content': content}, name, 'dist/demo/');
+   ejs2html(__dirname + '/views/pages/demo.ejs', {'content': content}, name, 'docs/demo/');
 }
