@@ -88,9 +88,10 @@ Einerseits wäre die Farbe alleine nicht aussagekräftig genug, was dann genau p
 
 *Stand 2019 gibt es rund 377'000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:*
 
-- *Ausreichende Farbkontraste*
-- *Farben alleine reichen nicht*
-- *Text Beschreibungen*
+- Ausreichende Farbkontraste
+- Klare Farben 
+- Farben alleine reichen nicht
+- Text Beschreibungen
 
 <br/><br/>
 
