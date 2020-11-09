@@ -20,12 +20,12 @@
 	<p>
 </div>
 <div class="w-2/6">
-	<div style="cursor: pointer; color: blue;" onclick="window.location.href='/';">Klick mich</div>
+	<div style="cursor: pointer; color: blue;" tabindex="0" onclick="window.location.href='/';">Klick mich</div>
 </div>
 <div class="w-3/6">
 
 ``` html
-	<div style="cursor: pointer; color: blue;" onclick="window.location.href='/';">Klick mich</div>
+	<div style="cursor: pointer; color: blue;" tabindex="0" onclick="window.location.href='/';">Klick mich</div>
 ```
 </div>
 <div class="w-1/6">
