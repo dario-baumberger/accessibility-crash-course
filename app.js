@@ -5,11 +5,11 @@ const path = require('path');
 const marked = require ('marked');
 const fs = require ('fs');
 
-let md = function (filename, classes = '') {
+let md = function (filename) {
 	var path = __dirname +"/content/" + filename + '.md';
 	var include = fs.readFileSync (path, 'utf8');
 	var html = marked (include);
-	var html = '<div class="markdown-body m-auto text-lg '+classes+' ">' + html + "</div>"
+	html = '<div class="markdown-body">' + html + "</div>"
 
 	return html;
  };
@@ -20,7 +20,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
  
 app.get('/', function (req, res) {
-	const content = md('readme', 'max-w-screen-md')
+	const content = md('readme')
 	res.render('pages/home', {'content': content})
   })
 
@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 
   app.get('/presentation/:name', function (req, res) {
 	let slide = req.params.name;
-	let pre;
+	let prev;
 	let next;
 
 	if(parseInt(slide) <= 0){

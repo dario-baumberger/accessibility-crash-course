@@ -1,12 +1,13 @@
 # Accessibility / Barrierefreiheit
 
 Von Grobabrieb für Einsteiger bis zu fortegschritteneren Themen.
-Fühl dich frei bekannte Theme zu überspringen.
+Fühl dich frei, dir bekannte Theme zu überspringen.
 
 ## Tools für diesen Crash Kurs
 Die Demos schaust du dir am besten mit folgenden Tools an. Einige Probleme sind nicht immer gleich auf den ersten Blick nur im Browser Fenster ersichtlich.
 - [Wave Browser Extension](https://wave.webaim.org/extension/)
 - [NVDA Screenreader](https://www.nvaccess.org/download/)
+- [Colorblinding](https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa?hl=en)
 
 Siehe auch noch [Steuerung Screenreader](#steuerung)
 
@@ -38,10 +39,10 @@ Quellen:
 - [https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
 
 
-> Für Bund, Bundesnahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der Eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für Bline Personen nicht immer ganz einfach ist). Das Zertifikat kann als "Aushängeschild" verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
+Für Bund, Bundesnahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der Eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für Bline Personen nicht immer ganz einfach ist). Das Zertifikat kann als "Aushängeschild" verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
 
 ## Für wen?
-In erster Linie für Eingeschränkte Personen. Ja gut ok, aber wer alles gehört zu eingeschränkten Personen?
+In erster Linie für Eingeschränkte Personen. Ja gut ok, aber wer alles gehört zu eingeschränkten Personen? Unter anderen folgende:
 - Komplett Blinde Personen
 - Personen mit anderen Sehschwächen
 - Taube Personen
@@ -61,20 +62,22 @@ In erster Linie für Eingeschränkte Personen. Ja gut ok, aber wer alles gehört
 
 ## Farben
 
-Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerfüehrung. Wir alle verbinden automatisch gewisse farben mit gewissen Funktionen. So ist beispielweise ein grüner Löschen Button für uns komisch. Ein roter Löschen Button hingegen ist für uns logisch.
+Beginnen wir mit etwas einfacherem, das sollte sicher noch für alle verständlich sein.
+
+Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerfüehrung. Wir alle verbinden automatisch gewisse farben mit gewissen Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teil intuitiv auf diese Farben (Verkehrsampel). So ist beispielweise ein grüner Löschen Button für uns komisch. Ein roter Löschen Button hingegen ist für uns logisch.
 
 Demo: 
 - [Button empty (Bad)](/demo/colors-button-empty)
 
 <br>
 
-Farben alleine reichen jedoch nicht. Beim Beispiel vom Button wird meistens noch ein Text oder ein Icon verwendet. 
+Farben alleine reichen jedoch nicht. Beim Beispiel vom Button wird noch ein Text oder ein Icon (benötigt in aller Regel auch noch einen Text) verwendet. 
 
 Demo: 
 - [Button Color with Text](/demo/colors-button-text)
 - [Button Icon](/demo/colors-button-icon)
 
-Einerseits wäre die Farbe alleine nicht aussagekräftig genug, was dann genau passiert und andererseits können nicht alle Menschen alle Farben wahr nehmen: 
+Einerseits wäre die Farbe alleine nicht aussagekräftig genug. Und andererseits können nicht alle Menschen alle Farben wahr nehmen: 
 
 - Achromasie: Vollständige Farbenblindheit, Betroffene sehen nur Schwarz, Weiss und Graustufen
 - Monochromasie: Betroffene nehmen nur eine Farbe wahr
@@ -86,7 +89,7 @@ Einerseits wäre die Farbe alleine nicht aussagekräftig genug, was dann genau p
 - Blind 
 
 
-*Stand 2019 gibt es rund 377'000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:*
+Stand 2019 gibt es rund 377'000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:
 
 - Ausreichende Farbkontraste
 - Klare Farben 
@@ -95,7 +98,7 @@ Einerseits wäre die Farbe alleine nicht aussagekräftig genug, was dann genau p
 
 <br/><br/>
 
-*Wie wird unser Speichern Button von den verschiedenen Gruppen wahrgenommen?*
+*Wie wird unser Speichern Button von den verschiedenen Gruppen wahrgenommen? (Colorblinding Extension)*
 
 <br/><br/>
 
@@ -150,7 +153,7 @@ Links:
 
 
 
-## Texte:
+## Text / Schrift
 
 *Was ist eingetlich alles Text?*
 
@@ -160,7 +163,7 @@ Paragraphen `<p>`, etc. Speziell blinde Menschen, allgemein aber für die Verwen
 Assistenztechnologien oder Suchmaschinen, sind darauf angewiesen, dass jegliche visuell sichtbare semantische
 Struktur aus dem HTML-Code ersichtlich ist. Visuelle Hervorhebung umfasst Schriftgrössen, Schriftarten,
 Unterstreichungen, Nummerierungen, Einfärbungen, vergrösserte Abstände aber auch spezielle
-Positionierungen von Inhalten, z.B.: durch Info-Kästen.
+Positionierungen von Inhalten, z.B. durch Info-Kästen.
 
 
 
@@ -178,16 +181,19 @@ Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften k�
 
 Demo:
 
-- [Text Font Size](/demo/text-font-size)
+- [Text Font Size (Wave Toolbar)](/demo/text-font-size)
 
 ### Schriftfarben
 
 
-Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der Farbe `#efefef` auf  weissem Hintergrund `#ffffff` (Contrast Ratio 1.14:1) ist selbst für gut sehende nicht wirklich lesbar.
+Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der Farbe `#efefef` auf  weissem Hintergrund `#ffffff` (Contrast Ratio 1.14:1) ist selbst für gut sehende nicht wirklich lesbar. Bei der Berechnung des Kontrast spielen nicht nut die Hintergrund- und die Vordergrund-Farbe eine Rolle, sondern auch die Schriftgrösse.
 
 Demo: 
 
-- [Text Colors](/demo/text-colors)
+- [Text Colors (Wave Toolbar)](/demo/text-colors)
+
+Links:
+- [Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 
 ### Headings / Überschriften
@@ -203,9 +209,9 @@ Es gibt sechs headign Typen:
 
 
 
-Was ist dabei zu beachten? 
+*Was ist dabei zu beachten?* 
 
-- Mehrere H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist
+- Mehrere H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist. (SEO Spezailisten und Accessibillity Spezialisten sind sich dort teilweise nicht einig. Je nach Applikation bspw. bei einer Anwendung hinter einem Login, spielt SEO wohl keine all zu grosse Rolle mehr.)
 - Keine Heading Levels überspringen
 
 
@@ -214,20 +220,20 @@ Was ist dabei zu beachten?
 
 
 
-Mit dem Screenreader können Headings direkt angesprungen werden. So kann man sich mit dem Screenreader sofort einen Überblick der Seitenstruktur machen. Bspw. wenn man direkt zum Inhalt will und nicht noch durch alle Navigationspunkte gehen will.* 
+Mit dem Screenreader können Headings direkt angesprungen werden. So kann man sich mit dem Screenreader sofort einen Überblick der Seitenstruktur machen. Bspw. wenn man direkt zum Inhalt will und nicht noch durch alle Navigationspunkte gehen will.
 
 Demo:
 
-- [Text Heading](/demo/text-h)
-- [Text Heading Structure (Bad)](/demo/text-h-structure-bad)
-- [Text Heading Structure (Good)](/demo/text-h-structure-good)
+- [Text Heading (Screenreader)](/demo/text-h)
+- [Text Heading Structure (Bad) (Wave Toolbar)](/demo/text-h-structure-bad)
+- [Text Heading Structure (Good) (Wave Toolbar)](/demo/text-h-structure-good)
 
 
 
 ### Text / Paragraph
 
 Leere `<p>` Elemente werden durch assistive Technologien und Suchmaschinen als leere Paragraphen
-interpretiert und sind somit semantisch besetzt. Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
+interpretiert und sind somit semantisch besetzt (Teils Screenreader abhängig). Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
 der visuellen Gestaltung sondern der semantischen Strukturierung von Inhalten.
 
 
@@ -238,22 +244,31 @@ Semantisch korrekt: `<p>Ich bin ein Text in einem p<p>`
 
 
 
-`<p>` wird vom Browser, Screenreader etc. als Text erkannt. Ein `<div>` stellt den Text zwar dar, aber mehr passiert mit dem Text nicht.*
+`<p>` wird vom Browser, Screenreader etc. als Text erkannt. Ein `<div>` stellt den Text zwar dar, mehr aber auch nicht.
 
 
 
 Demo:
 
-- [Text Paragraph](/demo/text-p)
+- [Text Paragraph (Screenreader)](/demo/text-p)
 
-- [Text Paragraph Empty](/demo/text-p-empty)
+- [Text Paragraph Empty (Screenreader)](/demo/text-p-empty)
 
 
 
 ### Link:
 
-> Was ist ein Link? 
+*Was ist ein Link / Was macht ein Link?* 
 
+- Verlinken von Seiten
+- window.location verändern
+
+*Welche Möglichkeiten gibt es um das zu machen?*
+
+- `<a>`
+- Java Script
+    - Custom
+    - Framework Handler
 
 Semantisch nicht korrekt: `<div onclick="window.location.href='/';">Klick mich</div>` 
 
@@ -261,22 +276,24 @@ Semantisch korrekt: `<a href="/">Klick mich<a>`
 
 
 
-*`<a>` wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt . Ein `<div>` kann auch klickbar gemacht werden, auch das "verlinken" ist möglich. Browser und Screenreader erkennen zudem mit einem `<a>` Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus Cursor (Pointer). Mit JavaScript und CSS alleine ist nicht alles getan. Die Verwendung der semantisch korrekten Elemente ist wichtig und bietet oft standart Verhalten, welche wir selber bauen müssten.*
+`<a>` wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt . Ein `<div>` kann auch klickbar gemacht werden, auch das "verlinken" ist möglich. Browser und Screenreader erkennen zudem mit einem `<a>` Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus Cursor (Pointer). Mit JavaScript und CSS alleine ist nicht alles getan. Die Verwendung der semantisch korrekten Elemente ist wichtig und bietet oft standart Verhalten, welche wir selber bauen müssten.
 
+Web Frameworks wie Angular oder React bieten eigene Handlers an. Diese Router Handler fügen in der Regel auch gleich ein 'href="blah"' Attribut auf dem entsprechenden Element ein. Für Screenreader ist so klar, um was es sich handelt: Ein Link mit Ziel XY. Die Browser markieren besuchte Links zusätzlich noch als besucht. Auf diese Informationen kann der Screenreader auch zugreifen.
 
+*Wann ist es ein Link und wann ein Button?*
 
-> Wann ist es ein Link und wann ein Button?
-
-
+WIP Button
 
 Demo: 
 
-[Link](/demo/link)
+[Link (Screenreader & Navigieren)](/demo/link)
 
 ### Bold/Strong
 
 - `<bold>` ist **kein** semantisches HTML Tag. 
 - `<strong>` ist **ein** semantisches HTML Tag.
+
+Leider wird die semantische Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt die klar.  
 
 Demo: 
 
@@ -291,6 +308,8 @@ Link:
 - `<i>` ist **kein** semantisches HTML Tag. 
 - `<em>` ist **ein** semantisches HTML Tag.
 
+Leider wird die semantische Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt die klar.
+
 Demo: 
 
 - [Text Italic / Kursiv](/demo/text-italic-cursive)
@@ -299,7 +318,7 @@ Link:
 
 - [https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
 
-### Text Styling
+### Text Styling / CSS Styles
 
 `text-decoration: underline` wird vom Screenreader nicht beachtet (text-decoration grundsätzlich).
 

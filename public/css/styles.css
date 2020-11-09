@@ -924,6 +924,14 @@
   vertical-align:middle
 }
 
+.markdown-body{
+  font-size: inherit;
+}
+
+html{
+  font-size: 20px;
+}
+
 h1{
   font-size: 2.1rem;
   margin: 1em 0;
@@ -1600,8 +1608,28 @@ video {
   background-color:rgba(44, 122, 123, var(--bg-opacity))
 }
 
+.hover\:bg-teal-900:hover{
+  --bg-opacity:1;
+  background-color:#234e52;
+  background-color:rgba(35, 78, 82, var(--bg-opacity))
+}
+
+.border-white{
+  --border-opacity:1;
+  border-color:#fff;
+  border-color:rgba(255, 255, 255, var(--border-opacity))
+}
+
 .border{
   border-width:1px
+}
+
+.border-t{
+  border-top-width:1px
+}
+
+.block{
+  display:block
 }
 
 .flex{
@@ -1628,12 +1656,20 @@ video {
   align-items:center
 }
 
+.justify-end{
+  justify-content:flex-end
+}
+
 .justify-center{
   justify-content:center
 }
 
 .justify-between{
   justify-content:space-between
+}
+
+.h-12{
+  height:3rem
 }
 
 .h-20{
@@ -1652,6 +1688,20 @@ video {
   margin:auto
 }
 
+.mx-8{
+  margin-left:2rem;
+  margin-right:2rem
+}
+
+.mx-auto{
+  margin-left:auto;
+  margin-right:auto
+}
+
+.mb-12{
+  margin-bottom:3rem
+}
+
 .mt-20{
   margin-top:5rem
 }
@@ -1664,8 +1714,16 @@ video {
   margin-bottom:10rem
 }
 
+.max-w-screen-lg{
+  max-width:1024px
+}
+
 .min-h-screen{
   min-height:100vh
+}
+
+.overflow-auto{
+  overflow:auto
 }
 
 .p-6{
@@ -1676,12 +1734,30 @@ video {
   padding:2.5rem
 }
 
+.py-2{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem
+}
+
+.px-4{
+  padding-left:1rem;
+  padding-right:1rem
+}
+
+.pt-6{
+  padding-top:1.5rem
+}
+
 .fixed{
   position:fixed
 }
 
 .absolute{
   position:absolute
+}
+
+.top-0{
+  top:0
 }
 
 .right-0{
@@ -1710,6 +1786,14 @@ video {
   text-decoration:underline
 }
 
+.visible{
+  visibility:visible
+}
+
+.w-auto{
+  width:auto
+}
+
 .w-3\/4{
   width:75%
 }
@@ -1734,12 +1818,24 @@ video {
   width:50%
 }
 
+.w-4\/6{
+  width:66.666667%
+}
+
 .w-5\/12{
   width:41.666667%
 }
 
 .w-full{
   width:100%
+}
+
+.transition-all{
+  transition-property:all
+}
+
+.duration-300{
+  transition-duration:300ms
 }
 
 @-webkit-keyframes spin{
@@ -1866,6 +1962,15 @@ video {
       max-width:1280px
     }
   }
+
+  .md\:mx-auto{
+    margin-left:auto;
+    margin-right:auto
+  }
+
+  .md\:max-w-screen-sm{
+    max-width:640px
+  }
 }
 
 @media (min-width: 1024px){
@@ -1895,6 +2000,10 @@ video {
     .lg\:container{
       max-width:1280px
     }
+  }
+
+  .lg\:max-w-screen-md{
+    max-width:768px
   }
 }
 
