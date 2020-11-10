@@ -16,7 +16,7 @@ let md = function (filename) {
 };
 
 function contentEJS (content){
-    content = he.decode(content, {'encodeEverything': true})
+    //content = he.decode(content, {'encodeEverything': true})
     content = ejs.render(content, {'config': config});
 
     return content;
