@@ -2,6 +2,7 @@ const fs = require('fs');
 const ejs = require("ejs");
 const marked = require ('marked');
 const he = require ('he');
+const fse = require('fs-extra');
 const config = {
     base: '/accessibility-crash-course'
 }
@@ -93,6 +94,19 @@ function buildDemo(){
     }
 }
 
+function copyImages() {
+
+    if (!fs.existsSync('./docs/static/images')){
+        fs.mkdirSync('./docs/static/images');
+    }
+
+    fse.copy('./public/images/', './docs/static/images/', function (err) {
+        if (err) {
+            console.error(err);
+        }
+    });
+}
+
 function init() {
     if (!fs.existsSync('./docs')){
         fs.mkdirSync('./docs');
@@ -100,9 +114,10 @@ function init() {
 
 
 
-    buildIndex();
-    buildSlides();
-    buildDemo();
+   // buildIndex();
+    //buildSlides();
+    //buildDemo();
+    copyImages();
 }
 
 init();
