@@ -1,7 +1,7 @@
 # Accessibility Crash Course
 
-- [Accessibility Crash Course Paper](https://github.com/dario-baumberger/accessibility-crash-course)
-- [Accessibility Crash Course Paper](https://github.com/dario-baumberger/accessibility-crash-course/presentation/0)
+- [Accessibility Crash Course Paper](https://dario-baumberger.github.io/accessibility-crash-course/)
+- [Accessibility Crash Course Presentation](https://dario-baumberger.github.io/accessibility-crash-course//presentation/0)
 
 ## Installation
 - `npm i`
