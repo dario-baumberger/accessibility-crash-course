@@ -23,11 +23,11 @@
     document.addEventListener('keydown', function (event) {
 
         if (event.ctrlKey && event.key === 'ArrowRight') {
-            window.location.href="/presentation/<%- next %>";
+            window.location.href="<%- config.base %>/presentation/<%- next %>";
         }
 
         if (event.ctrlKey && event.key === 'ArrowLeft') {
-            window.location.href="/presentation/<%- prev %>";
+            window.location.href="<%- config.base %>/presentation/<%- prev %>";
         }
     });
 </script>
