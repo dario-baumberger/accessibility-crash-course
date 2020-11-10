@@ -114,9 +114,9 @@ function init() {
 
 
 
-   // buildIndex();
-    //buildSlides();
-    //buildDemo();
+    buildIndex();
+    buildSlides();
+    buildDemo();
     copyImages();
 }
 
