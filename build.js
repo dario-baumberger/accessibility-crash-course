@@ -1,6 +1,7 @@
 const fs = require('fs');
 const ejs = require("ejs");
 const marked = require ('marked');
+const he = require ('he');
 const config = {
     base: '/accessibility-crash-course'
 }
@@ -13,6 +14,13 @@ let md = function (filename) {
     return '<div class="markdown-body">' + html + "</div>"
 };
 
+function contentEJS (content){
+    content = he.decode(content, {'encodeEverything': true})
+    content = ejs.render(content, {'config': config});
+
+    return content;
+}
+
 // ejs to html, pass ejs params and write files to destination
 function ejs2html(path, information, name = path.split("/").pop().split('.')[0], dist = __dirname+'/docs') {
     fs.readFile(path, 'utf8', function (err, data) {
@@ -20,8 +28,8 @@ function ejs2html(path, information, name = path.split("/").pop().split('.')[0],
             console.log("ERROR: " + err);
             return false;
         }
-        let ejs_string = data,
-            template = ejs.compile(ejs_string, {
+
+            let template = ejs.compile(data, {
                 filename: path
             }),
             html = template(information);
@@ -39,7 +47,7 @@ function ejs2html(path, information, name = path.split("/").pop().split('.')[0],
 }
 
 function buildIndex(){
-    let content = md('readme')
+    let content = contentEJS(md('readme'));
     ejs2html(__dirname + '/views/pages/index.ejs', {'content': content, 'config': config} );
 }
 
@@ -66,7 +74,7 @@ function buildSlides(){
             next = parseInt(slide) +1;
         }
 
-        var content = md('slides/' + i)
+        var content = contentEJS(md('slides/' + i));
         ejs2html(__dirname + '/views/pages/slider.ejs', {'content': content, 'prev': prev, 'next': next, 'config': config}, i, 'docs/presentation/');
     }
 }
@@ -80,7 +88,7 @@ function buildDemo(){
 
     for (i = 0; i < demos.length; i++) {
         const name = demos[i].split('.')[0]
-        const content = md('demo/' +  name)
+        const content = contentEJS(md('demo/' +  name));
         ejs2html(__dirname + '/views/pages/demo.ejs', {'content': content, 'config': config}, name, 'docs/demo/');
     }
 }
@@ -89,6 +97,8 @@ function init() {
     if (!fs.existsSync('./docs')){
         fs.mkdirSync('./docs');
     }
+
+
 
     buildIndex();
     buildSlides();

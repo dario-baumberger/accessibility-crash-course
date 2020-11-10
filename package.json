@@ -15,6 +15,7 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "he": "^1.2.0",
     "marked": "^1.2.3",
     "tailwindcss": "^1.9.6"
   }

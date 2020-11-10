@@ -101,15 +101,15 @@ Beginnen wir mit etwas einfacherem, das sollte sicher noch für alle verständli
 Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerführung. Wir alle verbinden automatisch gewisse Farben mit gewissen Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teil intuitiv auf diese Farben (Verkehrsampel). So ist beispielsweise ein grüner Löschen-Button für uns komisch. Ein roter Löschen-Button hingegen ist für uns logisch.
 
 Demo: 
-- [Button empty (Bad)](/demo/colors-button-empty)
+- <a target="_blank" href="<%- config.base %>/demo/colors-button-empty">Button empty (Bad)</a>
 
 <br>
 
 Farben alleine reichen jedoch nicht. Beim Beispiel vom Button wird noch ein Text oder ein Icon (benötigt in aller Regel auch noch einen Text) verwendet. 
 
 Demo: 
-- [Button Color with Text](/demo/colors-button-text)
-- [Button Icon](/demo/colors-button-icon)
+- <a target="_blank" href="<%- config.base %>/demo/colors-button-text">Button Color with Text</a>
+- <a target="_blank" href="<%- config.base %>/demo/colors-button-icon">Button Icon</a>
 
 Einerseits wäre die Farbe alleine nicht aussagekräftig genug. Und andererseits können nicht alle Menschen alle Farben wahr nehmen: 
 

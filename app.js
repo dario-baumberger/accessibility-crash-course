@@ -4,6 +4,8 @@ const port = 3000
 const path = require('path');
 const marked = require ('marked');
 const fs = require ('fs');
+const he = require ('he');
+const ejs = require("ejs");
 const config = {
 	base: ''
 }
@@ -18,19 +20,25 @@ let md = function (filename) {
 	return html;
  };
 
+function contentEJS (content){
+	content = he.decode(content, {'encodeEverything': true})
+	content = ejs.render(content, {'config': config});
+
+	return content;
+}
+
 app.engine('.html', require('ejs').__express);
 app.set('views', path.join(__dirname, 'views'));
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
  
 app.get('/', function (req, res) {
-	const content = md('readme')
-	res.render('pages/index', {'content': content, 'config': config})
+	const content = contentEJS(md('readme'))
+	res.render('pages/index', {'content': content, 'config': config.base})
   })
 
   app.get('/demo/:name', function (req, res) {
-	  console.log(req.params)
-	  const content = md('demo/'+req.params.name, 'max-w-screen-lg')
+	  const content = contentEJS(md('demo/'+req.params.name, 'max-w-screen-lg'));
 	res.render('pages/demo', {'content': content, 'config': config})
   })
 
@@ -48,7 +56,7 @@ app.get('/', function (req, res) {
 		next = parseInt(slide) +1;
 	}
 
-	const content = md('slides/'+slide)
+	const content = contentEJS(md('slides/'+slide));
 
   res.render('pages/slider', {'content': content, 'prev': prev, 'next': next, 'config': config})
 })
