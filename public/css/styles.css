@@ -1668,6 +1668,10 @@ video {
   justify-content:space-between
 }
 
+.h-4{
+  height:1rem
+}
+
 .h-12{
   height:3rem
 }
@@ -1698,6 +1702,14 @@ video {
   margin-right:auto
 }
 
+.mt-10{
+  margin-top:2.5rem
+}
+
+.mb-10{
+  margin-bottom:2.5rem
+}
+
 .mb-12{
   margin-bottom:3rem
 }
@@ -1712,6 +1724,10 @@ video {
 
 .mb-40{
   margin-bottom:10rem
+}
+
+.ml-auto{
+  margin-left:auto
 }
 
 .max-w-screen-lg{
@@ -1800,6 +1816,10 @@ video {
   visibility:visible
 }
 
+.w-4{
+  width:1rem
+}
+
 .w-auto{
   width:auto
 }
@@ -1828,8 +1848,12 @@ video {
   width:50%
 }
 
-.w-5\/12{
-  width:41.666667%
+.w-4\/6{
+  width:66.666667%
+}
+
+.w-4\/12{
+  width:33.333333%
 }
 
 .w-full{

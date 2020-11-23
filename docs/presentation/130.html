@@ -11,34 +11,47 @@
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
-            <div class="markdown-body"><h1 id="role-attribute">Role Attribute</h1>
-<h2 id="role-listbox">Role listbox</h2>
-<p>WIP</p>
-<!--
-<ul role="listbox">
-    <li>
-        <button>Option 1</button>
-     </li>
-    <li>
-        <button>Option 2</button>
-     </li>
-    <li>
-        <button>Option 3</button>
-     </li>
-</ul>
+            <div class="markdown-body"><h1 id="forms">Forms</h1>
+<h2 id="readonly">readonly</h2>
+<form>
+  <div>
+    <label for="input1">Vorname</label>
+    <input type="text" readonly value="Demo Content" style="border: 1px solid black;" id="input1">
+  </div>
+  <div>
+      <label for="input2">Checkbox (Not working)</label>
+      <input type="checkbox" readonly style="border: 1px solid black;" id="input2">
+    </div>
+    <div>
+          <label for="input2">Radio (Not working)</label>
+          <input type="radio" readonly style="border: 1px solid black;" id="input2">
+        </div>
+  <div>
+      <label for="input4">Message</label>
+      <textarea readonly style="border: 1px solid black;" id="input4">Demo Message</textarea>
+    </div>
+</form>
 
-<ul role="listbox">
-    <li role="listitem">
-        <button>Option 1</button>
-     </li>
-    <li role="listitem">
-        <button>Option 2</button>
-     </li>
-    <li role="listitem">
-        <button>Option 3</button>
-     </li>
-</ul>
--->
+<br />
+
+<pre><code class="language-html">&lt;form&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input1&quot;&gt;Vorname&lt;/label&gt;
+    &lt;input type=&quot;text&quot; readonly value=&quot;Demo Content&quot; style=&quot;border: 1px solid black;&quot; id=&quot;input1&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input2&quot;&gt;Checkbox (Not working)&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; readonly style=&quot;border: 1px solid black;&quot; id=&quot;input2&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input2&quot;&gt;Radio (Not working)&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; readonly style=&quot;border: 1px solid black;&quot; id=&quot;input2&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input4&quot;&gt;Message&lt;/label&gt;
+    &lt;textarea readonly style=&quot;border: 1px solid black;&quot; id=&quot;input4&quot;&gt;Demo Message&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
 </div>
         </div>
 

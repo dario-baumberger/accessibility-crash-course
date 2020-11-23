@@ -541,9 +541,19 @@ Links:
 
 
 
-> Wie machen wir dann eine Tabelle responsive?!
+*Wie machen wir dann eine Tabelle responsive?!*
 
-<br />
+*Welche Möglichkeiten gibt es?*
+
+- Tabelle so lassen wie sie ist: X Achse Scrollbar
+- Spalten umbrechen, alles untereinander oder irgendwie sonst darstellen
+    - Was passiert mit dem Header?
+    - Wie bleibt die Semantik erhalten?
+        - Tabelle
+        - Spalten- und Zeilenbezeichnung
+        
+        
+Leider keine 0815 Lösung, welche immer und überall funktioniert. Man wird Kompromisse eingehen müssen.
 
 ---
 
@@ -552,11 +562,11 @@ Links:
 
 ## Bilder:
 
-"Visuelles" Bild: `<div style="background-image: url('https://picsum.photos/200/300');"></div>`
+"Visuelles" Bild: <br />`<div style="background-image: url('https://picsum.photos/200/300');"></div>`
 
-Semantisches Bild: `<img src="https://picsum.photos/200/300" alt="Random Image" />`
+Semantisches Bild: <br /> `<img src="https://picsum.photos/200/300" alt="Random Image" />`
 
-
+<br />
 
 `<img>` werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS `background-image` kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken. 
 
@@ -565,9 +575,11 @@ Beim Verwenden des `<img>` muss zwingen ein `alt` Attribut mit einem Wert angege
 
 
 Demo:
-
-- [Table Fake (Bad)](/demo/table-fake)
-- [Table 1](/demo/table-1)
+- <a target="_blank" href="<%- config.base %>/demo/image-bg">Background Image</a>
+- <a target="_blank" href="<%- config.base %>/demo/image-tag">Img Image</a>
+- <a target="_blank" href="<%- config.base %>/demo/image-no-alt">Image no Alt</a>
+- <a target="_blank" href="<%- config.base %>/demo/image-with-alt">Image with Alt</a>
+- <a target="_blank" href="<%- config.base %>/demo/image-alt-complex">Image Complex</a>
 
 
 <br />
@@ -610,7 +622,7 @@ Labels dienen dazu, um ein Eingabefeld zu beschreiben. Zudem wird bei einem Klic
 
 Demo:
 
-- [Images Img Tag](/demo/form-inputs-labels)
+- <a target="_blank" href="<%- config.base %>/demo/form-inputs-labels">Inputs with Labels</a>
 
 
 Links:
@@ -625,7 +637,6 @@ Fieldset werden verwendet, um Gruppen innerhalb eines Formulars semantisch auszu
 
 - Ein `<fieldset>` ist nur innerhalb einer `<form>` valid.
 - Ein `<fieldset>` benötigt zwingen einen `<legend>` als Child-Element.
-
 
 Links:
 
@@ -677,6 +688,11 @@ Gruppieren von zusammengehörenden Inputs bspw. Benutzerdaten: E-Mail, Benutzern
 </form>
 ```
 
+Demo:
+
+- <a target="_blank" href="<%- config.base %>/demo/form-fieldset-section-bad">Fieldset Section - Bad (no fieldset)</a>
+- <a target="_blank" href="<%- config.base %>/demo/form-fieldset-section-good">Fieldset Section - Good</a>
+
 <br />
 
 #### Input Gruppen
@@ -709,20 +725,55 @@ Man könnte alle Radiobuttons und Labels einzeln ausgeben und als Label jeweils 
 
 Bei einfachen Checkboxen wie bspw. AGB akzeptieren, ist dies nicht nötig - da hat es nur eine Checkbox.
 
+Demo:
+
+- <a target="_blank" href="<%- config.base %>/demo/form-fieldset-group-bad">Fieldset Group - Bad (no fieldset)</a>
+- <a target="_blank" href="<%- config.base %>/demo/form-fieldset-group-good">Fieldset Group - Good</a>
 
 
 Links: 
+- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
 
-Demo:
+<br />
 
-- [Form Group Bad](/demo/form-fieldset-bad)
-- [Form Group Good](/demo/form-fieldset-good)
+### Formular / Input Zusatz Informationen
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
+- Tooltips
+- Fehler
+- Hinweise
+- Erklärungen
+- Pflichtfeld Angaben
+
+Müssen alle auch Barrierefrei sein.
+
 
 <br />
 
 ### Disabled
+
+Das disabled Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein disabled Attribut gesetzt ist, diese immer als true interpretiert wird. `disabled="false"` ist ungültig!
+
+disabled hat immer den selben Effekt:
+
+- `disabled="false"`
+- `disabled="true"`
+- `disabled`
+
+<br />
+
+### Readonly
+
+Das readonly Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein readonly Attribut gesetzt ist, diese immer als true interpretiert wird. `readonly="false"` ist ungültig! (Genau wie disabled)
+
+readonly hat immer den selben Effekt:
+
+- `readonly="false"`
+- `readonly="true"`
+- `readonly`
+
+<br />
+
+Bei readonly ist zu beachten, dass die nicht auf allen Elementen erwartungsmäss funktioniert! Checkboxen und Radiobuttons können trotz readyonly verändert werden. 
 
 <br />
 
@@ -782,6 +833,10 @@ CSS hat zum Teil direkten Einfluss auf die Semantik von Elementen, jedoch nicht 
 `visibility: hidden;` Entfernt das Element für den Screenreader aus dem DOM 
 
 `visibility: visible;` Fügt das Element für den Screenreader in dem DOM
+
+ `opacity: 1;` -> visible for screen readers
+  
+  `opacity: 0;` -> visible for screen readers
 
 
 

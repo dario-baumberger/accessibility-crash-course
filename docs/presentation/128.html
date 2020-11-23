@@ -11,45 +11,48 @@
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
-            <div class="markdown-body"><h1 id="role-attribute">Role Attribute</h1>
-<div class="flex justify-between">
-    <div class="w-5/12">
+            <div class="markdown-body"><h1 id="forms">Forms</h1>
+<h2 id="fieldset---groups-good">Fieldset - Groups (Good)</h2>
+<form>
+    <fieldset>
+        <legend>Jackenfarbe</legend>
         <div>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+            <input type="radio" name="color" id="input1">
+            <label for="input1">Grün</label>
         </div>
         <div>
-
-<pre><code>    &lt;ul&gt;
-        &lt;li&gt;Item 1&lt;/li&gt;
-        &lt;li&gt;Item 2&lt;/li&gt;
-        &lt;li&gt;Item 3&lt;/li&gt;
-    &lt;/ul&gt;</code></pre>
-</div>
-</div>
-<div class="w-5/12">
-        <div>
-            <div role="list">
-                <p role="listitem">Item 1</p>
-                <p role="listitem">Item 2</p>
-                <p role="listitem">Item 3</p>
-            </div>
+            <input type="radio" name="color" id="input2">
+            <label for="input2">Blau</label>
         </div>
         <div>
+            <input type="radio" name="color" id="input3">
+            <label for="input3">Schwarz</label>
+        </div>
+    </fieldset>
+</form>
 
-<pre><code>    &lt;div role=&quot;list&quot;&gt;
-        &lt;p role=&quot;listitem&quot;&gt;Item 1&lt;/p&gt;
-        &lt;p role=&quot;listitem&quot;&gt;Item 2&lt;/p&gt;
-        &lt;p role=&quot;listitem&quot;&gt;Item 3&lt;/p&gt;
-    &lt;/div&gt;</code></pre>
-</div>
-    </div>
-</div>
-
-
+<pre><code class="language-html">&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Jackenfarbe&lt;/legend&gt;
+        &lt;div&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;color&quot; id=&quot;input1&quot;&gt;
+            &lt;label for=&quot;input1&quot;&gt;Grün&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;color&quot; id=&quot;input2&quot;&gt;
+            &lt;label for=&quot;input2&quot;&gt;Blau&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;color&quot; id=&quot;input3&quot;&gt;
+            &lt;label for=&quot;input3&quot;&gt;Schwarz&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+<hr>
+<p>Demo:</p>
+<ul>
+<li><a href="/demo/form-fieldset-group-good">Form Group Good</a></li>
+</ul>
 </div>
         </div>
 

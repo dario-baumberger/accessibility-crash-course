@@ -11,57 +11,47 @@
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
-            <div class="markdown-body"><h1 id="role-attribute">Role Attribute</h1>
-<div tabindex="0">Tab Stop</div>
-<table>
-    <tr>
-        <th>Tabelle 1 Title 1</th>
-        <th>Tabelle 1 Title 2</th>
-    </tr>
-    <tr>
-        <td>Tabelle 1 Text 1</td>
-        <td>Tabelle 1 Text 2</td>
-    </tr>
-</table>
-
-<pre><code>&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Tabelle 1 Title 1&lt;/th&gt;
-        &lt;th&gt;Tabelle 1 Title 2&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Tabelle 1 Text 1&lt;/td&gt;
-        &lt;td&gt;Tabelle 1 Text 2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-<div tabindex="0">Tab Stop</div>
-
-<div role="table">
-    <div role="row" style="display: flex">
-        <div role="columnheader">Tabelle 2 Title 1</div>
-        <div role="columnheader">Tabelle 2 Title 2</div>
+            <div class="markdown-body"><h1 id="forms">Forms</h1>
+<h2 id="disabled">disabled</h2>
+<form>
+  <div>
+    <label for="input1">Vorname</label>
+    <input type="text" disabled value="Demo Content" style="border: 1px solid black;" id="input1">
+  </div>
+  <div>
+      <label for="input2">Checkbox</label>
+      <input type="checkbox" disabled style="border: 1px solid black;" id="input2">
     </div>
-    <div role="row" style="display: flex">
-        <div role="cell">Tabelle 2 Text 1</div>
-        <div role="cell">Tabelle 2 Text 2</div>
+    <div>
+          <label for="input2">Radio</label>
+          <input type="radio" disabled style="border: 1px solid black;" id="input2">
+        </div>
+  <div>
+      <label for="input4">Message</label>
+      <textarea disabled style="border: 1px solid black;" id="input4">Demo Message</textarea>
     </div>
-</div>
+</form>
 
-<pre><code>&lt;div role=&quot;table&quot;&gt;
-    &lt;div role=&quot;row&quot; style=&quot;display: flex&quot;&gt;
-        &lt;div role=&quot;columnheader&quot;&gt;Tabelle 2 Title 1&lt;/div&gt;
-        &lt;div role=&quot;columnheader&quot;&gt;Tabelle 2 Title 2&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div role=&quot;row&quot; style=&quot;display: flex&quot;&gt;
-        &lt;div role=&quot;cell&quot;&gt;Tabelle 2 Text 1&lt;/div&gt;
-        &lt;div role=&quot;cell&quot;&gt;Tabelle 2 Text 2&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<hr>
-<p>Quellen:</p>
-<ul>
-<li><a href="https://w3c.github.io/using-aria/#do">https://w3c.github.io/using-aria/#do</a></li>
-</ul>
+<br />
+
+<pre><code class="language-html">&lt;form&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input1&quot;&gt;Vorname&lt;/label&gt;
+    &lt;input type=&quot;text&quot; disabled value=&quot;Demo Content&quot; style=&quot;border: 1px solid black;&quot; id=&quot;input1&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input2&quot;&gt;Checkbox&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; disabled style=&quot;border: 1px solid black;&quot; id=&quot;input2&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input2&quot;&gt;Radio&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; disabled style=&quot;border: 1px solid black;&quot; id=&quot;input2&quot;&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;input4&quot;&gt;Message&lt;/label&gt;
+    &lt;textarea disabled style=&quot;border: 1px solid black;&quot; id=&quot;input4&quot;&gt;Demo Message&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
 </div>
         </div>
 
