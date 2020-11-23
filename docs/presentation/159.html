@@ -11,15 +11,21 @@
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
-            <div class="markdown-body"><h1 id="screenreader">Screenreader</h1>
-<h2 id="programme">Programme:</h2>
-<ul>
-<li><a href="https://www.nvaccess.org/download/">NVDA (Windows, kostenlos)</a></li>
-<li><a href="https://support.freedomscientific.com/Downloads/JAWS">JAWS (40min Demo, sonst teuer)</a></li>
-<li>VoiceOver (OSX, vorinstallier)</li>
-<li>VoiceOver (iOS / iPasOS, vorinstallier)</li>
-<li>Android (vorinstallier)</li>
-</ul>
+            <div class="markdown-body"><h1 id="css">CSS</h1>
+<h2 id="screenreader-texte">Screenreader Texte</h2>
+<p><a href="#"><span class="sr-only">Zahlungs</span> Details <span class="sr-only">anzeigen</span></a></p>
+<pre><code class="language-html">&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Zahlungs&lt;/span&gt; Details &lt;span class=&quot;sr-only&quot;&gt;anzeigen&lt;/span&gt;&lt;/a&gt;</code></pre>
+<pre><code class="language-css">.sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+      }</code></pre>
 </div>
         </div>
 

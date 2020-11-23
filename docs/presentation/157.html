@@ -11,17 +11,26 @@
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
-            <div class="markdown-body"><h1 id="css">CSS</h1>
-<h2 id="einfluss">Einfluss</h2>
-<ul>
-<li><code>display: none;</code> -&gt; hidden for screen readers</li>
-<li><code>display: block;</code> -&gt; visible for screen readers</li>
-<li><code>visibility: hidden;</code> -&gt; hidden for screen readers</li>
-<li><code>visibility: visible;</code> -&gt; visible for screen readers</li>
-<li><code>opacity: 1;</code> -&gt; visible for screen readers</li>
-<li><code>opacity: 0;</code> -&gt; visible for screen readers</li>
-<li>Text Styling wie <code>text-decoration</code>, <code>font-weight</code>  allerdings keinen Einfluss!</li>
-</ul>
+            <div class="markdown-body"><h1 id="aria-attribute">Aria Attribute</h1>
+<h2 id="aria-expanded">aria-expanded</h2>
+<p><button class="toggler" aria-expanded="false" style="border: 1px solid black;">Open me</button></p>
+<div class="hidden target">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic molestias placeat, quasi qui ullam voluptates? Ad autem cumque distinctio eveniet! Dignissimos eos illum, maxime quisquam similique sunt ullam veniam voluptatibus.</p>
+</div>
+<script>
+    document.addEventListener('click', function (event) {
+        if (event.target.matches('.toggler')){
+            var el = document.querySelector('.toggler');
+            var exp = el.getAttribute('aria-expanded');
+            if(exp === 'false'){
+                el.setAttribute('aria-expanded', true)
+            } else{
+                el.setAttribute('aria-expanded', false)
+            }
+            document.querySelector('.target').classList.toggle('hidden');
+        }
+    }, false);
+</script>
 </div>
         </div>
 

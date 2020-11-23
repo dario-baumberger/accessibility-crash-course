@@ -12,12 +12,64 @@
 
         <div class="mb-40 mx-auto max-w-screen-lg">
             <div class="markdown-body"><h1 id="forms">Forms</h1>
-<h2 id="fieldset">Fieldset</h2>
+<h2 id="inputs">Inputs</h2>
+<div class="flex flex-wrap">
+<div class="w-1/6">
+    <p>
+        Bad
+    <p>
+</div>
+<div class="w-2/6">
+    <input style="border: 1px solid black;" type="text">
+</div>
+<div class="w-3/6">
+
+<pre><code class="language-html">    &lt;input style=&quot;border: 1px solid black;&quot; type=&quot;text&quot;&gt;</code></pre>
+</div>
+<div class="w-1/6">
+    <p>
+        Bad
+    <p>
+</div>
+<div class="w-2/6">
+    Label <input style="border: 1px solid black;" type="text">
+</div>
+<div class="w-3/6">
+
+<pre><code class="language-html">    Label &lt;input style=&quot;border: 1px solid black;&quot; type=&quot;text&quot;&gt;</code></pre>
+</div>
+<div class="w-1/6">
+    <p>
+        Good
+    <p>
+</div>
+<div class="w-2/6">
+    <label>Label <input style="border: 1px solid black;" type="text"></label>
+</div>
+<div class="w-3/6">
+
+<pre><code class="language-html">    &lt;label&gt;Label &lt;input style=&quot;border: 1px solid black;&quot; type=&quot;text&quot;&gt;&lt;/label&gt;</code></pre>
+</div>
+</div>
+<div class="flex flex-wrap">
+<div class="w-1/6">
+    <p>
+        Good
+    <p>
+</div>
+<div class="w-2/6">
+    <label for="inputID">Label</label><input style="border: 1px solid black;" type="text" id="inputID">
+</div>
+<div class="w-3/6">
+
+<pre><code class="language-html">    &lt;label for=&quot;inputID&quot;&gt;Label&lt;/label&gt;&lt;input style=&quot;border: 1px solid black;&quot; type=&quot;text&quot; id=&quot;inputID&quot;&gt;</code></pre>
+</div>
+</div>
+
+<hr>
+<p>Demo:</p>
 <ul>
-<li>Ein <code>&lt;fieldset&gt;</code> ist nur innerhalb einer <code>&lt;form&gt;</code> valid.</li>
-<li>Ein <code>&lt;fieldset&gt;</code> benötigt zwingen einen <code>&lt;legend&gt;</code> als direktes Child-Element.</li>
-<li>Formularabschnitte</li>
-<li>Input Gruppen</li>
+<li><a href="/demo/form-inputs-labels">Input Labels</a></li>
 </ul>
 </div>
         </div>

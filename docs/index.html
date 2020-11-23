@@ -601,24 +601,39 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</a></li>
 <li><a href="https://www.w3.org/WAI/tutorials/tables/">https://www.w3.org/WAI/tutorials/tables/</a></li>
 </ul>
-<blockquote>
-<p>Wie machen wir dann eine Tabelle responsive?!</p>
-</blockquote>
-<br />
-
+<p><em>Wie machen wir dann eine Tabelle responsive?!</em></p>
+<p><em>Welche Möglichkeiten gibt es?</em></p>
+<ul>
+<li>Tabelle so lassen wie sie ist: X Achse Scrollbar</li>
+<li>Spalten umbrechen, alles untereinander oder irgendwie sonst darstellen<ul>
+<li>Was passiert mit dem Header?</li>
+<li>Wie bleibt die Semantik erhalten?<ul>
+<li>Tabelle</li>
+<li>Spalten- und Zeilenbezeichnung</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Leider keine 0815 Lösung, welche immer und überall funktioniert. Man wird Kompromisse eingehen müssen.</p>
 <hr>
 <br />
 
 
 <h2 id="bilder">Bilder:</h2>
-<p>&quot;Visuelles&quot; Bild: <code>&lt;div style=&quot;background-image: url(&#39;https://picsum.photos/200/300&#39;);&quot;&gt;&lt;/div&gt;</code></p>
-<p>Semantisches Bild: <code>&lt;img src=&quot;https://picsum.photos/200/300&quot; alt=&quot;Random Image&quot; /&gt;</code></p>
+<p>&quot;Visuelles&quot; Bild: <br /><code>&lt;div style=&quot;background-image: url(&#39;https://picsum.photos/200/300&#39;);&quot;&gt;&lt;/div&gt;</code></p>
+<p>Semantisches Bild: <br /> <code>&lt;img src=&quot;https://picsum.photos/200/300&quot; alt=&quot;Random Image&quot; /&gt;</code></p>
+<br />
+
 <p><code>&lt;img&gt;</code> werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS <code>background-image</code> kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken. </p>
 <p>Beim Verwenden des <code>&lt;img&gt;</code> muss zwingen ein <code>alt</code> Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assitive Technologien. Da Screenreader keine Bilder bzw. Bildinhalte vorlesen, wird der Alt-Text ausgegeben.</p>
 <p>Demo:</p>
 <ul>
-<li><a href="/demo/table-fake">Table Fake (Bad)</a></li>
-<li><a href="/demo/table-1">Table 1</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/image-bg">Background Image</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/image-tag">Img Image</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/image-no-alt">Image no Alt</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/image-with-alt">Image with Alt</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/image-alt-complex">Image Complex</a></li>
 </ul>
 <br />
 
@@ -643,7 +658,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <p>Labels dienen dazu, um ein Eingabefeld zu beschreiben. Zudem wird bei einem Klick auf ein Label auch gleich ein Klick im auf dem dazugehörigen Eingabefeld ausgelöst.</p>
 <p>Demo:</p>
 <ul>
-<li><a href="/demo/form-inputs-labels">Images Img Tag</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/form-inputs-labels">Inputs with Labels</a></li>
 </ul>
 <p>Links:</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a></p>
@@ -697,6 +712,11 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
     &lt;/div&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
+<p>Demo:</p>
+<ul>
+<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-section-bad">Fieldset Section - Bad (no fieldset)</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-section-good">Fieldset Section - Good</a></li>
+</ul>
 <br />
 
 <h4 id="input-gruppen">Input Gruppen</h4>
@@ -720,16 +740,49 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
 <p>Bei einfachen Checkboxen wie bspw. AGB akzeptieren, ist dies nicht nötig - da hat es nur eine Checkbox.</p>
-<p>Links: </p>
 <p>Demo:</p>
 <ul>
-<li><a href="/demo/form-fieldset-bad">Form Group Bad</a></li>
-<li><a href="/demo/form-fieldset-good">Form Group Good</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-group-bad">Fieldset Group - Bad (no fieldset)</a></li>
+<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-group-good">Fieldset Group - Good</a></li>
 </ul>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></p>
+<p>Links: </p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></li>
+</ul>
+<br />
+
+<h3 id="formular--input-zusatz-informationen">Formular / Input Zusatz Informationen</h3>
+<ul>
+<li>Tooltips</li>
+<li>Fehler</li>
+<li>Hinweise</li>
+<li>Erklärungen</li>
+<li>Pflichtfeld Angaben</li>
+</ul>
+<p>Müssen alle auch Barrierefrei sein.</p>
 <br />
 
 <h3 id="disabled">Disabled</h3>
+<p>Das disabled Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein disabled Attribut gesetzt ist, diese immer als true interpretiert wird. <code>disabled=&quot;false&quot;</code> ist ungültig!</p>
+<p>disabled hat immer den selben Effekt:</p>
+<ul>
+<li><code>disabled=&quot;false&quot;</code></li>
+<li><code>disabled=&quot;true&quot;</code></li>
+<li><code>disabled</code></li>
+</ul>
+<br />
+
+<h3 id="readonly">Readonly</h3>
+<p>Das readonly Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein readonly Attribut gesetzt ist, diese immer als true interpretiert wird. <code>readonly=&quot;false&quot;</code> ist ungültig! (Genau wie disabled)</p>
+<p>readonly hat immer den selben Effekt:</p>
+<ul>
+<li><code>readonly=&quot;false&quot;</code></li>
+<li><code>readonly=&quot;true&quot;</code></li>
+<li><code>readonly</code></li>
+</ul>
+<br />
+
+<p>Bei readonly ist zu beachten, dass die nicht auf allen Elementen erwartungsmäss funktioniert! Checkboxen und Radiobuttons können trotz readyonly verändert werden. </p>
 <br />
 
 <hr>
@@ -840,7 +893,11 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 </div>
 
 </div>
-</main><footer class="bg-teal-700 p-10 mt-24 text-white">
+</main>
+<footer class="bg-teal-700 p-10 mt-24 text-white w-4/6 ml-auto">
+	<a href="https://github.com/dario-baumberger/accessibility-crash-course" target="_blank" class="w-4 h-4 block m-auto mt-10 mb-10">
+		<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+	</a>
 	<p class="text-center"> 
 		<small>
 			Made by Dario Baumberger 2020

@@ -12,8 +12,14 @@
 
         <div class="mb-40 mx-auto max-w-screen-lg">
             <div class="markdown-body"><h1 id="images">Images</h1>
-<h2 id="with-alternative-text">With Alternative Text</h2>
-<img src="/accessibility-crash-course/static/images/1000.jpg" class="w-3/4" alt="Spruch Ein Bild sagt mehr als 1000 Wort und 1000 zufällige Wörter" />
+<h2 id="no-alternative-text">No Alternative Text</h2>
+<div tabindex="0">Tab Stop</div>
+
+<img tabindex="0" src="/accessibility-crash-course/static/images/1000.jpg" class="w-3/4" />
+
+<br />
+
+<pre><code>&lt;img tabindex=&quot;0&quot; src=&quot;&lt;%- config.base %&gt;/static/images/1000.jpg&quot; class=&quot;w-3/4&quot; /&gt;</code></pre>
 </div>
         </div>
 

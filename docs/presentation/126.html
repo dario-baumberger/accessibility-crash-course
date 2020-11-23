@@ -12,12 +12,12 @@
 
         <div class="mb-40 mx-auto max-w-screen-lg">
             <div class="markdown-body"><h1 id="forms">Forms</h1>
-<h2 id="fieldset---formularabschnitte-good">Fieldset - Formularabschnitte (Good)</h2>
+<h2 id="fieldset---formularabschnitte-bad">Fieldset - Formularabschnitte (Bad)</h2>
 <form>
-  <fieldset>
-    <legend>
+  <div>
+    <p>
       Empfänger
-    </legend>
+    </p>
     <div>
       <label for="recipientFirstName">Vorname</label>
       <input type="text" style="border: 1px solid black;" id="recipientFirstName">
@@ -26,11 +26,11 @@
       <label for="recipientLastName">Nachname</label>
       <input type="text" style="border: 1px solid black;" id="recipientLastName">
     </div>
-  </fieldset>
-  <fieldset>
-    <legend>
+  </div>
+  <div>
+    <p>
       Rechnungsadresse
-    </legend>
+    </p>
     <div>
       <label for="paymentFirstName">Vorname</label>
       <input type="text" style="border: 1px solid black;" id="paymentFirstName">
@@ -39,14 +39,14 @@
       <label for="paymentLastName">Nachname</label>
       <input type="text" style="border: 1px solid black;" id="paymentLastName">
     </div>
-  </fieldset>
+  </div>
 </form>
 
 <pre><code class="language-html">&lt;form&gt;
-  &lt;fieldset&gt;
-    &lt;legend&gt;
+  &lt;div&gt;
+    &lt;p&gt;
       Empfänder
-    &lt;/legend&gt;
+    &lt;/p&gt;
     &lt;div&gt;
       &lt;label for=&quot;recipientFirstName&quot;&gt;Vorname&lt;/label&gt;
       &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;recipientFirstName&quot;&gt;
@@ -55,11 +55,11 @@
       &lt;label for=&quot;recipientLastName&quot;&gt;Nachname&lt;/label&gt;
       &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;recipientLastName&quot;&gt;
     &lt;/div&gt;
-  &lt;/fieldset&gt;
-  &lt;fieldset&gt;
-    &lt;legend&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;p&gt;
       Rechnungsadresse
-    &lt;/legend&gt;
+    &lt;/p&gt;
     &lt;div&gt;
       &lt;label for=&quot;paymentFirstName&quot;&gt;Vorname&lt;/label&gt;
       &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;paymentFirstName&quot;&gt;
@@ -68,12 +68,12 @@
       &lt;label for=&quot;paymentLastName&quot;&gt;Nachname&lt;/label&gt;
       &lt;input type=&quot;text&quot; style=&quot;border: 1px solid black;&quot; id=&quot;paymentLastName&quot;&gt;
     &lt;/div&gt;
-  &lt;/fieldset&gt;
+  &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 <hr>
 <p>Demo:</p>
 <ul>
-<li><a href="/demo/form-fieldset-section-good">Form Section Good</a></li>
+<li><a href="/demo/form-fieldset-section-bad">Form Group Bad</a></li>
 </ul>
 </div>
         </div>

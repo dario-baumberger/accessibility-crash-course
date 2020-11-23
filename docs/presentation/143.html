@@ -12,26 +12,13 @@
 
         <div class="mb-40 mx-auto max-w-screen-lg">
             <div class="markdown-body"><h1 id="tabindex">Tabindex</h1>
-<div tabindex="0">Div Focusable</div>
-<div>Div Not Focusable</div>
-<div>
-<button>Button Focusable</button>
-</div>
-<div>
-<button tabindex="-1">Button Not Focusable</button>
-</div>
-
-<br>
-<br>
-
-<pre><code>&lt;div tabindex=&quot;0&quot;&gt;Div Focusable&lt;/div&gt;
-&lt;div&gt;Div Not Focusable&lt;/div&gt;
-&lt;div&gt;
-&lt;button&gt;Button Focusable&lt;/button&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;button tabindex=&quot;-1&quot;&gt;Button Not Focusable&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+<p><code>tabinex=&quot;foo&quot;</code></p>
+<ul>
+<li><code>tabindex=&quot;-1&quot;</code>: Not focusable / focusable by scripts</li>
+<li><code>tabindex=&quot;0&quot;</code>: Focusable (DOM Order)</li>
+<li><code>tabindex=&quot;1&quot;</code>: Focusable (Custom Order then DOM Order)</li>
+<li><code>tabindex=&quot;x&quot;</code>: Focusable (Custom Order then DOM Order)</li>
+</ul>
 </div>
         </div>
 
