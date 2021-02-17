@@ -46,8 +46,9 @@ app.get('/', function (req, res) {
 	res.render('pages/demo', {'content': content, 'config': config})
   })
 
-  app.get('/presentation/:name', function (req, res) {
-	let slide = req.params.name;
+  app.get('/presentation/:name/:slide', function (req, res) {
+	let slide = req.params.slide;
+	let name = req.params.name;
 	let prev;
 	let next;
 
@@ -60,7 +61,7 @@ app.get('/', function (req, res) {
 		next = parseInt(slide) +1;
 	}
 
-	const content = contentEJS(md('slides/'+paths.paths[slide].slide));
+	const content = contentEJS(md('slides/'+paths.names[name].paths[slide].slide));
 
   res.render('pages/slider', {'content': content, 'prev': prev, 'next': next, 'config': config})
 

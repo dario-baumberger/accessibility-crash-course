@@ -1,13 +1,17 @@
 {
-  "paths": [
-    {
-      "slide": 1
-    },
-    {
-      "slide": 4
-    },
-    {
-      "slide": 3
+  "names": {
+    "base": {
+      "paths": [
+        {
+          "slide": 1
+        },
+        {
+          "slide": 4
+        },
+        {
+          "slide": 3
+        }
+      ]
     }
-  ]
+  }
 }
