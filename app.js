@@ -59,7 +59,10 @@ app.get('/', function (req, res) {
 	const content = contentEJS(md('slides/'+slide));
 
   res.render('pages/slider', {'content': content, 'prev': prev, 'next': next, 'config': config})
-})
+
+
+}
+)
 
 
 app.listen(port, () => {
