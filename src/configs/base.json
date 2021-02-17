@@ -3,13 +3,244 @@
     "base": {
       "paths": [
         {
-          "slide": 1
+          "slide": "cover"
         },
         {
-          "slide": 4
+          "slide": "audience"
         },
         {
-          "slide": 3
+          "slide": "goals-expectations"
+        },
+        {
+          "slide": "accessi-what-1"
+        },
+        {
+          "slide": "accessi-what-2"
+        },
+        {
+          "slide": "webseiten-content-1"
+        },
+        {
+          "slider": "webseiten-content-2"
+        },
+        {
+          "slide": "why-1"
+        },
+        {
+          "slide": "why-2"
+        },
+        {
+          "slide": "why-3"
+        },
+        {
+          "slide": "why-4"
+        },
+        {
+          "slide": "why-5"
+        },
+        {
+          "slide": "why-6-law-1"
+        },
+        {
+          "slide": "why-7-law-2"
+        },
+        {
+          "slide": "why-8"
+        },
+        {
+          "slide": "why-9"
+        },
+        {
+          "slide": "why-10"
+        },
+        {
+          "slide": "why-11"
+        },
+        {
+          "slide": "for-whom-1"
+        },
+        {
+          "slide": "for-whom-2"
+        },
+        {
+          "slide": "for-whom-3"
+        },
+        {
+          "slide": "concern-1"
+        },
+        {
+          "slide": "concern-2"
+        },
+        {
+          "slide": "start"
+        },
+        {
+          "slide": "color-1"
+        },
+        {
+          "slide": "color-2"
+        },
+        {
+          "slide": "color-no-problem-question"
+        },
+        {
+          "slide": "color-no-problem-answer-1"
+        },
+        {
+          "slide": "color-no-problem-answer-2"
+        },
+        {
+          "slide": "color-example-1-question"
+        },
+        {
+          "slide": "color-example-1-answer-1"
+        },
+        {
+          "slide": "color-example-1-answer-2"
+        },
+        {
+          "slide": "color-example-1-answer-3"
+        },
+        {
+          "slide": "color-example-2"
+        },
+        {
+          "slide": "color-example-3"
+        },
+        {
+          "slide": "color-example-4"
+        },
+        {
+          "slide": "html-elements"
+        },
+        {
+          "slide": "html-elements-question"
+        },
+        {
+          "slide": "html-elements-answer"
+        },
+        {
+          "slide": "html-elements-examples-1"
+        },
+        {
+          "slide": "html-elements-examples-2"
+        },
+        {
+          "slide": "html-elements-examples-3"
+        },
+        {
+          "slide": "text"
+        },
+        {
+          "slide": "text-question"
+        },
+        {
+          "slide": "text-answer-1"
+        },
+        {
+          "slide": "text-answer-2"
+        },
+        {
+          "slide": "text-answer-3"
+        },
+        {
+          "slide": "text-font-family-question"
+        },
+        {
+          "slide": "text-font-family-answer"
+        },
+        {
+          "slide": "text-font-family-example-1"
+        },
+        {
+          "slide": "text-font-size-question"
+        },
+        {
+          "slide": "text-font-size-answer"
+        },
+        {
+          "slide": "text-font-size-example-1"
+        },
+        {
+          "slide": "text-color-question"
+        },
+        {
+          "slide": "text-color-answer"
+        },
+        {
+          "slide": "text-color-example-1"
+        },
+        {
+          "slide": "text-headings"
+        },
+        {
+          "slide": "text-headings-question"
+        },
+        {
+          "slide": "text-headings-answer"
+        },
+        {
+          "slide": "text-headings-question-2"
+        },
+        {
+          "slide": "text-headings-answer-2"
+        },
+        {
+          "slide": "text-headings-example-1"
+        },
+        {
+          "slide": "text-headings-example-2"
+        },
+        {
+          "slide": "text-headings-example-3"
+        },
+        {
+          "slide": "text-paragraph-question"
+        },
+        {
+          "slide": "text-paragraph-answer"
+        },
+        {
+          "slide": "text-paragraph-answer-2"
+        },
+        {
+          "slide": "text-paragraph-example-1"
+        },
+        {
+          "slide": "text-paragraph-example-2"
+        },
+        {
+          "slide": "text-link-question-1"
+        },
+        {
+          "slide": "text-link-answer-1"
+        },
+        {
+          "slide": "text-link-question-2"
+        },
+        {
+          "slide": "text-link-answer-2"
+        },
+        {
+          "slide": "text-link-example-1"
+        },
+        {
+          "slide": "text-styling-example-1"
+        },
+        {
+          "slide": "text-styling-example-2"
+        },
+        {
+          "slide": "text-styling-example-3"
+        },
+        {
+          "slide": "text-styling-question-simple"
+        },
+        {
+          "slide": "text-styling-special-question"
+        },
+        {
+          "slide": "text-styling-special-example-1"
         }
       ]
     }

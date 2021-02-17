@@ -63,7 +63,7 @@ app.get('/', function (req, res) {
 
 	const content = contentEJS(md('slides/'+paths.names[name].paths[slide].slide));
 
-  res.render('pages/slider', {'content': content, 'prev': prev, 'next': next, 'config': config})
+  res.render('pages/slider', {'content': content, 'prev': prev, 'next': next, 'config': config, 'name': name})
 
 
 }
