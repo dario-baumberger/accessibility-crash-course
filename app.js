@@ -6,6 +6,10 @@ const marked = require ('marked');
 const fs = require ('fs');
 const he = require ('he');
 const ejs = require("ejs");
+
+const paths = require('./src/configs/base.json');
+
+
 const config = {
 	base: ''
 }
@@ -56,7 +60,7 @@ app.get('/', function (req, res) {
 		next = parseInt(slide) +1;
 	}
 
-	const content = contentEJS(md('slides/'+slide));
+	const content = contentEJS(md('slides/'+paths.paths[slide].slide));
 
   res.render('pages/slider', {'content': content, 'prev': prev, 'next': next, 'config': config})
 
