@@ -241,6 +241,289 @@
         },
         {
           "slide": "text-styling-special-example-1"
+        },
+        {
+          "slide": "text-styling-special-question-2"
+        },
+        {
+          "slide": "text-styling-special-question-2-hint"
+        },
+        {
+          "slide": "text-styling-special-example-2"
+        },
+        {
+          "slide": "text-styling-special-question-example-3"
+        },
+        {
+          "slide": "teaser-copy"
+        },
+        {
+          "slide": "lists"
+        },
+        {
+          "slide": "lists-unordered"
+        },
+        {
+          "slide": "lists-ordered"
+        },
+        {
+          "slide": "lists-easy"
+        },
+        {
+          "slide": "lists-easy-more"
+        },
+        {
+          "slide": "lists-menus"
+        },
+        {
+          "slide": "lists-options"
+        },
+        {
+          "slide": "lists-others"
+        },
+        {
+          "slide": "tables"
+        },
+        {
+          "slide": "tables-reasons"
+        },
+        {
+          "slide": "tables-fake"
+        },
+        {
+          "slide": "tables-elements-basics-1"
+        },
+        {
+          "slide": "tables-elements-basics-2"
+        },
+        {
+          "slide": "tables-example-1"
+        },
+        {
+          "slide": "tables-elements-basics-3"
+        },
+        {
+          "slide": "tables-example-2"
+        },
+        {
+          "slide": "tables-elements-advanced"
+        },
+        {
+          "slide": "tables-example-3"
+        },
+        {
+          "slide": "tables-css-attributes"
+        },
+        {
+          "slide": "tables-responsive-question"
+        },
+        {
+          "slide": "tables-responsive-answer-1"
+        },
+        {
+          "slide": "tables-responsive-answer-2"
+        },
+        {
+          "slide": "tables-responsive-answer-3"
+        },
+        {
+          "slide": "tables-conclusion"
+        },
+        {
+          "slide": "images-question-1"
+        },
+        {
+          "slide": "images-answer-1"
+        },
+        {
+          "slide": "images-question-accessibility"
+        },
+        {
+          "slide": "images-answer-accessibility"
+        },
+        {
+          "slide": "images-semantic"
+        },
+        {
+          "slide": "images-background-images"
+        },
+        {
+          "slide": "images-img-no-alt"
+        },
+        {
+          "slide": "images-img-with-alt"
+        },
+        {
+          "slide": "images-img-no-alt-1000-words-bad"
+        },
+        {
+          "slide": "images-img-no-alt-1000-words-good"
+        },
+        {
+          "slide": "images-complex-chart"
+        },
+        {
+          "slide": "images-complex-chart-alternative"
+        },
+        {
+          "slide": "forms"
+        },
+        {
+          "slide": "forms-form-tag"
+        },
+        {
+          "slide": "forms-label"
+        },
+        {
+          "slide": "forms-label-example"
+        },
+        {
+          "slide": "forms-fieldset"
+        },
+        {
+          "slide": "forms-fieldset-section-example-bad"
+        },
+        {
+          "slide": "forms-fieldset-section-example-good"
+        },
+        {
+          "slide": "forms-fieldset-group-example-bad"
+        },
+        {
+          "slide": "forms-fieldset-group-example-good"
+        },
+        {
+          "slide": "forms-additional"
+        },
+        {
+          "slide": "forms-disabled"
+        },
+        {
+          "slide": "forms-readonly"
+        },
+        {
+          "slide": "aria-role-img"
+        },
+        {
+          "slide": "aria-role-role"
+        },
+        {
+          "slide": "aria-role/conclusion"
+        },
+        {
+          "slide": "aria-role-img-magic",
+          "todo": ""
+        },
+        {
+          "slide": "aria-role/img-boom"
+        },
+        {
+          "slide": "aria-role/role-meaning"
+        },
+        {
+          "slide": "aria-role/role-button"
+        },
+        {
+          "slide": "aria-role/role-list"
+        },
+        {
+          "slide": "aria-role/role-listbox"
+        },
+        {
+          "slide": "aria-role/role-listbox"
+        },
+        {
+          "slide": "aria-role/role-table"
+        },
+        {
+          "slide": "aria-role/tabindex"
+        },
+        {
+          "slide": "aria-role/tabindex-example-1"
+        },
+        {
+          "slide": "aria-role/tabindex-example-2"
+        },
+        {
+          "slide": "aria-role/img-boom"
+        },
+        {
+          "slide": "aria-role/tabindex-example-3"
+        },
+        {
+          "slide": "aria-role/aria"
+        },
+        {
+          "slide": "aria-role/aria-hidden"
+        },
+        {
+          "slide": "aria-role/aria-hidden-example-text"
+        },
+        {
+          "slide": "aria-role/aria-hidden-example-button"
+        },
+        {
+          "slide": "aria-role/aria-describedby"
+        },
+        {
+          "slide": "aria-rol/aria-label"
+        },
+        {
+          "slide": "aria-role/aria-label-and-aria-hidden"
+        },
+        {
+          "slide": "aria-role/aria-labelledby-and-aria-hidden"
+        },
+        {
+          "slide": "aria-role/aria-expanded-example-overlay"
+        },
+        {
+          "slide": "aria-rol/-aria-expanded-example-accordion"
+        },
+        {
+          "slide": "css/influence"
+        },
+        {
+          "slide": "css/screenreader"
+        },
+        {
+          "slide": "screenreader/programs"
+        },
+        {
+          "slide": "screenreader/control-focus-mode"
+        },
+        {
+          "slide": "screenreader/control-browse-mode"
+        },
+        {
+          "slide": "screenreader/control-shortcuts"
+        },
+        {
+          "slide": "screenreader/tips"
+        },
+        {
+          "slide": "focus/focus"
+        },
+        {
+          "slide": "testing/testing"
+        },
+        {
+          "slide": "generic/procedure"
+        },
+        {
+          "slide": "generic/conclusion"
+        },
+        {
+          "slide": "help/help"
+        },
+        {
+          "slide": "generic/preview"
+        },
+        {
+          "slide": "generic/empty"
+        },
+        {
+          "slide": "contact/contact"
         }
       ]
     }
