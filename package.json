@@ -12,12 +12,12 @@
   "author": "Dario Baumberger",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.5",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "fs-extra": "^9.0.1",
+    "fs-extra": "^9.1.0",
     "he": "^1.2.0",
-    "marked": "^1.2.3",
+    "marked": "^1.2.9",
     "tailwindcss": "^1.9.6"
   }
 }

@@ -37,8 +37,9 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
  
 app.get('/', function (req, res) {
-	const content = contentEJS(md('readme'))
-	res.render('pages/index', {'content': content, 'config': config.base})
+	const content = contentEJS(md('/pages/index'))
+	const header = contentEJS(md('/partials/header'))
+	res.render('pages/index', {'content': content, 'config': config.base, 'header': header})
   })
 
   app.get('/demo/:name', function (req, res) {
@@ -60,6 +61,8 @@ app.get('/', function (req, res) {
 		prev = parseInt(slide) -1;
 		next = parseInt(slide) +1;
 	}
+
+	console.log(paths.names[name].paths[slide].slide)
 
 	const content = contentEJS(md('slides/'+paths.names[name].paths[slide].slide));
 
