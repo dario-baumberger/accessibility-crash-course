@@ -129,7 +129,7 @@
           "slide": "html/elements-examples-3"
         },
         {
-          "slide": "text"
+          "slide": "text/text"
         },
         {
           "slide": "text/question"
@@ -258,148 +258,148 @@
           "slide": "teaser-copy"
         },
         {
-          "slide": "lists"
+          "slide": "lists/lists"
         },
         {
-          "slide": "lists-unordered"
+          "slide": "lists/unordered"
         },
         {
-          "slide": "lists-ordered"
+          "slide": "lists/ordered"
         },
         {
-          "slide": "lists-easy"
+          "slide": "lists/easy"
         },
         {
-          "slide": "lists-easy-more"
+          "slide": "lists/easy-more"
         },
         {
-          "slide": "lists-menus"
+          "slide": "lists/menus"
         },
         {
-          "slide": "lists-options"
+          "slide": "lists/options"
         },
         {
-          "slide": "lists-others"
+          "slide": "lists/others"
         },
         {
-          "slide": "tables"
+          "slide": "table/table"
         },
         {
-          "slide": "tables-reasons"
+          "slide": "table/reasons"
         },
         {
-          "slide": "tables-fake"
+          "slide": "table/fake"
         },
         {
-          "slide": "tables-elements-basics-1"
+          "slide": "table/elements-basics-1"
         },
         {
-          "slide": "tables-elements-basics-2"
+          "slide": "table/elements-basics-2"
         },
         {
-          "slide": "tables-example-1"
+          "slide": "table/example-1"
         },
         {
-          "slide": "tables-elements-basics-3"
+          "slide": "table/elements-basics-3"
         },
         {
-          "slide": "tables-example-2"
+          "slide": "table/example-2"
         },
         {
-          "slide": "tables-elements-advanced"
+          "slide": "table/elements-advanced"
         },
         {
-          "slide": "tables-example-3"
+          "slide": "table/example-3"
         },
         {
-          "slide": "tables-css-attributes"
+          "slide": "table/css-attributes"
         },
         {
-          "slide": "tables-responsive-question"
+          "slide": "table/responsive-question"
         },
         {
-          "slide": "tables-responsive-answer-1"
+          "slide": "table/responsive-answer-1"
         },
         {
-          "slide": "tables-responsive-answer-2"
+          "slide": "table/responsive-answer-2"
         },
         {
-          "slide": "tables-responsive-answer-3"
+          "slide": "table/responsive-answer-3"
         },
         {
-          "slide": "tables-conclusion"
+          "slide": "table/conclusion"
         },
         {
-          "slide": "images-question-1"
+          "slide": "images/question-1"
         },
         {
-          "slide": "images-answer-1"
+          "slide": "images/answer-1"
         },
         {
-          "slide": "images-question-accessibility"
+          "slide": "images/question-accessibility"
         },
         {
-          "slide": "images-answer-accessibility"
+          "slide": "images/answer-accessibility"
         },
         {
-          "slide": "images-semantic"
+          "slide": "images/semantic"
         },
         {
-          "slide": "images-background-images"
+          "slide": "images/background-images"
         },
         {
-          "slide": "images-img-no-alt"
+          "slide": "images/img-no-alt"
         },
         {
-          "slide": "images-img-with-alt"
+          "slide": "images/img-with-alt"
         },
         {
-          "slide": "images-img-no-alt-1000-words-bad"
+          "slide": "images/img-no-alt-1000-words-bad"
         },
         {
-          "slide": "images-img-no-alt-1000-words-good"
+          "slide": "images/img-no-alt-1000-words-good"
         },
         {
-          "slide": "images-complex-chart"
+          "slide": "images/complex-chart"
         },
         {
-          "slide": "images-complex-chart-alternative"
+          "slide": "images/complex-chart-alternative"
         },
         {
-          "slide": "forms"
+          "slide": "form/forms"
         },
         {
-          "slide": "forms-form-tag"
+          "slide": "form/form-tag"
         },
         {
-          "slide": "forms-label"
+          "slide": "form/label"
         },
         {
-          "slide": "forms-label-example"
+          "slide": "form/label-example"
         },
         {
-          "slide": "forms-fieldset"
+          "slide": "form/fieldset"
         },
         {
-          "slide": "forms-fieldset-section-example-bad"
+          "slide": "form/fieldset-section-example-bad"
         },
         {
-          "slide": "forms-fieldset-section-example-good"
+          "slide": "form/fieldset-section-example-good"
         },
         {
-          "slide": "forms-fieldset-group-example-bad"
+          "slide": "form/fieldset-group-example-bad"
         },
         {
-          "slide": "forms-fieldset-group-example-good"
+          "slide": "form/fieldset-group-example-good"
         },
         {
-          "slide": "forms-additional"
+          "slide": "form/additional"
         },
         {
-          "slide": "forms-disabled"
+          "slide": "form/disabled"
         },
         {
-          "slide": "forms-readonly"
+          "slide": "form/readonly"
         },
         {
           "slide": "aria-role-img"
