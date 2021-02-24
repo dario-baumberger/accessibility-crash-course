@@ -1,0 +1,7 @@
+# Texte
+
+*Was ist eingetlich alles Text?*
+
+- Eigentlich alles was Schrift hat...
+- ... und relevant für den Benutzer ist oder ihm Inhalt bietet...
+- ... also eigentlich irgendwie alles.

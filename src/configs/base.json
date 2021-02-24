@@ -171,7 +171,7 @@
           "slide": "text/color/example-1"
         },
         {
-          "slide": "text/headings"
+          "slide": "text/headings/headings"
         },
         {
           "slide": "text/headings/question"
@@ -402,20 +402,24 @@
           "slide": "form/readonly"
         },
         {
-          "slide": "aria-role-img"
-        },
-        {
-          "slide": "aria-role-role"
-        },
-        {
-          "slide": "aria-role/conclusion"
-        },
-        {
-          "slide": "aria-role-img-magic",
+          "slide": "aria-role/aria",
           "todo": ""
         },
         {
-          "slide": "aria-role/img-boom"
+          "slide": "aria-role/aria",
+          "todo": ""
+        },
+        {
+          "slide": "aria-role/aria",
+          "todo": ""
+        },
+        {
+          "slide": "aria-role/img-magic",
+          "todo": ""
+        },
+        {
+          "slide": "aria-role/img-magic",
+          "todo": ""
         },
         {
           "slide": "aria-role/role-meaning"
@@ -466,7 +470,7 @@
           "slide": "aria-role/aria-describedby"
         },
         {
-          "slide": "aria-rol/aria-label"
+          "slide": "aria-role/aria-label"
         },
         {
           "slide": "aria-role/aria-label-and-aria-hidden"
@@ -478,7 +482,7 @@
           "slide": "aria-role/aria-expanded-example-overlay"
         },
         {
-          "slide": "aria-rol/-aria-expanded-example-accordion"
+          "slide": "aria-role/aria-expanded-example-accordion"
         },
         {
           "slide": "css/influence"

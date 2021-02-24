@@ -36,77 +36,24 @@
 
 	let menuSection = document.querySelectorAll('aside nav a');
 	let mainHeadings = document.querySelectorAll(".markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6");
+	let headingData = [];
 
-	const quickSort = function quickSort(data) { // no optimizations
-		const partition = function partition(data, lo, hi) {
-			const pivot = data[hi]
-			let i = lo
-			for (let j = lo; j < hi; j++) {
-				if (data[j] < pivot) {
-					data[i] = data[j] - data[i] + (data[j] = data[i]);
-					i++
-				}
-			}
-			// swap
-			data[i] = data[hi] - data[i] + (data[hi] = data[i]);
-			return i
-		};
+	console.log(window.scrollY)
 
-		const sort = function sort(data, lo, hi) {
-			if (lo < hi) {
-				let p = partition(data, lo, hi)
-				sort(data, lo, p - 1)
-				sort(data, p + 1, hi)
-			}
-		};
-		sort(data, 0, data.length - 1)
-	}
+	mainHeadings.forEach((heading) => {
+		heading.classList.add('js-heading--out')
+		headingData.push({el: heading, y: heading.offsetTop})
+	})
 
-	const flatten = function flatten(arr) {
-		const reduce = Array.prototype.reduce
-		return reduce.call(arr, function(acc, val) {
-			return Array.isArray(val) || typeof val[Symbol.iterator] === "function" ? acc.concat(flatten(val)) : acc.concat(val);
-		}, [])
-	}
+	console.log(headingData)
 
-		const elOffsetIndex = {}
-		const h1 = document.querySelectorAll(".markdown-body h1")
-		const h2 = document.querySelectorAll(".markdown-body h2")
-		const h3 = document.querySelectorAll(".markdown-body h3")
-		const h4 = document.querySelectorAll(".markdown-body h4")
-		let h = flatten([h1, h2, h3, h4])
-		const offset = 0;
+	window.addEventListener('scroll', function() {
+		mainHeadings.forEach((heading) => {
 
-		window.addEventListener("DOMContentLoaded", function() {
-			// without this event, the `offsetTop` value may not be right
-			// as document may not have finished rendering
-			const offsets = []
-
-
-			// Time Complexity: O(n) => O(h.length)
-			for (var i = 0; i < h.length; i++) {
-
-				let hOffset = h[i].offsetTop + offset;
-				offsets.push(hOffset);
-				elOffsetIndex[hOffset] = h[i];
-			}
-
-			// Time Complexity: O(n log(n)) => O(h.length log(h.length))
-			quickSort(offsets)
-
-
-			document.addEventListener("scroll", function() {
-				const scrollTop = this.documentElement.scrollTop
-
-				// Time Complexity: worst case O(n) => O(offsets.length)
-				for (var i in offsets) {
-					if (scrollTop >= offsets[i]) {
-						elOffsetIndex[offsets[i]].classList.add("active")
-						break
-					}
-				}
-			})
 		})
+	});
+
+
 
 </script>
 </body>

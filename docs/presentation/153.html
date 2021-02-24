@@ -5,56 +5,22 @@
 		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-	
+
 		
 <main class="flex min-h-screen flex-col">
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
             <div class="markdown-body"><h1 id="aria-attribute">Aria Attribute</h1>
-<h2 id="aria-label">aria-label</h2>
-<!--
-<div class="flex flex-wrap">
-<div class="w-1/6">
-    <p>
-        Bad
-    <p>
-</div>
-<div class="w-2/6">
-    <button aria-label="Speichern" style="width: 100px; height: 40px; text-align: center;">
-        <svg style="display: inline-block; height: 20px;" focusable="false" data-prefix="fas" data-icon="sd-card" class="svg-inline--fa fa-sd-card fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M320 0H128L0 128v320c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM160 160h-48V64h48v96zm80 0h-48V64h48v96zm80 0h-48V64h48v96z"></path></svg>
-    </buton>
-</div>
-<div class="w-3/6">
+<h2 id="description">aria-describedby</h2>
 
-``` html
-    <button aria-label="Speichern" style="width: 100px; height: 40px; text-align: center;">
-        <svg style="display: inline-block; height: 20px;" focusable="false" data-prefix="fas" data-icon="sd-card" class="svg-inline--fa fa-sd-card fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M320 0H128L0 128v320c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM160 160h-48V64h48v96zm80 0h-48V64h48v96zm80 0h-48V64h48v96z"></path></svg>
-    </buton>
-```
-</div>
-<div class="w-1/6">
-    <p>
-        Bad
-    <p>
-</div>
-<div class="w-2/6">
-    <button aria-label="Löschen" style="width: 100px; height: 40px; text-align: center;">
-        <svg style="display: inline-block; height: 20px;" focusable="false" data-prefix="fas" data-icon="eraser" class="svg-inline--fa fa-eraser fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497.941 273.941c18.745-18.745 18.745-49.137 0-67.882l-160-160c-18.745-18.745-49.136-18.746-67.883 0l-256 256c-18.745 18.745-18.745 49.137 0 67.882l96 96A48.004 48.004 0 0 0 144 480h356c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H355.883l142.058-142.059zm-302.627-62.627l137.373 137.373L265.373 416H150.628l-80-80 124.686-124.686z"></path></svg>
-    </buton>
-</div>
-<div class="w-3/6">
+<p><button style="border: 1px solid black;" aria-describedby="description" >Button mit Zusatz</button></p>
+<br>
+<br>
 
-``` html
-    <button aria-label="Löschen" style="width: 100px; height: 40px; text-align: center;">
-        <svg style="display: inline-block; height: 20px;" focusable="false" data-prefix="fas" data-icon="eraser" class="svg-inline--fa fa-eraser fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497.941 273.941c18.745-18.745 18.745-49.137 0-67.882l-160-160c-18.745-18.745-49.136-18.746-67.883 0l-256 256c-18.745 18.745-18.745 49.137 0 67.882l96 96A48.004 48.004 0 0 0 144 480h356c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H355.883l142.058-142.059zm-302.627-62.627l137.373 137.373L265.373 416H150.628l-80-80 124.686-124.686z"></path></svg>
-    </buton>
-```
-</div>
-</div>
-
-
--->
+<pre><code>&lt;h2 id=&quot;description&quot;&gt;aria-describedby&lt;/h2&gt;
+&lt;button style=&quot;border: 1px solid black;&quot; aria-describedby=&quot;description&quot; &gt;Button mit Zusatz&lt;/button&gt;
+</code></pre>
 </div>
         </div>
 
@@ -62,8 +28,8 @@
 </div>
 <footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
     <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
-        <a href="/accessibility-crash-course/presentation/152" class="p-6">Prev</a>
-        <a href="/accessibility-crash-course/presentation/154" class="p-6">Next</a>
+        <a href="/accessibility-crash-course/presentation/base/152" class="p-6">Prev</a>
+        <a href="/accessibility-crash-course/presentation/base/154" class="p-6">Next</a>
     </div>
     <p class="text-center">
         <small>
@@ -75,11 +41,11 @@
     document.addEventListener('keydown', function (event) {
 
         if (event.ctrlKey && event.key === 'ArrowRight') {
-            window.location.href="/accessibility-crash-course/presentation/154";
+            window.location.href="/accessibility-crash-course/presentation/base/154";
         }
 
         if (event.ctrlKey && event.key === 'ArrowLeft') {
-            window.location.href="/accessibility-crash-course/presentation/152";
+            window.location.href="/accessibility-crash-course/presentation/base/152";
         }
     });
 </script>

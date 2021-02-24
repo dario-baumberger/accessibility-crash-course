@@ -6,6 +6,7 @@ const fse = require('fs-extra');
 const config = {
     base: '/accessibility-crash-course'
 }
+const paths = require('./src/configs/base.json');
 
 // md to html
 let md = function (filename) {
@@ -35,7 +36,7 @@ function ejs2html(path, information, name = path.split("/").pop().split('.')[0],
             }),
             html = template(information);
 
-        console.log(path + ' ('+name+')' + ' -> ' + dist+name + '.html')
+        console.log(path + ' ('+name+')' + ' -> ' + dist+'/'+name + '.html')
 
         fs.writeFile(dist+'/'+name + '.html', html, function (err) {
             if (err) {
@@ -48,35 +49,43 @@ function ejs2html(path, information, name = path.split("/").pop().split('.')[0],
 }
 
 function buildIndex(){
-    let content = contentEJS(md('readme'));
-    ejs2html(__dirname + '/views/pages/index.ejs', {'content': content, 'config': config} );
+    let content = contentEJS(md('pages/index'));
+    const header = contentEJS(md('/partials/header'))
+    ejs2html(__dirname + '/views/pages/index.ejs', {'content': content, 'config': config, 'header': header} );
 }
 
 function buildSlides(){
     let files = fs.readdirSync(__dirname + '/content/slides');
 
+
+
     if (!fs.existsSync('./docs/presentation')){
         fs.mkdirSync('./docs/presentation');
     }
 
-    for (i = 0; i < files.length; i++) {
+    for (i = 0; i < paths.names.base.paths.length; i++) {
 
-        let slide = i;
+        let name = 'base'
+
+        const slide = paths.names.base.paths[i].slide
+        let slideIndex = i;
+
+        console.log(slide, slideIndex, 'name '+ name)
 
         let prev;
         let next;
 
-        if(parseInt(slide) <= 0){
-            slide = 0;
+        if(parseInt(slideIndex) <= 0){
+            slideIndex = 0;
             prev = 0;
             next = 1;
         }else{
-            prev = parseInt(slide) -1;
-            next = parseInt(slide) +1;
+            prev = parseInt(slideIndex) -1;
+            next = parseInt(slideIndex) +1;
         }
 
-        var content = contentEJS(md('slides/' + i));
-        ejs2html(__dirname + '/views/pages/slider.ejs', {'content': content, 'prev': prev, 'next': next, 'config': config}, i, 'docs/presentation/');
+        var content = contentEJS(md('slides/' + slide));
+        ejs2html(__dirname + '/views/pages/slider.ejs', {'content': content, 'prev': prev, 'next': next, 'config': config, 'name': name}, i, 'docs/presentation');
     }
 }
 
@@ -116,8 +125,8 @@ function init() {
 
     buildIndex();
     buildSlides();
-    buildDemo();
-    copyImages();
+    //buildDemo();
+    //copyImages();
 }
 
 init();

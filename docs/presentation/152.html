@@ -5,21 +5,41 @@
 		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-	
+
 		
 <main class="flex min-h-screen flex-col">
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
             <div class="markdown-body"><h1 id="aria-attribute">Aria Attribute</h1>
-<h2 id="description">aria-describedby</h2>
+<h2 id="aria-hidden">aria-hidden</h2>
+<div>
+<button style="border: 1px solid black;"> Button 1</button>
+</div>
+<br>
+<div>
+<button aria-hidden="true" style="border: 1px solid black;">Button 2</button>
+</div>
+<br>
+<div>
+<button aria-hidden="true" tabindex="-1" style="border: 1px solid black;">Button 3</button>
+</div>
 
-<p><button style="border: 1px solid black;" aria-describedby="description" >Button mit Zusatz</button></p>
 <br>
 <br>
 
-<pre><code>&lt;h2 id=&quot;description&quot;&gt;aria-describedby&lt;/h2&gt;
-&lt;button style=&quot;border: 1px solid black;&quot; aria-describedby=&quot;description&quot; &gt;Button mit Zusatz&lt;/button&gt;</code></pre>
+<pre><code>&lt;div&gt;
+    &lt;button style=&quot;border: 1px solid black;&quot;&gt; Button 1&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div&gt;
+    &lt;button aria-hidden=&quot;true&quot; style=&quot;border: 1px solid black;&quot;&gt;Button 2&lt;/button&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div&gt;
+    &lt;button aria-hidden=&quot;true&quot; tabindex=&quot;-1&quot; style=&quot;border: 1px solid black;&quot;&gt;Button 3&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
 </div>
         </div>
 
@@ -27,8 +47,8 @@
 </div>
 <footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
     <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
-        <a href="/accessibility-crash-course/presentation/151" class="p-6">Prev</a>
-        <a href="/accessibility-crash-course/presentation/153" class="p-6">Next</a>
+        <a href="/accessibility-crash-course/presentation/base/151" class="p-6">Prev</a>
+        <a href="/accessibility-crash-course/presentation/base/153" class="p-6">Next</a>
     </div>
     <p class="text-center">
         <small>
@@ -40,11 +60,11 @@
     document.addEventListener('keydown', function (event) {
 
         if (event.ctrlKey && event.key === 'ArrowRight') {
-            window.location.href="/accessibility-crash-course/presentation/153";
+            window.location.href="/accessibility-crash-course/presentation/base/153";
         }
 
         if (event.ctrlKey && event.key === 'ArrowLeft') {
-            window.location.href="/accessibility-crash-course/presentation/151";
+            window.location.href="/accessibility-crash-course/presentation/base/151";
         }
     });
 </script>

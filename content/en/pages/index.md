@@ -4,13 +4,13 @@
 
 <br />
 
-## Tools für diesen Crash Kurs
-Die Demos schaust du dir am besten mit folgenden Tools an. Einige Probleme sind nicht immer gleich auf den ersten Blick nur im Browser Fenster ersichtlich.
+## Tools for this crash course
+The best way to watch the demos is with the following tools. Some problems are not always immediately apparent in the browser window.
 - [Wave Browser Extension](https://wave.webaim.org/extension/)
 - [NVDA Screenreader](https://www.nvaccess.org/download/)
 - [Colorblinding](https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa?hl=en)
 
-Siehe auch noch [Steuerung Screenreader](#steuerung)
+See also [Steuerung Screenreader](#steuerung)
 
 <br />
 
@@ -18,23 +18,23 @@ Siehe auch noch [Steuerung Screenreader](#steuerung)
 
 <br />
 
-## Wieso ?!
-- Gesetzliche Rahmenbedingungen in der Schweiz
+## Why ?!
+- Legal conditions in Switzerland
   - [Bundesverfassung Art. 8 (BV Art. 8)](https://www.admin.ch/opc/de/classified-compilation/19995395/index.html#a8)
   - [Behindertengleichstellungsgesetz (BehiG)](https://www.admin.ch/opc/de/classified-compilation/20002658/index.html)
   - [Behindertengleichstellungsverordnung (BehiV)](https://www.admin.ch/opc/de/classified-compilation/20031813/index.html)
-- [Zertifikat](https://www.access-for-all.ch/ch/zertifizierung.html) (Aushängeschild)
-- Grössere Zielgruppen
-- Eigennutzen
+- [Certificate ](https://www.access-for-all.ch/ch/zertifizierung.html) (flagship)
+- Larger target groups
+- Self-interest
 
 <br />
 
-### Bund, Kantone und Gemeinden
+### Confederation, cantons and communes
 > Bereits in der Bundesverfassung wird festgehalten, dass niemand diskriminiert werden darf aufgrund einer Behinderung. Das im Jahr 2004 in Kraft getretene Behindertengleichstellungsgesetz regelt weitergehend auch die Dienstleistungen des Gemeinweisens. Diese müssen auch zugänglich für Menschen mit Behinderungen angeboten werden. Darunter fallen auch die Internetangebote von Bund, Kantonen und Gemeinden. [...]
 
 > [...] Bestehende Webseiten des Bundes müssen demnach bis zum 31.12.2010 den Bedingungen der WCAG 2.0 entsprechen und mindestens die Konformitätsstufe AA erreichen. Neue Websites müssen ab sofort diese Richtlinien einhalten. [...]
 
-Quellen:
+Source:
 - [https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
 
 <br />

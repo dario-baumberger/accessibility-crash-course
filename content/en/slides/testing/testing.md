@@ -1,0 +1,10 @@
+# Testing
+- IDEA
+- Screenreader 
+- HTML Validators
+- Online Tools (Kontrast Rechner)
+- Chrome Extensions
+- Storybook Accessibillity Tab
+- Sonar 
+
+Automatisiert meist nicht ganz einfach, da sich die wirklichen Probleme meistens erst im Kontext einer ganzen Seite ergeben.

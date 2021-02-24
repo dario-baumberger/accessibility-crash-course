@@ -5,18 +5,58 @@
 		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-	
+
 		
 <main class="flex min-h-screen flex-col">
     <div class="container m-auto mt-20">
 
         <div class="mb-40 mx-auto max-w-screen-lg">
-            <div class="markdown-body"><h1 id="aria-attribute">Aria Attribute</h1>
-<ul>
-<li>Hide or Show (only Screenreaders)</li>
-<li>Further information</li>
-<li>States</li>
-</ul>
+            <div class="markdown-body"><h1 id="tabindex">Tabindex</h1>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  document.querySelector('.autofocus').focus();
+});
+</script>
+<div class="autofocus" tabindex="0"></div>
+<div tabindex="0">Div Focusable</div>
+<div>Div Not Focusable</div>
+<div>
+<button>Button Focusable</button>
+</div>
+<div>
+<button tabindex="-1">Button Not Focusable</button>
+</div>
+<div tabindex="4">Div Focusable (4)</div>
+<div tabindex="2">Div Focusable (2)</div>
+<div tabindex="1">Div Focusable (1)</div>
+<div tabindex="3">Div Focusable (3)</div>
+<div tabindex="0">Div Focusable (0)</div>
+
+<br>
+<br>
+
+<pre><code>
+&lt;script&gt;
+document.addEventListener(&quot;DOMContentLoaded&quot;, function(){
+  document.querySelector(&#39;.autofocus&#39;).focus();
+});
+&lt;/script&gt;
+&lt;div class=&quot;autofocus&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;
+
+&lt;div tabindex=&quot;0&quot;&gt;Div Focusable&lt;/div&gt;
+&lt;div&gt;Div Not Focusable&lt;/div&gt;
+&lt;div&gt;
+&lt;button&gt;Button Focusable&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;button tabindex=&quot;-1&quot;&gt;Button Not Focusable&lt;/button&gt;
+&lt;/div&gt;
+&lt;div tabindex=&quot;4&quot;&gt;Div Focusable (4)&lt;/div&gt;
+&lt;div tabindex=&quot;2&quot;&gt;Div Focusable (2)&lt;/div&gt;
+&lt;div tabindex=&quot;1&quot;&gt;Div Focusable (1)&lt;/div&gt;
+&lt;div tabindex=&quot;3&quot;&gt;Div Focusable (3)&lt;/div&gt;
+&lt;div tabindex=&quot;0&quot;&gt;Div Focusable (0)&lt;/div&gt;
+</code></pre>
 </div>
         </div>
 
@@ -24,8 +64,8 @@
 </div>
 <footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
     <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
-        <a href="/accessibility-crash-course/presentation/147" class="p-6">Prev</a>
-        <a href="/accessibility-crash-course/presentation/149" class="p-6">Next</a>
+        <a href="/accessibility-crash-course/presentation/base/147" class="p-6">Prev</a>
+        <a href="/accessibility-crash-course/presentation/base/149" class="p-6">Next</a>
     </div>
     <p class="text-center">
         <small>
@@ -37,11 +77,11 @@
     document.addEventListener('keydown', function (event) {
 
         if (event.ctrlKey && event.key === 'ArrowRight') {
-            window.location.href="/accessibility-crash-course/presentation/149";
+            window.location.href="/accessibility-crash-course/presentation/base/149";
         }
 
         if (event.ctrlKey && event.key === 'ArrowLeft') {
-            window.location.href="/accessibility-crash-course/presentation/147";
+            window.location.href="/accessibility-crash-course/presentation/base/147";
         }
     });
 </script>
