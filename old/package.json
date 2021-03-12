@@ -1,0 +1,23 @@
+{
+  "name": "accessibility-crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npx tailwindcss build src/css/styles.css -o public/css/styles.css",
+    "start": "node app.js",
+
+    "build": "node build.js"
+  },
+  "author": "Dario Baumberger",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.1.0",
+    "he": "^1.2.0",
+    "marked": "^1.2.9",
+    "tailwindcss": "^1.9.6"
+  }
+}
