@@ -8,16 +8,10 @@
 
 
 </div>
-<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center">
-    <div class="absolute left-0 right-0 bottom-0 h-20 flex justify-between items-center text-white">
-        <a href="<%- config.base %>/<%- lang %>/presentation/<%- name %>/<%- prev %>" class="p-6">Prev</a>
-        <a href="<%- config.base %>/<%- lang %>/presentation/<%- name %>/<%- next %>" class="p-6">Next</a>
-    </div>
-    <p class="text-center">
-        <small>
-            Accessibility / Barrierefreiheit
-        </small>
-    </p>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
+    <a href="<%- config.base %>/<%- lang %>/presentation/<%- name %>/<%- prev %>" class="p-6 order-1 text-xs">&#8592; Prev</a>
+    <a href="<%- config.base %>/<%- lang %>/presentation/<%- name %>/<%- next %>" class="p-6 order-3 text-xs">Next &#8594;</a>
+    <a href="<%- config.base %>/<%- lang %>/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
 </footer>
 <script>
     document.addEventListener('keydown', function (event) {

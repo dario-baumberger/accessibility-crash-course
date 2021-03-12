@@ -35,7 +35,9 @@ app.set("views", path.join(__dirname, "views"));
 app.use("/static", express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
-app.get("/", function (req, res) {});
+app.get("/", function (req, res) {
+  res.redirect("/de");
+});
 
 app.get("/:lang", function (req, res) {
   let lang = req.params.lang;
@@ -49,13 +51,17 @@ app.get("/:lang", function (req, res) {
   });
 });
 
-app.get("/", function (req, res) {
-  res.redirect("/de");
-});
-
 app.get("/demo/:name", function (req, res) {
   const content = contentEJS(md("demo/" + req.params.name, "max-w-screen-lg"));
   res.render("pages/demo", { content: content, config: config });
+});
+
+app.get("/:lang/challenges", function (req, res) {
+  let lang = req.params.lang;
+  const content = contentEJS(
+    md("/" + lang + "/challenges/index", "max-w-screen-lg")
+  );
+  res.render("pages/challenges", { content: content, config: config });
 });
 
 app.get("/:lang/presentation/:name/:slide", function (req, res) {
@@ -73,8 +79,6 @@ app.get("/:lang/presentation/:name/:slide", function (req, res) {
     prev = parseInt(slide) - 1;
     next = parseInt(slide) + 1;
   }
-
-  console.log(paths.names[name].paths[slide].slide);
 
   const content = contentEJS(
     md(lang + "/slides/" + paths.names[name].paths[slide].slide)
