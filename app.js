@@ -7,7 +7,8 @@ const fs = require("fs");
 const he = require("he");
 const ejs = require("ejs");
 
-const paths = require("./src/configs/base.json");
+const presentations = require("./src/configs/presentations/general.json");
+const challenges = require("./src/configs/challenges/general.json");
 
 const config = {
   base: "",
@@ -58,10 +59,64 @@ app.get("/demo/:name", function (req, res) {
 
 app.get("/:lang/challenges", function (req, res) {
   let lang = req.params.lang;
+
+  let slide = req.params.slide;
+  let name = req.params.name;
+  let prev;
+  let next;
+
+  if (parseInt(slide) <= 0) {
+    slide = 0;
+    prev = 0;
+    next = 1;
+  } else {
+    prev = parseInt(slide) - 1;
+    next = parseInt(slide) + 1;
+  }
+
   const content = contentEJS(
     md("/" + lang + "/challenges/index", "max-w-screen-lg")
   );
-  res.render("pages/challenges", { content: content, config: config });
+  res.render("pages/challenges", {
+    content: content,
+    prev: prev,
+    next: next,
+    config: config,
+    name: name,
+    lang: lang,
+  });
+});
+
+app.get("/:lang/challenges/:name/:slide", function (req, res) {
+  let lang = req.params.lang;
+
+  let slide = req.params.slide;
+  let name = req.params.name;
+
+  let prev;
+  let next;
+
+  if (parseInt(slide) <= 0) {
+    slide = 0;
+    prev = 0;
+    next = 1;
+  } else {
+    prev = parseInt(slide) - 1;
+    next = parseInt(slide) + 1;
+  }
+
+  const content = contentEJS(
+    md(lang + "/challenges/" + challenges.names[name].paths[slide].file)
+  );
+
+  res.render("pages/challenges", {
+    content: content,
+    prev: prev,
+    next: next,
+    config: config,
+    name: name,
+    lang: lang,
+  });
 });
 
 app.get("/:lang/presentation/:name/:slide", function (req, res) {
@@ -81,7 +136,7 @@ app.get("/:lang/presentation/:name/:slide", function (req, res) {
   }
 
   const content = contentEJS(
-    md(lang + "/slides/" + paths.names[name].paths[slide].slide)
+    md(lang + "/slides/" + presentations.names[name].paths[slide].file)
   );
 
   res.render("pages/slider", {
