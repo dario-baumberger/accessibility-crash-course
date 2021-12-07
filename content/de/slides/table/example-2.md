@@ -46,4 +46,4 @@
 --- 
 
 Demo: 
-- [Table 2](/demo/table-2)
+- [Table 2](/accessibility-crash-course/demo/table-2)

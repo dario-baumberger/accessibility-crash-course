@@ -33,5 +33,5 @@
 </div>
 
 Demo: 
-- [Button empty (Bad)](/demo/colors-button-empty)
+- [Button empty (Bad)](/accessibility-crash-course/demo/colors-button-empty)
 

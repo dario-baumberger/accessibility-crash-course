@@ -120,5 +120,5 @@
 </div>
 
 Demo: 
-- [Button Icon](/demo/colors-button-icon)
+- [Button Icon](/accessibility-crash-course/demo/colors-button-icon)
 

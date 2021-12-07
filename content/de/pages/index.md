@@ -210,7 +210,7 @@ Schriften spielen eine wichtige Rolle auf Webseiten. Auch der beste Text kann mi
 
 Demo:
 
-- [Text Font Family](/demo/text-font-family)
+- [Text Font Family](/accessibility-crash-course/demo/text-font-family)
 
 <br />
 <br />
@@ -221,7 +221,7 @@ Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften k√
 
 Demo:
 
-- [Text Font Size (Wave Toolbar)](/demo/text-font-size)
+- [Text Font Size (Wave Toolbar)](/accessibility-crash-course/demo/text-font-size)
 
 <br />
 <br />
@@ -233,7 +233,7 @@ Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der
 
 Demo: 
 
-- [Text Colors (Wave Toolbar)](/demo/text-colors)
+- [Text Colors (Wave Toolbar)](/accessibility-crash-course/demo/text-colors)
 
 Links:
 - [Contrast Checker](https://webaim.org/resources/contrastchecker/)
@@ -269,9 +269,9 @@ Mit dem Screenreader k√∂nnen Headings direkt angesprungen werden. So kann man si
 
 Demo:
 
-- [Text Heading (Screenreader)](/demo/text-h)
-- [Text Heading Structure (Bad) (Wave Toolbar)](/demo/text-h-structure-bad)
-- [Text Heading Structure (Good) (Wave Toolbar)](/demo/text-h-structure-good)
+- [Text Heading (Screenreader)](/accessibility-crash-course/demo/text-h)
+- [Text Heading Structure (Bad) (Wave Toolbar)](/accessibility-crash-course/demo/text-h-structure-bad)
+- [Text Heading Structure (Good) (Wave Toolbar)](/accessibility-crash-course/demo/text-h-structure-good)
 
 <br />
 <br />
@@ -296,9 +296,9 @@ Semantisch korrekt: `<p>Ich bin ein Text in einem p<p>`
 
 Demo:
 
-- [Text Paragraph (Screenreader)](/demo/text-p)
+- [Text Paragraph (Screenreader)](/accessibility-crash-course/demo/text-p)
 
-- [Text Paragraph Empty (Screenreader)](/demo/text-p-empty)
+- [Text Paragraph Empty (Screenreader)](/accessibility-crash-course/demo/text-p-empty)
 
 <br />
 <br />
@@ -333,7 +333,7 @@ WIP Button
 
 Demo: 
 
-[Link (Screenreader & Navigieren)](/demo/link)
+[Link (Screenreader & Navigieren)](/accessibility-crash-course/demo/link)
 
 <br />
 <br />
@@ -347,7 +347,7 @@ Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern un
 
 Demo: 
 
-- [Text Bold / Strong](/demo/text-bold-strong)
+- [Text Bold / Strong](/accessibility-crash-course/demo/text-bold-strong)
 
 Link: 
 
@@ -365,7 +365,7 @@ Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern un
 
 Demo: 
 
-- [Text Italic / Kursiv](/demo/text-italic-cursive)
+- [Text Italic / Kursiv](/accessibility-crash-course/demo/text-italic-cursive)
 
 Link: 
 
@@ -523,9 +523,9 @@ Bei Tabellen ist auch noch zu beachten, dass CSS Einfluss auf die Semantik hat. 
 
 Demo:
 
-- [Table Fake (Bad)](/demo/table-fake)
-- [Table 1](/demo/table-1)
-- [Table 2](/demo/table-2)
+- [Table Fake (Bad)](/accessibility-crash-course/demo/table-fake)
+- [Table 1](/accessibility-crash-course/demo/table-1)
+- [Table 2](/accessibility-crash-course/demo/table-2)
 
 
 

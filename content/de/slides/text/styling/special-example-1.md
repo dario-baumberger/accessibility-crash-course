@@ -34,4 +34,4 @@
 
 Demo: 
 
-- [Text no Spolier ;)](/demo/text-sub-sup)
+- [Text no Spolier ;)](/accessibility-crash-course/demo/text-sub-sup)

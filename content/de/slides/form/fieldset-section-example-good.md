@@ -68,4 +68,4 @@
 
 Demo:
 
-- [Input Labels](/demo/form-inputs-labels)
+- [Input Labels](/accessibility-crash-course/demo/form-inputs-labels)

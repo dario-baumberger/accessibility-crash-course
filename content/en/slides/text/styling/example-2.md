@@ -42,7 +42,7 @@
 
 Demo: 
 
-- [Text Italic / Kursiv](/demo/text-italic-cursive)
+- [Text Italic / Kursiv](/accessibility-crash-course/demo/text-italic-cursive)
 
 ---
 

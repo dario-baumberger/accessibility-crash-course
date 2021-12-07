@@ -43,4 +43,4 @@
 
 Demo:
 
-- [Form Group Bad](/demo/form-fieldset-group-bad)
+- [Form Group Bad](/accessibility-crash-course/demo/form-fieldset-group-bad)

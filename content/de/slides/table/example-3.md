@@ -66,4 +66,4 @@
 --- 
 
 Demo: 
-- [Table 3](/demo/table-3)
+- [Table 3](/accessibility-crash-course/demo/table-3)

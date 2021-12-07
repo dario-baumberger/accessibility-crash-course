@@ -62,4 +62,4 @@
 
 Demo: 
 
-- [Text SUB SUP](/demo/text-sub-sup)
+- [Text SUB SUP](/accessibility-crash-course/demo/text-sub-sup)
