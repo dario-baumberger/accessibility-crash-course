@@ -65,4 +65,4 @@
 
 Demo:
 
-- [Form Section Good](/demo/form-fieldset-section-good)
+- [Form Section Good](/accessibility-crash-course/demo/form-fieldset-section-good)

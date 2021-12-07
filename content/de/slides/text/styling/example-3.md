@@ -42,7 +42,7 @@
 
 Demo: 
 
-- [Text Bold / Strong](/demo/text-bold-strong)
+- [Text Bold / Strong](/accessibility-crash-course/demo/text-bold-strong)
 
 ---
 

@@ -91,4 +91,4 @@
 
 Demo: 
 
-- [Text Styling CSS](/demo/text-styles)
+- [Text Styling CSS](/accessibility-crash-course/demo/text-styles)

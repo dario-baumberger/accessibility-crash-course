@@ -8,4 +8,4 @@
 
 Demo:
 
-- [Text Heading Structure (Bad)](/demo/text-h-structure-bad)
+- [Text Heading Structure (Bad)](/accessibility-crash-course/demo/text-h-structure-bad)

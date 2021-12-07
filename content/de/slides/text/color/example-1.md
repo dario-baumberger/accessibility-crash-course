@@ -50,4 +50,4 @@
 
 Demo: 
 
-- [Text Colors](/demo/text-colors)
+- [Text Colors](/accessibility-crash-course/demo/text-colors)

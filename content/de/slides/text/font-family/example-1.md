@@ -40,4 +40,4 @@
 
 Demo:
 
-- [Text Font Family](/demo/text-font-family)
+- [Text Font Family](/accessibility-crash-course/demo/text-font-family)

@@ -65,4 +65,4 @@
 
 Demo:
 
-- [Form Group Bad](/demo/form-fieldset-section-bad)
+- [Form Group Bad](/accessibility-crash-course/demo/form-fieldset-section-bad)

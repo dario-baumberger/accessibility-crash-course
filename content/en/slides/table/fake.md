@@ -46,4 +46,4 @@
 --- 
 
 Demo: 
-- [Table Fake](/demo/table-fake)
+- [Table Fake](/accessibility-crash-course/demo/table-fake)

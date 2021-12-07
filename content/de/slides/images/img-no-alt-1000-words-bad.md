@@ -16,4 +16,4 @@
 
 Demo:
 
-- [Images Background Image](/demo/image-bg)
+- [Images Background Image](/accessibility-crash-course/demo/image-bg)

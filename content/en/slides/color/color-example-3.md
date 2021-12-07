@@ -63,5 +63,5 @@
 </div>
 
 Demo: 
-- [Button Color with Text](/demo/colors-button-text)
+- [Button Color with Text](/accessibility-crash-course/demo/colors-button-text)
 

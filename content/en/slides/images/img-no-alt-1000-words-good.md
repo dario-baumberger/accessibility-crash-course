@@ -16,4 +16,4 @@
 
 Demo:
 
-- [Images Img Tag](/demo/image-img)
+- [Images Img Tag](/accessibility-crash-course/demo/image-img)

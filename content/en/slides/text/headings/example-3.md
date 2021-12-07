@@ -9,4 +9,4 @@
 
 Demo:
 
-- [Text Heading Structure (Good)](/demo/text-h-structure-good)
+- [Text Heading Structure (Good)](/accessibility-crash-course/demo/text-h-structure-good)

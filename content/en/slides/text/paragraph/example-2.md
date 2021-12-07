@@ -33,4 +33,4 @@
 
 Demo:
 
-- [Text Paragraph Empty](/demo/text-p-empty)
+- [Text Paragraph Empty](/accessibility-crash-course/demo/text-p-empty)
