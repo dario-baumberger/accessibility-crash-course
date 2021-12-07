@@ -4,15 +4,12 @@ module.exports = {
     // purgeLayersByDefault: true,
   },
   purge: {
-    enabled: false,
-    content: [
-      './content/**/*.md',
-      './views/**/*.ejs',
-    ],
-  } ,
+    enabled: true,
+    content: ["./content/**/*.md", "./views/**/*.ejs"],
+  },
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
-}
+};

@@ -66,16 +66,6 @@ function ejs2html(
   });
 }
 
-function buildIndex() {
-  let content = contentEJS(md("pages/index"));
-  const header = contentEJS(md("/partials/header"));
-  ejs2html(__dirname + "/views/pages/index.ejs", {
-    content: content,
-    config: config,
-    header: header,
-  });
-}
-
 function buildSlides() {
   Object.keys(presentations.lang).forEach((langKey) => {
     Object.keys(presentations.lang[langKey]).forEach((presKey) => {
@@ -92,8 +82,8 @@ function buildSlides() {
 
         if (parseInt(slideIndex) <= 0) {
           slideIndex = 0;
-          prev = 0;
-          next = 1;
+          prev = langData.paths[0].file;
+          next = langData.paths[1].file;
         } else {
           prev = langData.paths[langsI - 1].file;
           if (langData.paths[langsI + 1]) {
@@ -112,6 +102,7 @@ function buildSlides() {
               config: config,
               name: slide,
               lang: langKey,
+              presentation: presKey,
             },
             slide,
             `${process.env.DIST}/${langKey}/presentation/${presKey}`
@@ -125,19 +116,26 @@ function buildSlides() {
 }
 
 function buildPages() {
-  //const files = fs.readdirSync(__dirname + "/content/**");
   const files = glob.sync([__dirname + "/content/**/pages/**.md"]);
 
-  console.log(files);
-
   for (i = 0; i < files.length; i++) {
-    const name = files[i].split(".")[0];
-    const content = contentEJS(md("pages/" + name));
+    let name = files[i].split(".")[0];
+
+    name = name
+      .replace(__dirname.replace(/\\/g, "/"), "")
+      .replace("/", "")
+      .replace(/^(.*?)\//, "");
+
+    const lang = name.split("/")[0];
+
+    const header = contentEJS(md(`${lang}/partials/header`));
+
+    const content = contentEJS(md(name));
     ejs2html(
       __dirname + "/views/pages/index.ejs",
-      { content: content, config: config },
+      { content: content, config: config, header: header },
       name,
-      `${process.env.DIST}/`
+      `${process.env.DIST}`
     );
   }
 }
@@ -156,7 +154,7 @@ function buildDemo() {
       __dirname + "/views/pages/demo.ejs",
       { content: content, config: config },
       name,
-      "docs/demo/"
+      `${process.env.DIST}/demo`
     );
   }
 }
@@ -166,11 +164,15 @@ function copyImages() {
     fs.mkdirSync("./docs/static/images");
   }
 
-  fse.copy("./public/images/", "./docs/static/images/", function (err) {
-    if (err) {
-      console.error(err);
+  fse.copy(
+    "./public/images/",
+    `./${process.env.DIST}/static/images/`,
+    function (err) {
+      if (err) {
+        console.error(err);
+      }
     }
-  });
+  );
 }
 
 function init() {
@@ -178,11 +180,10 @@ function init() {
     fs.mkdirSync("./docs");
   }
 
-  // buildIndex();
-  //buildSlides();
+  buildSlides();
   buildPages();
-  //buildDemo();
-  //copyImages();
+  buildDemo();
+  copyImages();
 }
 
 init();
