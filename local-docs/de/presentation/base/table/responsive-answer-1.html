@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="tabellen">Tabellen</h1>
+<h2 id="hidden-headers">Hidden Headers</h2>
+<div tabindex="0">Tab Stop</div>
+
+<table>
+    <thead>
+      <tr>
+        <th class="sr-only">Bestand</th>
+        <th>Artikelnummer</th>
+        <th>Produkt</th>
+        <th>Preis</th>
+        <th class="sr-only">Aktion</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td><span class="sr-only">Voll</span><svg style="display: inline-block; height: 20px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-three-quarters" class="svg-inline--fa fa-thermometer-three-quarters fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-23.685 12.876-44.349 32-55.417V160c0-17.673 14.327-32 32-32s32 14.327 32 32v168.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg></td>
+        <td>12345</td>
+        <th>Gala Apfel</th>
+        <td>CHF 0.85</td>
+        <td><button>Löschen</button></td>
+    </tr>
+    <tr>
+        <td><span class="sr-only">Knapp</span><svg style="display: inline-block; height: 20px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-half" class="svg-inline--fa fa-thermometer-half fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V224c0-17.673 14.327-32 32-32s32 14.327 32 32v104.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg></td>
+        <td>234567</td>
+        <th>Gala Jazz</th>
+        <td>CHF 0.90</td>
+        <td><button>Löschen</button></td>
+    </tr>
+    <tr>
+        <td><span class="sr-only">Leer</span><svg style="display: inline-block; height: 20px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thermometer-quarter" class="svg-inline--fa fa-thermometer-quarter fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V288c0-17.673 14.327-32 32-32s32 14.327 32 32v40.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z"></path></svg></td>
+        <td>345678</td>
+        <th>Gala Diwa</th>
+        <td>CHF 0.90</td>
+        <td><button>Löschen</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;sr-only&quot;&gt;Bestand&lt;/th&gt;
+        &lt;th&gt;Artikelnummer&lt;/th&gt;
+        &lt;th&gt;Produkt&lt;/th&gt;
+        &lt;th&gt;Preis&lt;/th&gt;
+        &lt;th class=&quot;sr-only&quot;&gt;Aktion&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;span class=&quot;sr-only&quot;&gt;Voll&lt;/span&gt;&lt;svg style=&quot;display: inline-block; height: 20px;&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;thermometer-three-quarters&quot; class=&quot;svg-inline--fa fa-thermometer-three-quarters fa-w-8&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 256 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M192 384c0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-23.685 12.876-44.349 32-55.417V160c0-17.673 14.327-32 32-32s32 14.327 32 32v168.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/td&gt;
+        &lt;td&gt;12345&lt;/td&gt;
+        &lt;th&gt;Gala Apfel&lt;/th&gt;
+        &lt;td&gt;CHF 0.85&lt;/td&gt;
+        &lt;td&gt;&lt;button&gt;Löschen&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;span class=&quot;sr-only&quot;&gt;Knapp&lt;/span&gt;&lt;svg style=&quot;display: inline-block; height: 20px;&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;thermometer-half&quot; class=&quot;svg-inline--fa fa-thermometer-half fa-w-8&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 256 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V224c0-17.673 14.327-32 32-32s32 14.327 32 32v104.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/td&gt;
+        &lt;td&gt;234567&lt;/td&gt;
+        &lt;th&gt;Gala Jazz&lt;/th&gt;
+        &lt;td&gt;CHF 0.90&lt;/td&gt;
+        &lt;td&gt;&lt;button&gt;Löschen&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;span class=&quot;sr-only&quot;&gt;Leer&lt;/span&gt;&lt;svg style=&quot;display: inline-block; height: 20px;&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;thermometer-quarter&quot; class=&quot;svg-inline--fa fa-thermometer-quarter fa-w-8&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 256 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M192 384c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-23.685 12.876-44.349 32-55.417V288c0-17.673 14.327-32 32-32s32 14.327 32 32v40.583c19.124 11.068 32 31.732 32 55.417zm32-84.653c19.912 22.563 32 52.194 32 84.653 0 70.696-57.303 128-128 128-.299 0-.609-.001-.909-.003C56.789 511.509-.357 453.636.002 383.333.166 351.135 12.225 321.755 32 299.347V96c0-53.019 42.981-96 96-96s96 42.981 96 96v203.347zM208 384c0-34.339-19.37-52.19-32-66.502V96c0-26.467-21.533-48-48-48S80 69.533 80 96v221.498c-12.732 14.428-31.825 32.1-31.999 66.08-.224 43.876 35.563 80.116 79.423 80.42L128 464c44.112 0 80-35.888 80-80z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/td&gt;
+        &lt;td&gt;345678&lt;/td&gt;
+        &lt;th&gt;Gala Diwa&lt;/th&gt;
+        &lt;td&gt;CHF 0.90&lt;/td&gt;
+        &lt;td&gt;&lt;button&gt;Löschen&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<hr>
+<p>Demo:</p>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
+    <a href="/de/presentation/table/responsive-answer-1/table/responsive-question" class="p-6 order-1 text-xs">&#8592; Prev</a>
+    <a href="/de/presentation/table/responsive-answer-1/table/responsive-answer-2" class="p-6 order-3 text-xs">Next &#8594;</a>
+    <a href="/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/presentation/table/responsive-answer-1/table/responsive-answer-2";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/presentation/table/responsive-answer-1/table/responsive-question";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		

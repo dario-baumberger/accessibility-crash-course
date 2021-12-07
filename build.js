@@ -1,14 +1,18 @@
 const fs = require("fs");
 const ejs = require("ejs");
 const marked = require("marked");
-const he = require("he");
 const fse = require("fs-extra");
 const path = require("path");
-const config = {
-  base: "/accessibility-crash-course",
-};
-//const paths = require("./src/configs/base.json");
+const glob = require("glob-all");
+require("dotenv").config({ path: `env/.env.${process.env.NODE_ENV}` });
+
 const presentations = require("./src/configs/presentations/general.json");
+
+const config = {
+  base: process.env.BASE,
+};
+
+console.log(`building ${process.env.NODE_ENV}`);
 
 // md to html
 let md = function (filename) {
@@ -19,41 +23,38 @@ let md = function (filename) {
 };
 
 function contentEJS(content) {
-  //content = he.decode(content, {'encodeEverything': true})
-  content = ejs.render(content, { config: config });
-
-  return content;
+  return ejs.render(content, { config: config });
 }
 
 // ejs to html, pass ejs params and write files to destination
-function ejs2html(pathString, information, name, dist = __dirname + "/docs") {
+function ejs2html(
+  pathString,
+  information,
+  name,
+  dist = __dirname + process.env.DIST
+) {
   fs.readFile(pathString, "utf8", function (err, data) {
     if (err) {
-      console.log("ERROR: " + err);
+      console.error("ERROR: " + err);
       return false;
     }
-
-    let template = ejs.compile(data, {
-        filename: pathString,
-      }),
-      html = template(information);
 
     console.log(
       pathString + " (" + name + ")" + " -> " + dist + "/" + name + ".html"
     );
 
-    console.log("name", name);
+    const template = ejs.compile(data, {
+        filename: pathString,
+      }),
+      html = template(information);
 
     var split = name.split("/");
     var x = split.slice(0, split.length - 1).join("/") + "/";
 
-    console.log(`here: ${x}`);
-    var folder = path.normalize(`${dist}/${x}`);
+    var allDist = `${dist}/${x}`;
+    var folder = path.normalize(allDist);
 
-    if (!fs.existsSync(folder)) {
-      console.log("doesent exist");
-      fs.mkdirSync(folder);
-    }
+    fs.mkdirSync(folder, { recursive: true });
 
     fs.writeFile(dist + "/" + name + ".html", html, function (err) {
       if (err) {
@@ -76,15 +77,9 @@ function buildIndex() {
 }
 
 function buildSlides() {
-  if (!fs.existsSync("./docs/test")) {
-    fs.mkdirSync("./docs/test");
-  }
-
   Object.keys(presentations.lang).forEach((langKey) => {
-    const langs = presentations.lang[langKey];
-
-    Object.keys(langs).forEach((presKey) => {
-      const langData = langs[presKey];
+    Object.keys(presentations.lang[langKey]).forEach((presKey) => {
+      const langData = presentations.lang[langKey][presKey];
 
       for (let langsI = 0; langsI < langData.paths.length; langsI++) {
         const path = langData.paths[langsI];
@@ -100,11 +95,11 @@ function buildSlides() {
           prev = 0;
           next = 1;
         } else {
-          prev = parseInt(slideIndex) - 1;
-          next = parseInt(slideIndex) + 1;
+          prev = langData.paths[langsI - 1].file;
+          if (langData.paths[langsI + 1]) {
+            next = langData.paths[langsI + 1].file;
+          }
         }
-
-        console.log(slide);
 
         if (slide) {
           var content = contentEJS(md(`${langKey}/slides/${slide}`));
@@ -119,12 +114,32 @@ function buildSlides() {
               lang: langKey,
             },
             slide,
-            "docs/test"
+            `${process.env.DIST}/${langKey}/presentation/${presKey}`
           );
+        } else {
+          console.error("nothing");
         }
       }
     });
   });
+}
+
+function buildPages() {
+  //const files = fs.readdirSync(__dirname + "/content/**");
+  const files = glob.sync([__dirname + "/content/**/pages/**.md"]);
+
+  console.log(files);
+
+  for (i = 0; i < files.length; i++) {
+    const name = files[i].split(".")[0];
+    const content = contentEJS(md("pages/" + name));
+    ejs2html(
+      __dirname + "/views/pages/index.ejs",
+      { content: content, config: config },
+      name,
+      `${process.env.DIST}/`
+    );
+  }
 }
 
 function buildDemo() {
@@ -164,7 +179,8 @@ function init() {
   }
 
   // buildIndex();
-  buildSlides();
+  //buildSlides();
+  buildPages();
   //buildDemo();
   //copyImages();
 }

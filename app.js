@@ -16,6 +16,7 @@ const config = {
 
 // md to html
 let md = function (filename) {
+  console.log(filename);
   var path = __dirname + "/content/" + filename + ".md";
   var include = fs.readFileSync(path, "utf8");
   var html = marked(include);
@@ -126,17 +127,20 @@ app.get("/:lang/presentation/:name/:slide", function (req, res) {
   let prev;
   let next;
 
-  if (parseInt(slide) <= 0) {
-    slide = 0;
-    prev = 0;
-    next = 1;
+  if (isNaN(slide)) {
   } else {
-    prev = parseInt(slide) - 1;
-    next = parseInt(slide) + 1;
+    if (parseInt(slide) <= 0) {
+      slide = 0;
+      prev = 0;
+      next = 1;
+    } else {
+      prev = parseInt(slide) - 1;
+      next = parseInt(slide) + 1;
+    }
   }
 
   const content = contentEJS(
-    md(lang + "/slides/" + presentations.names[name].paths[slide].file)
+    md(lang + "/slides/" + presentations.lang[lang][name].paths[slide].file)
   );
 
   res.render("pages/slider", {
