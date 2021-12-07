@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+	/accessibility-crash-course
+
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="texte">Texte</h1>
+<h2 id="schriftarten">Schriftarten</h2>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+</style>
+
+
+<div class="flex flex-wrap">
+<div class="w-1/6">
+    <p>
+        Maybe not so good
+    <p>
+</div>
+<div class="w-2/6">
+    <p style="font-family: 'Homemade Apple', cursive;">lorem ipsum dolor</p>
+</div>
+<div class="w-3/6">
+
+<pre><code class="language-html">    &lt;p style=&quot;font-family: &#39;Homemade Apple&#39;, cursive;&quot;&gt;lorem ipsum dolor&lt;/p&gt;
+</code></pre>
+</div>
+<div class="w-1/6">
+    <p>
+        Good
+    <p>
+</div>
+<div class="w-2/6">
+    <p style="font-family: monospace;">lorem ipsum dolor</p>
+</div>
+<div class="w-3/6">
+
+<pre><code class="language-html">    &lt;p style=&quot;font-family: monospace;&quot;&gt;lorem ipsum dolor&lt;/p&gt;
+</code></pre>
+</div>
+</div>
+
+<p>Demo:</p>
+<ul>
+<li><a href="/demo/text-font-family">Text Font Family</a></li>
+</ul>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
+    <a href="/accessibility-crash-course/de/presentation/base/text/font-family/answer" class="p-6 order-1 text-xs">&#8592; Prev</a>
+    <a href="/accessibility-crash-course/de/presentation/base/text/font-size/question" class="p-6 order-3 text-xs">Next &#8594;</a>
+    <a href="/accessibility-crash-course/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/accessibility-crash-course/presentation/text/font-family/example-1/text/font-size/question";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/accessibility-crash-course/presentation/text/font-family/example-1/text/font-family/answer";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		
