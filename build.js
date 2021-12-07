@@ -159,7 +159,7 @@ function buildDemo() {
   }
 }
 
-function copyImages() {
+function copyFiles() {
   if (!fs.existsSync("./docs/static/images")) {
     fs.mkdirSync("./docs/static/images", { recursive: true });
   }
@@ -167,6 +167,16 @@ function copyImages() {
   fse.copy(
     "./public/images/",
     `./${process.env.DIST}/static/images/`,
+    function (err) {
+      if (err) {
+        console.error(err);
+      }
+    }
+  );
+
+  fse.copy(
+    `./${process.env.DIST}/de/pages/`,
+    `./${process.env.DIST}/`,
     function (err) {
       if (err) {
         console.error(err);
@@ -183,7 +193,7 @@ function init() {
   buildSlides();
   buildPages();
   buildDemo();
-  copyImages();
+  copyFiles();
 }
 
 init();
