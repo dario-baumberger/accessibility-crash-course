@@ -161,7 +161,7 @@ function buildDemo() {
 
 function copyImages() {
   if (!fs.existsSync("./docs/static/images")) {
-    fs.mkdirSync("./docs/static/images");
+    fs.mkdirSync("./docs/static/images", { recursive: true });
   }
 
   fse.copy(
@@ -177,7 +177,7 @@ function copyImages() {
 
 function init() {
   if (!fs.existsSync("./docs")) {
-    fs.mkdirSync("./docs");
+    fs.mkdirSync("./docs", { recursive: true });
   }
 
   buildSlides();

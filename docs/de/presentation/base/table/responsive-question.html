@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+	/accessibility-crash-course
+
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="tabellen">Tabellen</h1>
+<h2 id="hidden-headers">Hidden Headers</h2>
+<div tabindex="0">Tab Stop</div>
+
+<table>
+    <thead>
+      <tr>
+        <th>Artikelnummer</th>
+        <th>Produkt</th>
+        <th>Preis</th>
+        <th class="sr-only">Aktion</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>12345</td>
+        <th>Gala Apfel</th>
+        <td>CHF 0.85</td>
+        <td><button>Löschen</button></td>
+    </tr>
+    <tr>
+        <td>234567</td>
+        <th>Gala Jazz</th>
+        <td>CHF 0.90</td>
+        <td><button>Löschen</button></td>
+    </tr>
+    <tr>
+        <td>345678</td>
+        <th>Gala Diwa</th>
+        <td>CHF 0.90</td>
+        <td><button>Löschen</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Artikelnummer&lt;/th&gt;
+        &lt;th&gt;Produkt&lt;/th&gt;
+        &lt;th&gt;Preis&lt;/th&gt;
+        &lt;th class=&quot;sr-only&quot;&gt;Aktion&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;12345&lt;/td&gt;
+        &lt;th&gt;Gala Apfel&lt;/th&gt;
+        &lt;td&gt;CHF 0.85&lt;/td&gt;
+        &lt;td&gt;&lt;button&gt;Löschen&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;234567&lt;/td&gt;
+        &lt;th&gt;Gala Jazz&lt;/th&gt;
+        &lt;td&gt;CHF 0.90&lt;/td&gt;
+        &lt;td&gt;&lt;button&gt;Löschen&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;345678&lt;/td&gt;
+        &lt;th&gt;Gala Diwa&lt;/th&gt;
+        &lt;td&gt;CHF 0.90&lt;/td&gt;
+        &lt;td&gt;&lt;button&gt;Löschen&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<hr>
+<p>Demo:</p>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
+    <a href="/accessibility-crash-course/de/presentation/base/table/css-attributes" class="p-6 order-1 text-xs">&#8592; Prev</a>
+    <a href="/accessibility-crash-course/de/presentation/base/table/responsive-answer-1" class="p-6 order-3 text-xs">Next &#8594;</a>
+    <a href="/accessibility-crash-course/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/accessibility-crash-course/presentation/table/responsive-question/table/responsive-answer-1";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/accessibility-crash-course/presentation/table/responsive-question/table/css-attributes";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		
