@@ -1,0 +1,537 @@
+{
+  "lang": {
+    "de": {
+      "base": {
+        "paths": [
+          {
+            "file": "generic/cover"
+          },
+          {
+            "file": "generic/audience"
+          },
+          {
+            "file": "generic/goals-expectations"
+          },
+          {
+            "file": "generic/accessi-what-1"
+          },
+          {
+            "file": "generic/accessi-what-2"
+          },
+          {
+            "file": "generic/webseiten-content-1"
+          },
+          {
+            "file": "generic/webseiten-content-2"
+          },
+          {
+            "file": "why/why-1"
+          },
+          {
+            "file": "why/why-2"
+          },
+          {
+            "file": "why/why-3"
+          },
+          {
+            "file": "why/why-4"
+          },
+          {
+            "file": "why/why-5"
+          },
+          {
+            "file": "why/why-6-law-1"
+          },
+          {
+            "file": "why/why-7-law-2"
+          },
+          {
+            "file": "why/why-8"
+          },
+          {
+            "file": "why/why-9"
+          },
+          {
+            "file": "why/why-10"
+          },
+          {
+            "file": "why/why-11"
+          },
+          {
+            "file": "whom/for-whom-1"
+          },
+          {
+            "file": "whom/for-whom-2"
+          },
+          {
+            "file": "whom/for-whom-3"
+          },
+          {
+            "file": "concern/concern-1"
+          },
+          {
+            "file": "concern/concern-2"
+          },
+          {
+            "file": "generic/start"
+          },
+          {
+            "file": "color/color-1"
+          },
+          {
+            "file": "color/color-2"
+          },
+          {
+            "file": "color/color-no-problem-question"
+          },
+          {
+            "file": "color/color-no-problem-answer-1"
+          },
+          {
+            "file": "color/color-no-problem-answer-2"
+          },
+          {
+            "file": "color/color-example-1-question"
+          },
+          {
+            "file": "color/color-example-1-answer-1"
+          },
+          {
+            "file": "color/color-example-1-answer-2"
+          },
+          {
+            "file": "color/color-example-1-answer-3"
+          },
+          {
+            "file": "color/color-example-2"
+          },
+          {
+            "file": "color/color-example-3"
+          },
+          {
+            "file": "color/color-example-4"
+          },
+          {
+            "file": "html/elements"
+          },
+          {
+            "file": "html/elements-question"
+          },
+          {
+            "file": "html/elements-answer"
+          },
+          {
+            "file": "html/elements-examples-1"
+          },
+          {
+            "file": "html/elements-examples-2"
+          },
+          {
+            "file": "html/elements-examples-3"
+          },
+          {
+            "file": "text/text"
+          },
+          {
+            "file": "text/question"
+          },
+          {
+            "file": "text/answer-1"
+          },
+          {
+            "file": "text/answer-2"
+          },
+          {
+            "file": "text/answer-3"
+          },
+          {
+            "file": "text/font-family/question"
+          },
+          {
+            "file": "text/font-family/answer"
+          },
+          {
+            "file": "text/font-family/example-1"
+          },
+          {
+            "file": "text/font-size/question"
+          },
+          {
+            "file": "text/font-size/answer"
+          },
+          {
+            "file": "text/font-size/example-1"
+          },
+          {
+            "file": "text/color/question"
+          },
+          {
+            "file": "text/color/answer"
+          },
+          {
+            "file": "text/color/example-1"
+          },
+          {
+            "file": "text/headings/headings"
+          },
+          {
+            "file": "text/headings/question"
+          },
+          {
+            "file": "text/headings/answer"
+          },
+          {
+            "file": "text/headings/question-2"
+          },
+          {
+            "file": "text/headings/answer-2"
+          },
+          {
+            "file": "text/headings/example-1"
+          },
+          {
+            "file": "text/headings/example-2"
+          },
+          {
+            "file": "text/headings/example-3"
+          },
+          {
+            "file": "text/paragraph/question"
+          },
+          {
+            "file": "text/paragraph/answer"
+          },
+          {
+            "file": "text/paragraph/answer-2"
+          },
+          {
+            "file": "text/paragraph/example-1"
+          },
+          {
+            "file": "text/paragraph/example-2"
+          },
+          {
+            "file": "text/link/question-1"
+          },
+          {
+            "file": "text/link/answer-1"
+          },
+          {
+            "file": "text/link/question-2"
+          },
+          {
+            "file": "text/link/answer-2"
+          },
+          {
+            "file": "text/link/example-1"
+          },
+          {
+            "file": "text/styling/example-1"
+          },
+          {
+            "file": "text/styling/example-2"
+          },
+          {
+            "file": "text/styling/example-3"
+          },
+          {
+            "file": "text/styling/question-simple"
+          },
+          {
+            "file": "text/styling/special-question"
+          },
+          {
+            "file": "text/styling/special-example-1"
+          },
+          {
+            "file": "text/styling/special-question-2"
+          },
+          {
+            "file": "text/styling/special-question-2-hint"
+          },
+          {
+            "file": "text/styling/special-example-2"
+          },
+          {
+            "file": "text/styling/special-question-example-3"
+          },
+          {
+            "test": "teaser-copy"
+          },
+          {
+            "file": "lists/lists"
+          },
+          {
+            "file": "lists/unordered"
+          },
+          {
+            "file": "lists/ordered"
+          },
+          {
+            "file": "lists/easy"
+          },
+          {
+            "file": "lists/easy-more"
+          },
+          {
+            "file": "lists/menus"
+          },
+          {
+            "file": "lists/options"
+          },
+          {
+            "file": "lists/others"
+          },
+          {
+            "file": "table/table"
+          },
+          {
+            "file": "table/reasons"
+          },
+          {
+            "file": "table/fake"
+          },
+          {
+            "file": "table/elements-basics-1"
+          },
+          {
+            "file": "table/elements-basics-2"
+          },
+          {
+            "file": "table/example-1"
+          },
+          {
+            "file": "table/elements-basics-3"
+          },
+          {
+            "file": "table/example-2"
+          },
+          {
+            "file": "table/elements-advanced"
+          },
+          {
+            "file": "table/example-3"
+          },
+          {
+            "file": "table/css-attributes"
+          },
+          {
+            "file": "table/responsive-question"
+          },
+          {
+            "file": "table/responsive-answer-1"
+          },
+          {
+            "file": "table/responsive-answer-2"
+          },
+          {
+            "file": "table/responsive-answer-3"
+          },
+          {
+            "file": "table/conclusion"
+          },
+          {
+            "file": "images/question-1"
+          },
+          {
+            "file": "images/answer-1"
+          },
+          {
+            "file": "images/question-accessibility"
+          },
+          {
+            "file": "images/answer-accessibility"
+          },
+          {
+            "file": "images/semantic"
+          },
+          {
+            "file": "images/background-images"
+          },
+          {
+            "file": "images/img-no-alt"
+          },
+          {
+            "file": "images/img-with-alt"
+          },
+          {
+            "file": "images/img-no-alt-1000-words-bad"
+          },
+          {
+            "file": "images/img-no-alt-1000-words-good"
+          },
+          {
+            "file": "images/complex-chart"
+          },
+          {
+            "file": "images/complex-chart-alternative"
+          },
+          {
+            "file": "form/forms"
+          },
+          {
+            "file": "form/form-tag"
+          },
+          {
+            "file": "form/label"
+          },
+          {
+            "file": "form/label-example"
+          },
+          {
+            "file": "form/fieldset"
+          },
+          {
+            "file": "form/fieldset-section-example-bad"
+          },
+          {
+            "file": "form/fieldset-section-example-good"
+          },
+          {
+            "file": "form/fieldset-group-example-bad"
+          },
+          {
+            "file": "form/fieldset-group-example-good"
+          },
+          {
+            "file": "form/additional"
+          },
+          {
+            "file": "form/disabled"
+          },
+          {
+            "file": "form/readonly"
+          },
+          {
+            "file": "aria-role/aria",
+            "todo": ""
+          },
+          {
+            "file": "aria-role/aria",
+            "todo": ""
+          },
+          {
+            "file": "aria-role/aria",
+            "todo": ""
+          },
+          {
+            "file": "aria-role/img-magic",
+            "todo": ""
+          },
+          {
+            "file": "aria-role/img-magic",
+            "todo": ""
+          },
+          {
+            "file": "aria-role/role-meaning"
+          },
+          {
+            "file": "aria-role/role-button"
+          },
+          {
+            "file": "aria-role/role-list"
+          },
+          {
+            "file": "aria-role/role-listbox"
+          },
+          {
+            "file": "aria-role/role-listbox"
+          },
+          {
+            "file": "aria-role/role-table"
+          },
+          {
+            "file": "aria-role/tabindex"
+          },
+          {
+            "file": "aria-role/tabindex-example-1"
+          },
+          {
+            "file": "aria-role/tabindex-example-2"
+          },
+          {
+            "file": "aria-role/img-boom"
+          },
+          {
+            "file": "aria-role/tabindex-example-3"
+          },
+          {
+            "file": "aria-role/aria"
+          },
+          {
+            "file": "aria-role/aria-hidden"
+          },
+          {
+            "file": "aria-role/aria-hidden-example-text"
+          },
+          {
+            "file": "aria-role/aria-hidden-example-button"
+          },
+          {
+            "file": "aria-role/aria-describedby"
+          },
+          {
+            "file": "aria-role/aria-label"
+          },
+          {
+            "file": "aria-role/aria-label-and-aria-hidden"
+          },
+          {
+            "file": "aria-role/aria-labelledby-and-aria-hidden"
+          },
+          {
+            "file": "aria-role/aria-expanded-example-overlay"
+          },
+          {
+            "file": "aria-role/aria-expanded-example-accordion"
+          },
+          {
+            "file": "css/influence"
+          },
+          {
+            "file": "css/screenreader"
+          },
+          {
+            "file": "screenreader/programs"
+          },
+          {
+            "file": "screenreader/control-focus-mode"
+          },
+          {
+            "file": "screenreader/control-browse-mode"
+          },
+          {
+            "file": "screenreader/control-shortcuts"
+          },
+          {
+            "file": "screenreader/tips"
+          },
+          {
+            "file": "focus/focus"
+          },
+          {
+            "file": "testing/testing"
+          },
+          {
+            "file": "generic/procedure"
+          },
+          {
+            "file": "generic/conclusion"
+          },
+          {
+            "file": "help/help"
+          },
+          {
+            "file": "generic/preview"
+          },
+          {
+            "file": "generic/empty"
+          },
+          {
+            "file": "contact/contact"
+          }
+        ]
+      }
+    }
+  }
+}

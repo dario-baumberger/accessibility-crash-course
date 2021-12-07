@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+	
+
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="images">Images</h1>
+<h2 id="img-tag-no-alt-tag">Img Tag no alt Tag</h2>
+<div tabindex="0">Tab Stop</div>
+
+<img tabindex="0" src="/static/images/monitor_november_cover_2019.gif" />
+
+<br>
+
+<pre><code class="language-html">&lt;img tabindex=&quot;0&quot; src=&quot;&lt;%- config.base %&gt;/static/images/monitor_november_cover_2019.gif&quot; /&gt;
+</code></pre>
+<hr>
+<p>Demo:</p>
+<ul>
+<li><a href="/demo/image-img">Images Img Tag</a></li>
+</ul>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
+    <a href="/de/presentation/base/images/img-no-alt-1000-words-bad" class="p-6 order-1 text-xs">&#8592; Prev</a>
+    <a href="/de/presentation/base/images/complex-chart" class="p-6 order-3 text-xs">Next &#8594;</a>
+    <a href="/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/presentation/images/img-no-alt-1000-words-good/images/complex-chart";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/presentation/images/img-no-alt-1000-words-good/images/img-no-alt-1000-words-bad";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		

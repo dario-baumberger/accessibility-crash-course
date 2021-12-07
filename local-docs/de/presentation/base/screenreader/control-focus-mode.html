@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="text-lg" lang="de">
+	<head>
+		<title>Accessibility / Barrierefreiheit Crash Course</title>
+		<link href="/static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+	
+
+		
+<main class="flex min-h-screen flex-col">
+    <div class="container m-auto mt-20">
+
+        <div class="mb-40 mx-auto max-w-screen-lg">
+            <div class="markdown-body"><h1 id="screenreader">Screenreader</h1>
+<h2 id="steuerung">Steuerung:</h2>
+<h3 id="focus-mode">Focus Mode</h3>
+<ul>
+<li>Tab / Shift + Tab </li>
+<li>Interaktive Elemente / Tabstops</li>
+<li>Formulare</li>
+</ul>
+</div>
+        </div>
+
+
+</div>
+<footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
+    <a href="/de/presentation/base/screenreader/programs" class="p-6 order-1 text-xs">&#8592; Prev</a>
+    <a href="/de/presentation/base/screenreader/control-browse-mode" class="p-6 order-3 text-xs">Next &#8594;</a>
+    <a href="/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+</footer>
+<script>
+    document.addEventListener('keydown', function (event) {
+
+        if (event.ctrlKey && event.key === 'ArrowRight') {
+            window.location.href="/presentation/screenreader/control-focus-mode/screenreader/control-browse-mode";
+        }
+
+        if (event.ctrlKey && event.key === 'ArrowLeft') {
+            window.location.href="/presentation/screenreader/control-focus-mode/screenreader/programs";
+        }
+    });
+</script>
+</main>
+</body>
+</html>
+
+
+		

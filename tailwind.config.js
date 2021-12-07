@@ -5,14 +5,11 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: [
-      './content/**/*.md',
-      './views/**/*.ejs',
-    ],
-  } ,
+    content: ["./content/**/*.md", "./views/**/*.ejs"],
+  },
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
-}
+};

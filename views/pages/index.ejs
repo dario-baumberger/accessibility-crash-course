@@ -1,111 +1,129 @@
-<%- include ('../partials/head') %>
-<div class="flex justify-end">
-    <aside class="bg-teal-700 text-white fixed pt-6 top-0 bottom-0 left-0 min-h-screen overflow-auto hidden md:block md:w-2/6 max-w-1/4">
-        <nav class="mb-12">
+<%- include('../partials/head') %>
+<%- include('../partials/header', {content :`${header}`})-%>
+<div class="block lg:flex justify-start items-start container lg:m-auto mx-6 sm:mx-8 md:mx-16 w-auto">
+    <aside class="pt-4 lg:pt-16 lg:sticky top-0 mr-0 lg:mr-8">
+        <h1 class="sr-only">Hauptnavigation</h1>
+        <nav class="text-xs">
+            <h2 class="font-bold lg:px-10">Themen</h2>
+            <ul class="js-section-links">
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#tools-für-diesen-crash-kurs">Tools für diesen Crash Kurs</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#wieso-">Wieso ?!</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#für-wen">Für wen?</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#wen-betrifft-das">Wen betrifft das?</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#farben">Farben</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#html-elements">HTML Elements</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#text--schrift">Text / Schrift</a>
+                    <ul class="h-0 overflow-hidden">
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#schriftarten">Schriftarten</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#schriftgrössen">Schriftgrössen</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#schriftfarben">Schriftfarben</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#headings--überschriften">Headings / Überschriften</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#text--paragraph">Text / Paragraph</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#link">Link</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#boldstrong">Bold/Strong</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#italickursiv">Italic/Kursiv</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#text-styling--css-styles">Text Styling / CSS Styles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#listen">Listen</a>
+                    <ul class="h-0 overflow-hidden">
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#orderd-list-ol">Orderd List</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#unorderd-list-ul">Unorderd List</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#tabellen">Tabellen</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#bilder">Bilder</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#formulare">Formulare</a>
+                    <ul class="h-0 overflow-hidden">
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#inputs-and-labels">Inputs and Labels</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#fieldset-gruppen">Fieldset (Gruppen)</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#komplexerre-inputs--gruppen--formularabschnitte">Komplexerre Inputs / Gruppen & Formularabschnitte</a>
+                        </li>
+                        <li>
+                            <a class="py-1 px-16 transition-all duration-300 block" href="<%- config.base %>/#aria-attribute-role-attribute-und-tabindex-attribut">Disabled</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#aria-attribute-role-attribute-und-tabindex-attribut">Aria-Attribute, Role-Attribute und Tabindex-Attribut</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#tabindex">Tabindex</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#css-einfluss">CSS Einfluss</a>
+                </li>
+                <li>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/#screenreader">Screenreader</a>
+                </li>
+            </ul>
+            <h2 class="font-bold lg:px-10 pt-6">Links</h2>
             <ul>
                 <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#tools-für-diesen-crash-kurs">Tools für diesen Crash Kurs</a>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/de/presentation/base/generic/cover.html">Presentation</a>
                 </li>
                 <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#wieso-">Wieso ?!</a>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/de/challenges">Challenges</a>
                 </li>
+            </ul>
+            <h2 class="font-bold lg:px-10 pt-6">Sprachen</h2>
+            <ul>
                 <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#für-wen">Für wen?</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#wen-betrifft-das">Wen betrifft das?</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#farben">Farben</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#html-elements">HTML Elements</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#text--schrift">Text / Schrift</a>
-                    <ul>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#schriftarten">Schriftarten</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#schriftgrössen">Schriftgrössen</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#schriftfarben">Schriftfarben</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#headings--überschriften">Headings / Überschriften</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#text--paragraph">Text / Paragraph</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#link">Link</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#boldstrong">Bold/Strong</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#italickursiv">Italic/Kursiv</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#text-styling--css-styles">Text Styling / CSS Styles</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#listen">Listen</a>
-                    <ul>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#orderd-list-ol">Orderd List</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#unorderd-list-ul">Unorderd List</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#tabellen">Tabellen</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#bilder">Bilder</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#formulare">Formulare</a>
-                    <ul>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#inputs-and-labels">Inputs and Labels</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#fieldset-gruppen">Fieldset (Gruppen)</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#komplexerre-inputs--gruppen--formularabschnitte">Komplexerre Inputs / Gruppen & Formularabschnitte</a>
-                        </li>
-                        <li>
-                            <a class="py-2 px-16 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#aria-attribute-role-attribute-und-tabindex-attribut">Disabled</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#aria-attribute-role-attribute-und-tabindex-attribut">Aria-Attribute, Role-Attribute und Tabindex-Attribut</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#tabindex">Tabindex</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#css-einfluss">CSS Einfluss</a>
-                </li>
-                <li>
-                    <a class="py-2 px-10 hover:bg-teal-900 transition-all duration-300 block" href="<%- config.base %>/#screenreader">Screenreader</a>
+                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="<%- config.base %>/en">Englisch</a>
                 </li>
             </ul>
         </nav>
-        <a href="<%- config.base %>/presentation/0" class="bg-teal-700 hover:bg-teal-900 fixed left-0 w-2/6 bottom-0 h-12 py-2 px-4 transition-all duration-300 border-t border-white">Presentation</a>
     </aside>
-    <main class="flex min-h-screen flex-col md:w-4/6">
-<div class="mx-8 w-auto md:mx-auto mt-20 text-lg lg:max-w-screen-md md:max-w-screen-sm">
-<%- content %>
-</div>
-</div>
+    <main class="lg:w-4/6 pt-16">
+        <div class="text-lg">
+        <%- content %>
+        </div>
+    </div>
 <%- include('../partials/footer')-%>
+

@@ -1,0 +1,8 @@
+# Aria Attribute, Tabindex & Role Attribute
+
+- Erweitere "Semantik"
+- Eingriff die eigentliche Semantik
+- Erweiterte Informationen
+- Vorsichtig verwenden
+- Korrekt kombinieren
+- Nicht zum "Reparieren" von Semantik gedacht 

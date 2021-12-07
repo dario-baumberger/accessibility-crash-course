@@ -1,128 +1,189 @@
-const fs = require('fs');
+const fs = require("fs");
 const ejs = require("ejs");
-const marked = require ('marked');
-const he = require ('he');
-const fse = require('fs-extra');
+const marked = require("marked");
+const fse = require("fs-extra");
+const path = require("path");
+const glob = require("glob-all");
+require("dotenv").config({ path: `env/.env.${process.env.NODE_ENV}` });
+
+const presentations = require("./src/configs/presentations/general.json");
+
 const config = {
-    base: '/accessibility-crash-course'
-}
+  base: process.env.BASE,
+};
+
+console.log(`building ${process.env.NODE_ENV}`);
 
 // md to html
 let md = function (filename) {
-    const path = __dirname +"/content/" + filename + '.md';
-    const include = fs.readFileSync (path, 'utf8');
-    const html = marked (include);
-    return '<div class="markdown-body">' + html + "</div>"
+  const path = __dirname + "/content/" + filename + ".md";
+  const include = fs.readFileSync(path, "utf8");
+  const html = marked(include);
+  return '<div class="markdown-body">' + html + "</div>";
 };
 
-function contentEJS (content){
-    //content = he.decode(content, {'encodeEverything': true})
-    content = ejs.render(content, {'config': config});
-
-    return content;
+function contentEJS(content) {
+  return ejs.render(content, { config: config });
 }
 
 // ejs to html, pass ejs params and write files to destination
-function ejs2html(path, information, name = path.split("/").pop().split('.')[0], dist = __dirname+'/docs') {
-    fs.readFile(path, 'utf8', function (err, data) {
-        if (err) {
-            console.log("ERROR: " + err);
-            return false;
-        }
-
-            let template = ejs.compile(data, {
-                filename: path
-            }),
-            html = template(information);
-
-        console.log(path + ' ('+name+')' + ' -> ' + dist+name + '.html')
-
-        fs.writeFile(dist+'/'+name + '.html', html, function (err) {
-            if (err) {
-                console.log(err);
-                return false
-            }
-            return true;
-        });
-    });
-}
-
-function buildIndex(){
-    let content = contentEJS(md('readme'));
-    ejs2html(__dirname + '/views/pages/index.ejs', {'content': content, 'config': config} );
-}
-
-function buildSlides(){
-    let files = fs.readdirSync(__dirname + '/content/slides');
-
-    if (!fs.existsSync('./docs/presentation')){
-        fs.mkdirSync('./docs/presentation');
+function ejs2html(
+  pathString,
+  information,
+  name,
+  dist = __dirname + process.env.DIST
+) {
+  fs.readFile(pathString, "utf8", function (err, data) {
+    if (err) {
+      console.error("ERROR: " + err);
+      return false;
     }
 
-    for (i = 0; i < files.length; i++) {
+    console.log(
+      pathString + " (" + name + ")" + " -> " + dist + "/" + name + ".html"
+    );
 
-        let slide = i;
+    const template = ejs.compile(data, {
+        filename: pathString,
+      }),
+      html = template(information);
 
+    var split = name.split("/");
+    var x = split.slice(0, split.length - 1).join("/") + "/";
+
+    var allDist = `${dist}/${x}`;
+    var folder = path.normalize(allDist);
+
+    fs.mkdirSync(folder, { recursive: true });
+
+    fs.writeFile(dist + "/" + name + ".html", html, function (err) {
+      if (err) {
+        console.log(err);
+        return false;
+      }
+      return true;
+    });
+  });
+}
+
+function buildSlides() {
+  Object.keys(presentations.lang).forEach((langKey) => {
+    Object.keys(presentations.lang[langKey]).forEach((presKey) => {
+      const langData = presentations.lang[langKey][presKey];
+
+      for (let langsI = 0; langsI < langData.paths.length; langsI++) {
+        const path = langData.paths[langsI];
+
+        const slide = path.file;
+
+        let slideIndex = langsI;
         let prev;
         let next;
 
-        if(parseInt(slide) <= 0){
-            slide = 0;
-            prev = 0;
-            next = 1;
-        }else{
-            prev = parseInt(slide) -1;
-            next = parseInt(slide) +1;
+        if (parseInt(slideIndex) <= 0) {
+          slideIndex = 0;
+          prev = langData.paths[0].file;
+          next = langData.paths[1].file;
+        } else {
+          prev = langData.paths[langsI - 1].file;
+          if (langData.paths[langsI + 1]) {
+            next = langData.paths[langsI + 1].file;
+          }
         }
 
-        var content = contentEJS(md('slides/' + i));
-        ejs2html(__dirname + '/views/pages/slider.ejs', {'content': content, 'prev': prev, 'next': next, 'config': config}, i, 'docs/presentation/');
-    }
+        if (slide) {
+          var content = contentEJS(md(`${langKey}/slides/${slide}`));
+          ejs2html(
+            __dirname + "/views/pages/slider.ejs",
+            {
+              content: content,
+              prev: prev,
+              next: next,
+              config: config,
+              name: slide,
+              lang: langKey,
+              presentation: presKey,
+            },
+            slide,
+            `${process.env.DIST}/${langKey}/presentation/${presKey}`
+          );
+        } else {
+          console.error("nothing");
+        }
+      }
+    });
+  });
 }
 
-function buildDemo(){
-    const demos = fs.readdirSync(__dirname + '/content/demo');
+function buildPages() {
+  const files = glob.sync([__dirname + "/content/**/pages/**.md"]);
 
-    if (!fs.existsSync('./docs/demo')){
-        fs.mkdirSync('./docs/demo');
-    }
+  for (i = 0; i < files.length; i++) {
+    let name = files[i].split(".")[0];
 
-    for (i = 0; i < demos.length; i++) {
-        const name = demos[i].split('.')[0]
-        const content = contentEJS(md('demo/' +  name));
-        ejs2html(__dirname + '/views/pages/demo.ejs', {'content': content, 'config': config}, name, 'docs/demo/');
-    }
+    name = name
+      .replace(__dirname.replace(/\\/g, "/"), "")
+      .replace("/", "")
+      .replace(/^(.*?)\//, "");
+
+    const lang = name.split("/")[0];
+
+    const header = contentEJS(md(`${lang}/partials/header`));
+
+    const content = contentEJS(md(name));
+    ejs2html(
+      __dirname + "/views/pages/index.ejs",
+      { content: content, config: config, header: header },
+      name,
+      `${process.env.DIST}`
+    );
+  }
+}
+
+function buildDemo() {
+  const demos = fs.readdirSync(__dirname + "/content/demo");
+
+  if (!fs.existsSync("./docs/demo")) {
+    fs.mkdirSync("./docs/demo");
+  }
+
+  for (i = 0; i < demos.length; i++) {
+    const name = demos[i].split(".")[0];
+    const content = contentEJS(md("demo/" + name));
+    ejs2html(
+      __dirname + "/views/pages/demo.ejs",
+      { content: content, config: config },
+      name,
+      `${process.env.DIST}/demo`
+    );
+  }
 }
 
 function copyImages() {
+  if (!fs.existsSync("./docs/static/images")) {
+    fs.mkdirSync("./docs/static/images");
+  }
 
-    if (!fs.existsSync('./docs/static/images')){
-        fs.mkdirSync('./docs/static/images');
+  fse.copy(
+    "./public/images/",
+    `./${process.env.DIST}/static/images/`,
+    function (err) {
+      if (err) {
+        console.error(err);
+      }
     }
-
-    fse.copy('./public/images/', './docs/static/images/', function (err) {
-        if (err) {
-            console.error(err);
-        }
-    });
+  );
 }
 
 function init() {
-    if (!fs.existsSync('./docs')){
-        fs.mkdirSync('./docs');
-    }
+  if (!fs.existsSync("./docs")) {
+    fs.mkdirSync("./docs");
+  }
 
-
-
-    buildIndex();
-    buildSlides();
-    buildDemo();
-    copyImages();
+  buildSlides();
+  buildPages();
+  buildDemo();
+  copyImages();
 }
 
 init();
-
-
-
-
-
