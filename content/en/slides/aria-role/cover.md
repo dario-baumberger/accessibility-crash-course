@@ -3,7 +3,7 @@
 - `role="foo"`
 - `aria-blah="foo"`
 
-<img src="<%- config.base %>/static/images/cringe.gif" class="w-2/5" />
+<img src="<%- config.base %>/assets/images/cringe.gif" class="w-2/5" />
 
 ---
 

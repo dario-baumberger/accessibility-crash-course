@@ -3,27 +3,32 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "prestart": "npx tailwindcss build src/css/styles.css -o public/css/styles.css",
-    "start": "node app.js",
-    "build": "cross-env NODE_ENV=production node build.js",
-    "postbuild": "npx tailwindcss build src/css/styles.css -o docs/static/css/styles.css",
+    "prestart": "npx tailwindcss -c ./tailwind.config.cjs -i ./src/css/styles.css -o ./public/css/styles.css",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node app.js",
+    "build": "cross-env NODE_ENV=production node --experimental-modules --es-module-specifier-resolution=node build.js",
+    "postbuild": "npx tailwindcss -c ./tailwind.config.cjs -i ./src/css/styles.css -o ./docs/assets/css/styles.css",
     "build:local": "cross-env NODE_ENV=local node build.js",
-    "postbuild:local": "npx tailwindcss build src/css/styles.css -o local-docs/static/css/styles.css"
+    "postbuild:local": "npx tailwindcss -c ./tailwind.config.cjs -i ./src/css/styles.css -o ./local-docs/assets/css/styles.css"
   },
   "author": "Dario Baumberger",
   "license": "ISC",
   "dependencies": {
     "cross-env": "^7.0.3",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "fs-extra": "^9.1.0",
-    "glob": "^7.1.6",
+    "glob": "^7.2.0",
     "glob-all": "^3.2.1",
     "he": "^1.2.0",
-    "marked": "^1.2.9",
-    "tailwindcss": "^1.9.6"
+    "marked": "^1.2.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.13"
   }
 }

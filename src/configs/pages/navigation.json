@@ -1,0 +1,155 @@
+{
+  "sidebar": {
+    "texts":{
+      "menu": "Hauptnavigation",
+      "submenu": "Untermenü",
+      "topics": "Themen",
+      "links": "Links",
+      "languages": "Sprachen"
+    },
+    "topics": [
+      {
+        "name": "Tools",
+        "link": "#tools-für-diesen-crash-kurs"
+      },
+      {
+        "name": "Wieso",
+        "link": "#wieso"
+      },
+      {
+        "name": "Für wen",
+        "link": "#für-wen"
+      },
+      {
+        "name": "Wen betrifft das",
+        "link": "#wen-betrifft-das"
+      },
+      {
+        "name": "Farben",
+        "link": "#farben"
+      },
+      {
+        "name": "HTML Elemente",
+        "link": "#html-elements"
+      },
+      {
+        "name": "Text / Schrift",
+        "link": "#text--schrift",
+        "children": [
+          {
+            "name": "Schriftarten",
+            "link": "#schriftarten"
+          },
+          {
+            "name": "Schriftgrössen",
+            "link": "#schriftgrössen"
+          },
+          {
+            "name": "Schriftfarben",
+            "link": "#schriftfarben"
+          },
+          {
+            "name": "Headings / Überschriften",
+            "link": "#headings--überschriften"
+          },
+          {
+            "name": "Text / Paragraph",
+            "link": "#text--paragraph"
+          },
+          {
+            "name": "Link",
+            "link": "#link"
+          },
+          {
+            "name": "Bold/Strong",
+            "link": "#boldstrong"
+          },
+          {
+            "name": "Italic/Kursiv",
+            "link": "#italickursiv"
+          },
+          {
+            "name": "Text Styling / CSS Styles",
+            "link": "##text-styling--css-styles"
+          }
+        ]
+      },
+      {
+        "name": "Listen",
+        "link": "#listen",
+        "children": [
+          {
+            "name": "Orderd List",
+            "link": "#orderd-list-ol"
+          },
+          {
+            "name": "Unorderd List",
+            "link": "#unorderd-list-ul"
+          }
+        ]
+      },
+      {
+        "name": "Tabellen",
+        "link": "#tabellen"
+      },
+      {
+        "name": "Bilder",
+        "link": "#bilder"
+      },
+      {
+        "name": "Formulare",
+        "link": "#formulare",
+        "children": [
+          {
+            "name": "Inputs and Labels",
+            "link": "#inputs-and-labels"
+          },
+          {
+            "name": "Fieldset (Gruppen)",
+            "link": "#fieldset-gruppen"
+          },
+          {
+            "name": "Komplexerre Inputs / Gruppen & Formularabschnitte",
+            "link": "#komplexerre-inputs--gruppen--formularabschnitte"
+          },
+          {
+            "name": "Disabled",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Attribute",
+        "link": "#aria-attribute-role-attribute-und-tabindex-attribut"
+      },
+      {
+        "name": "Tabindex",
+        "link": "#tabindex"
+      },
+      {
+        "name": "CSS Einfluss",
+        "link": "#css-einfluss"
+      },
+      {
+        "name": "Screenreader",
+        "link": "#screenreader"
+      }
+    ],
+    "links": [
+      {
+        "name": "Presentation (In Progress)",
+        "link": "/de/presentation/base/generic/cover"
+      },
+      {
+        "name": "Challenges (Coming soon)",
+        "link": "#"
+      }
+    ],
+    "languages": [
+      {
+        "name": "English (Coming soon)",
+        "link": "/#"
+      }
+    ]
+  }
+}

@@ -4,7 +4,7 @@
 
 *Wieso gibt es Schriftgrössen?*
 
-<img src="<%- config.base %>/static/images/small.gif" class="w-2/5" />
+<img src="<%- config.base %>/assets/images/small.gif" class="w-2/5" />
 
 ---
 

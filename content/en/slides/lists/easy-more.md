@@ -2,9 +2,9 @@
 
 <div class="flex items-center justify-between">
 
-<img src="<%- config.base %>/static/images/easy.gif" class="w-2/5" />
+<img src="<%- config.base %>/assets/images/easy.gif" class="w-2/5" />
 
-<img src="<%- config.base %>/static/images/more.gif" class="w-2/5" />
+<img src="<%- config.base %>/assets/images/more.gif" class="w-2/5" />
 </div>
 
 ---

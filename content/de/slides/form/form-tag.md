@@ -3,12 +3,12 @@
 
 <div tabindex="0">Tab Stop</div>
 
-<img tabindex="0" src="<%- config.base %>/static/images/boerse.png" class="w-3/4" alt="Bild mit Börsendaten" />
+<img tabindex="0" src="<%- config.base %>/assets/images/boerse.png" class="w-3/4" alt="Bild mit Börsendaten" />
 
 <br />
 
 ```
-<img tabindex="0" src="<%- config.base %>/static/images/boerse.png" class="w-3/4" alt="Bild mit Börsendaten" />
+<img tabindex="0" src="<%- config.base %>/assets/images/boerse.png" class="w-3/4" alt="Bild mit Börsendaten" />
 ```
 
 ---

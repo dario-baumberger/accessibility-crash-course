@@ -1,6 +1,6 @@
 # Accessibility / Barrierefreiheit
 
-<img src="<%- config.base %>/static/images/wtf.png" class="w-3/5" />
+<img src="<%- config.base %>/assets/images/wtf.png" class="w-3/5" />
 
 ---
 
