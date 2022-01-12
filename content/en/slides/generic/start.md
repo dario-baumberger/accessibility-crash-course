@@ -1,7 +1,7 @@
 # Start
 
 
-<img src="<%- config.base %>/static/images/go.gif" class="w-2/5" />
+<img src="<%- config.base %>/assets/images/go.gif" class="w-2/5" />
 
 ---
 

@@ -1,10 +1,11 @@
-## Introduction
+## Einleitung
+Einführung in das Thema Web Accessibility (A11Y). Das Primäre Ziel dieses Crash-Kurses, ist es ein Verständinis für die Barrierefreiheit zu entwicklen. Im Bereich A11Y ist nicht alles schwarz auf weiss vorgegeben. Für ein Vorhaben gibt es meistens mehrer mögliche Lösungswege. 
 
 ---
 
 <br />
 
-## Tools für diesen Crash Kurs
+## Tools für diesen Crashkurs
 Die Demos schaust du dir am besten mit folgenden Tools an. Einige Probleme sind nicht immer gleich auf den ersten Blick nur im Browser Fenster ersichtlich.
 - [Wave Browser Extension](https://wave.webaim.org/extension/)
 - [NVDA Screenreader](https://www.nvaccess.org/download/)
@@ -18,13 +19,14 @@ Siehe auch [Steuerung Screenreader](#steuerung)
 
 <br />
 
-## Wieso ?!
+## Wieso
 - Gesetzliche Rahmenbedingungen in der Schweiz
   - [Bundesverfassung Art. 8 (BV Art. 8)](https://www.admin.ch/opc/de/classified-compilation/19995395/index.html#a8)
   - [Behindertengleichstellungsgesetz (BehiG)](https://www.admin.ch/opc/de/classified-compilation/20002658/index.html)
   - [Behindertengleichstellungsverordnung (BehiV)](https://www.admin.ch/opc/de/classified-compilation/20031813/index.html)
 - [Zertifikat](https://www.access-for-all.ch/ch/zertifizierung.html) (Aushängeschild)
 - Grössere Zielgruppen
+- User Experience
 - Eigennutzen
 
 <br />
@@ -35,7 +37,7 @@ Siehe auch [Steuerung Screenreader](#steuerung)
 > [...] Bestehende Webseiten des Bundes müssen demnach bis zum 31.12.2010 den Bedingungen der WCAG 2.0 entsprechen und mindestens die Konformitätsstufe AA erreichen. Neue Websites müssen ab sofort diese Richtlinien einhalten. [...]
 
 Quellen:
-- [https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
+- [Zugang für alle - Gesetz Schweiz](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
 
 <br />
 
@@ -47,10 +49,10 @@ Quellen:
 > Grösstenteils stehen bei Privatunternehmen wirtschaftliche Aspekte bei der Umsetzung von Barrierefreiheit im Vordergrund. Eine gesamtheitliche Betrachtung von Accessibility zeigt, dass wirtschaftliche Kriterien für einen «Zugang für alle» sprechen – wer verzichtet schon freiwillig auf 15-25% der User.
 
 Quellen:
-- [https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
+- [Zugang für alle - Gesetz Schweiz](https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html)
 
 
-Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online-Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für blind Personen nicht immer ganz einfach ist). Das Zertifikat kann als "Aushängeschild" verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
+Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online-Shop, könnte sehr attraktiv sein für bspw. blinde Personen (gehen wir mal davon aus, dass Einkaufen für blinde Personen nicht immer ganz einfach ist). Das Zertifikat kann als „Aushängeschild“ verwendet werden. Und auch Sie selbst können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?
 
 <br />
 
@@ -59,7 +61,7 @@ Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Pr
 <br />
 
 ## Für wen?
-In erster Linie für eingeschränkte Personen. Ja, gut ok, aber wer alles gehört zu eingeschränkten Personen? Unter anderen folgende:
+In erster Linie für eingeschränkte Personen. Soweit so gut, aber was heisst das genau, wer alles gehört zu eingeschränkten Personen? Unter anderem folgende:
 - Komplett Blinde Personen
 - Personen mit anderen Sehschwächen
 - Taube Personen
@@ -91,22 +93,22 @@ In erster Linie für eingeschränkte Personen. Ja, gut ok, aber wer alles gehör
 
 ## Farben
 
-Beginnen wir mit etwas einfacherem, das sollte sicher noch für alle verständlich sein.
+Beginnen wir mit etwas Einfacherem, das sollte sicher noch für alle verständlich sein.
 
-Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerführung. Wir alle verbinden automatisch gewisse Farben mit gewissen Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teil intuitiv auf diese Farben (Verkehrsampel). So ist beispielsweise ein grüner Löschen-Button für uns komisch. Ein roter Löschen-Button hingegen ist für uns logisch.
+Farben sind nicht nur dekorativ, oft helfen sie auch bei der Benutzerführung. Wir alle verbinden automatisch gewisse Farben mit Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teils intuitiv auf diese Farben (Verkehrsampel). So ist etwa ein grüner Löschen-Button für uns komisch. Ein roter Löschen-Button hingegen ist für uns logisch.
 
-Demo: 
+Demo:
 - <a target="_blank" href="<%- config.base %>/demo/colors-button-empty">Button empty (Bad)</a>
 
 <br>
 
-Farben alleine reichen jedoch nicht. Beim Beispiel vom Button wird noch ein Text oder ein Icon (benötigt in aller Regel auch noch einen Text) verwendet. 
+Farben allein reichen jedoch nicht. Beim Beispiel vom Button wird noch ein Text oder ein Icon (benötigt in aller Regel auch noch einen Text) verwendet.
 
-Demo: 
+Demo:
 - <a target="_blank" href="<%- config.base %>/demo/colors-button-text">Button Color with Text</a>
 - <a target="_blank" href="<%- config.base %>/demo/colors-button-icon">Button Icon</a>
 
-Einerseits wäre die Farbe alleine nicht aussagekräftig genug. Und andererseits können nicht alle Menschen alle Farben wahr nehmen: 
+Einerseits wäre die Farbe allein nicht aussagekräftig genug. Und andererseits können nicht alle Menschen alle Farben wahr nehmen:
 
 - Achromasie: Vollständige Farbenblindheit, Betroffene sehen nur Schwarz, Weiss und Graustufen
 - Monochromasie: Betroffene nehmen nur eine Farbe wahr
@@ -115,14 +117,14 @@ Einerseits wäre die Farbe alleine nicht aussagekräftig genug. Und andererseits
   - Grünblindheit (Deuteranopie): Bei dieser Form der Rot-Grün-Blindheit fehlen M-Zapfen, sodass Betroffene die Farbe Grün nicht wahrnehmen und mit Rot verwechseln
   - Blaublindheit (Tritanopie): Auch Blau-Gelb-Blindheit genannt, da Betroffene die Farbe Blau nicht wahrnehmen und mit Gelb verwechseln. Es fehlen S-Zapfen
 - Teilweise Blind
-- Blind 
+- Blind
 
 
-Stand 2019 gibt es rund 377'000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:
+Stand 2019 gibt es rund 377’000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:
 
 - Ausreichende Farbkontraste
-- Klare Farben 
-- Farben alleine reichen nicht
+- Klare Farben
+- Farben allein reichen nicht
 - Text Beschreibungen
 
 <br/><br/>
@@ -143,8 +145,8 @@ Links:
 
 Quellen:
 
-- [https://www.augenaerzte-bern.ch/farbsehstoerungen/](https://www.augenaerzte-bern.ch/farbsehstoerungen/)
-- [https://www.szblind.ch/fileadmin/pdfs/forschung/Fachheft-Sehbehinderung-Schweiz-2019-de-BF-v01.pdf](https://www.szblind.ch/fileadmin/pdfs/forschung/Fachheft-Sehbehinderung-Schweiz-2019-de-BF-v01.pdf)
+- [Augenärzte Bern - Farbsehstoerungen](https://www.augenaerzte-bern.ch/farbsehstoerungen/)
+- [SZBLIND - Fachheft Sehbehinderung Schweiz 2019](https://www.szblind.ch/fileadmin/pdfs/forschung/Fachheft-Sehbehinderung-Schweiz-2019-de-BF-v01.pdf)
 
 
 
@@ -158,7 +160,7 @@ Quellen:
 
 ## HTML Elements
 
-| Semantic Elements | Not semantic Elements |
+| Semantische Elemente | Nicht semantische Elemente |
 | ----------------- | --------------------- |
 | `<article>`       | `<div>`               |
 | `<aside>`         | `<span>`              |
@@ -174,11 +176,11 @@ Quellen:
 (Nicht abschliessende Liste)
 
 - Semantische Elemente geben dem Element eine Bedeutung.
-- Alles, was mit semantischen Elementen gemacht werden kann, ist auch mit nicht semantischen Elementen machbar (man sollte das jedoch nicht tun)
+- Alles, was mit semantischen Elementen gemacht werden kann, ist auch mit nicht semantischen Elementen machbar (man sollte das jedoch nicht tun).
 
 
 
-Links: 
+Links:
 
 - [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
@@ -198,15 +200,15 @@ Textinhalten in HTML explizit ausgezeichnet werden. Überschriften als Überschr
 Paragraphen `<p>`, etc. Speziell blinde Menschen, allgemein aber für die Verwendung jeglicher maschineller
 Assistenztechnologien oder Suchmaschinen, sind darauf angewiesen, dass jegliche visuell sichtbare semantische
 Struktur aus dem HTML-Code ersichtlich ist. Visuelle Hervorhebung umfasst Schriftgrössen, Schriftarten,
-Unterstreichungen, Nummerierungen, Einfärbungen, vergrösserte Abstände aber auch spezielle
-Positionierungen von Inhalten, z.B. durch Info-Kästen.
+Unterstreichungen, Nummerierungen, Einfärbungen, vergrösserte Abstände, aber auch spezielle
+Positionierungen von Inhalten, z. B. durch Info-Kästen.
 
 <br />
 <br />
 
 ### Schriftarten
 
-Schriften spielen eine wichtige Rolle auf Webseiten. Auch der beste Text kann mit einer unleserlichen Schrift nicht gelesen werden. Schriften sollten gut lesbar sein. 
+Schriften spielen eine wichtige Rolle auf Webseiten. Auch der beste Text kann mit einer unleserlichen Schrift nicht gelesen werden. Schriften sollten lesbar sein.
 
 Demo:
 
@@ -217,7 +219,7 @@ Demo:
 
 ### Schriftgrössen
 
-Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften können nicht von allen Menschen gelesen werden. 
+Mit der Schriftart allein ist es allerdings nicht getan. Zu kleine Schriften können nicht von allen Menschen gelesen werden.
 
 Demo:
 
@@ -231,7 +233,7 @@ Demo:
 
 Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der Farbe `#efefef` auf weissem Hintergrund `#ffffff` (Contrast Ratio 1.14:1) ist selbst für gut sehende nicht wirklich lesbar. Bei der Berechnung des Kontrastes spielen nicht nur die Hintergrund- und die Vordergrund-Farbe eine Rolle, sondern auch die Schriftgrösse.
 
-Demo: 
+Demo:
 
 - [Text Colors (Wave Toolbar)](/accessibility-crash-course/demo/text-colors)
 
@@ -254,9 +256,9 @@ Es gibt sechs Headign Typen:
 
 
 
-*Was ist dabei zu beachten?* 
+*Was ist dabei zu beachten?*
 
-- Mehrere H1 sind ok, sofern in `<main>` Element ein H1 vorhanden ist. (SEO Spezialisten und Barrierefreiheit Spezialisten sind sich dort teilweise nicht einig. Je nach Applikation bspw. bei einer Anwendung hinter einem Login, spielt SEO wohl keine allzu grosse Rolle mehr.)
+- Mehrere H1 sind ok, sofern im `<main>` Element ein H1 vorhanden ist. (SEO  und Barrierefreiheit können teilweise unterschiedliche Anforderungen haben. Je nach Applikation, bspw. bei einer Anwendung hinter einem Login, spielt SEO in der Regel keine allzu grosse Rolle mehr.)
 - Keine Heading Levels überspringen
 
 
@@ -279,12 +281,12 @@ Demo:
 ### Text / Paragraph
 
 Leere `<p>` Elemente werden durch assistive Technologien und Suchmaschinen als leere Paragraphen
-interpretiert und sind somit semantisch besetzt (Teils Screenreader abhängig). Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
+interpretiert und sind somit semantisch besetzt (teils Screenreader abhängig). Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
 der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.
 
 
 
-Semantisch nicht korrekt: `<div>Ich bin ein Text in einem div</div>` 
+Semantisch nicht korrekt: `<div>Ich bin ein Text in einem div</div>`
 
 Semantisch korrekt: `<p>Ich bin ein Text in einem p<p>`
 
@@ -305,33 +307,33 @@ Demo:
 
 ### Link:
 
-*Was ist ein Link / Was macht ein Link?* 
+*Was ist ein Link / was macht ein Link?*
 
-- Verlinken von Seiten
+- Seiten verlinken
 - window.location verändern
 
 *Welche Möglichkeiten gibt es, um das zu machen?*
 
 - `<a>`
-- Java Script
-    - Custom
-    - Framework Handler
+- JavaScript
+  - Custom
+  - Framework Handler
 
-Semantisch nicht korrekt: `<div onclick="window.location.href='/';">Klick mich</div>` 
+Semantisch nicht korrekt: `<div onclick="window.location.href='/';">Klick mich</div>`
 
 Semantisch korrekt: `<a href="/">Klick mich<a>`
 
 
 
-`<a>` wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt . Ein `<div>` kann auch klickbar gemacht werden, auch das "verlinken" ist möglich. Browser und Screenreader erkennen zudem mit einem `<a>` Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus Cursor (Pointer). Mit JavaScript und CSS alleine ist nicht alles getan. Die Verwendung, der semantisch korrekten Elemente ist wichtig und bietet oft standard Verhalten, welche wir selber bauen müssten.
+`<a>` wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt. Ein `<div>` kann auch klickbar gemacht werden, auch das „verlinken“ ist möglich. Browser und Screenreader erkennen zudem mit einem `<a>` Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus-Cursor (Pointer). Mit JavaScript und CSS allein ist nicht alles getan. Die Verwendung, der semantisch korrekten Elemente ist wichtig und bietet oft Standard Verhalten, welche wir selbst bauen müssten.
 
-Web Frameworks wie Angular oder React bieten eigene Handlers an. Diese Router Handler fügen in der Regel auch gleich ein 'href="blah"' Attribut auf dem entsprechenden Element ein. Für Screenreader ist so klar, um was es sich handelt: Ein Link mit Ziel XY. Die Browser markieren besuchte Links zusätzlich noch als besucht. Auf diese Informationen kann der Screenreader auch zugreifen.
+Web Frameworks wie Angular oder React bieten eigene Handlers an. Diese Router Handler fügen in der Regel ein 'href="blah"' Attribut auf dem entsprechenden Element hinzu. Für Screenreader ist so klar, um was es sich handelt: Ein Link mit Ziel XY. Die Browser markieren besuchte Links zusätzlich noch als besucht. Auf diese Informationen kann der Screenreader ebenfalls zugreifen.
 
 *Wann ist es ein Link und wann ein Button?*
 
 WIP Button
 
-Demo: 
+Demo:
 
 [Link (Screenreader & Navigieren)](/accessibility-crash-course/demo/link)
 
@@ -340,36 +342,36 @@ Demo:
 
 ### Bold/Strong
 
-- `<bold>` ist **kein** semantisches HTML Tag. 
+- `<bold>` ist **kein** semantisches HTML Tag.
 - `<strong>` ist **ein** semantisches HTML Tag.
 
-Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.  
+Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.
 
-Demo: 
+Demo:
 
 - [Text Bold / Strong](/accessibility-crash-course/demo/text-bold-strong)
 
-Link: 
+Link:
 
-- [https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
+- [TPGI - screen readers lack emphasis](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
 
 <br />
 <br />
 
 ### Italic/Kursiv
 
-- `<i>` ist **kein** semantisches HTML Tag. 
+- `<i>` ist **kein** semantisches HTML Tag.
 - `<em>` ist **ein** semantisches HTML Tag.
 
 Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.
 
-Demo: 
+Demo:
 
 - [Text Italic / Kursiv](/accessibility-crash-course/demo/text-italic-cursive)
 
-Link: 
+Link:
 
-- [https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
+- [TPGI - screen readers lack emphasis](https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/)
 
 <br />
 <br />
@@ -388,7 +390,7 @@ Link:
 
 Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgehoben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder anders darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur Verfügung:
 
-- `<ul>` ungeordnete Liste 
+- `<ul>` ungeordnete Liste
 - `<ol>` geordnete Liste
 
 Neben dem korrekten Listen Element benötigen wir auch noch Listenelemente:
@@ -405,7 +407,7 @@ Mit Nummerierung. Zu verwenden beispielsweise bei einer Anleitung, bei welcher e
 
 ### Unorderd List `<ul>`
 
-Mit Bulletpoints. Zu verwenden, wenn die Reihenfolge der Listen Elemente irrelevant ist.
+Mit Aufzählungszeichen. Zu verwenden, wenn die Reihenfolge der Listen Elemente irrelevant ist.
 
 Navigationen und Menüs müssen neben der Navigations-Rolle oder ```<nav>``` auch als Liste ausgewiesen werden.
 
@@ -418,59 +420,59 @@ Navigationen und Menüs müssen neben der Navigations-Rolle oder ```<nav>``` auc
 
 ### Tabellen
 
-Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abonnements.
+Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abonnements oder Produkten.
 
-Tabellen dürfen auf keinen Fall für den Aufbau bzw. Styling für Tabellen verwendet werden. Das ist ein Relikt aus der Vergangenheit (Ausnahme Newsletter)!
+Tabellen dürfen auf keinen Fall für den Aufbau respektive Strukturierung für Seiten verwendet werden. Das ist ein Relikt aus der Vergangenheit (Ausnahme Newsletter)!
 
-Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut: 
+Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut:
 
 ```html
 <table>
-	<tr>
-		<th>Produkt</th>
-		<th>Preis</th>
-	</tr>
-	<tr>
-		<td>Gala Apfel</td>
-		<td>CHF 0.85</td>
-	</tr>
-	<tr>
-		<td>Gala Jazz</td>
-		<td>CHF 0.90</td>
-	</tr>
-	<tr>
-		<td>Gala Diwa</td>
-		<td>CHF 0.90</td>
-	</tr>
+   <tr>
+      <th>Produkt</th>
+      <th>Preis</th>
+   </tr>
+   <tr>
+      <td>Gala Apfel</td>
+      <td>CHF 0.85</td>
+   </tr>
+   <tr>
+      <td>Gala Jazz</td>
+      <td>CHF 0.90</td>
+   </tr>
+   <tr>
+      <td>Gala Diwa</td>
+      <td>CHF 0.90</td>
+   </tr>
 </table>
 ```
 
-- Eine `<table>` hat `x` Tabellenzeilen/Tablerows `<tr>`
-- Jede `<tr>` kann `x` Spalten `<td>` beinhalten
+- Eine `<table>` hat `x` Tabellenzeilen (Table Row) `<tr>`
+- Jede `<tr>` kann `x` Spalten (Table Data) `<td>` beinhalten
 - Tabellenheader werden innerhalb eines `<tr>`  als `<th>` markiert (statt `td`)
 
 
 
-Tabellen können jedoch mehr als nur eine Zeile mit Tableheadings beinhalten. Bspw. bei Tabellen, in welchen wir die Daten "zwei Dimensional" vergleichen wollen:
+Tabellen können jedoch mehr als nur eine Zeile mit Tableheadings beinhalten. Bspw. bei Tabellen, in welchen wir die Daten „zwei Dimensional“ vergleichen wollen:
 
 ```html
 <table>
-	<tr>
-		<th>Produkt</th>
-		<th>Preis</th>
-	</tr>
-	<tr>
-		<th>Gala Apfel</th>
-		<td>CHF 0.85</td>
-	</tr>
-	<tr>
-		<th>Gala Jazz</th>
-		<td>CHF 0.90</td>
-	</tr>
-	<tr>
-		<th>Gala Diwa</th>
-		<td>CHF 0.90</td>
-	</tr>
+   <tr>
+      <th>Produkt</th>
+      <th>Preis</th>
+   </tr>
+   <tr>
+      <th>Gala Apfel</th>
+      <td>CHF 0.85</td>
+   </tr>
+   <tr>
+      <th>Gala Jazz</th>
+      <td>CHF 0.90</td>
+   </tr>
+   <tr>
+      <th>Gala Diwa</th>
+      <td>CHF 0.90</td>
+   </tr>
 </table>
 ```
 
@@ -486,25 +488,25 @@ Tabellen Struktur
 
 ```html
 <table>
-	<thead>
-  	<tr>
-		<th>Produkt</th>
-		<th>Preis</th>
-	</tr>
+   <thead>
+   <tr>
+      <th>Produkt</th>
+      <th>Preis</th>
+   </tr>
   </thead>
-	<tbody>
-  	<tr>
-		<th>Gala Apfel</th>
-		<td>CHF 0.85</td>
-	</tr>
-	<tr>
-		<th>Gala Jazz</th>
-		<td>CHF 0.90</td>
-	</tr>
-	<tr>
-		<th>Gala Diwa</th>
-		<td>CHF 0.90</td>
-	</tr>
+   <tbody>
+   <tr>
+      <th>Gala Apfel</th>
+      <td>CHF 0.85</td>
+   </tr>
+   <tr>
+      <th>Gala Jazz</th>
+      <td>CHF 0.90</td>
+   </tr>
+   <tr>
+      <th>Gala Diwa</th>
+      <td>CHF 0.90</td>
+   </tr>
   </tbody>
   <tfoot>
     <tr>
@@ -517,7 +519,7 @@ Tabellen Struktur
 
 
 
-Bei Tabellen ist auch noch zu beachten, dass CSS Einfluss auf die Semantik hat. Tabellen sind grundsätzlich `display: table;`. Ändert man den Display-Wert bspw. auf `display: flex;`, so handelt es sich nicht mehr um eine Tabelle (Abhängig von der Technologie). 
+Bei Tabellen ist auch noch zu beachten, dass CSS Einfluss auf die Semantik hat. Tabellen sind grundsätzlich `display: table;`. Ändert man den Display-Wert bspw. auf `display: flex;`, so handelt es sich nicht mehr um eine Tabelle (Abhängig von der Technologie).
 
 
 
@@ -531,8 +533,8 @@ Demo:
 
 Links:
 
-- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
-- [https://www.w3.org/WAI/tutorials/tables/](https://www.w3.org/WAI/tutorials/tables/)
+- [MDN - Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+- [W3 - Tables](https://www.w3.org/WAI/tutorials/tables)
 
 
 
@@ -542,12 +544,12 @@ Links:
 
 - Tabelle so lassen wie sie ist: X Achse Scrollbar
 - Spalten umbrechen, alles untereinander oder irgendwie sonst darstellen
-    - Was passiert mit dem Header?
-    - Wie bleibt die Semantik erhalten?
-        - Tabelle
-        - Spalten- und Zeilenbezeichnung
-        
-        
+  - Was passiert mit dem Header?
+  - Wie bleibt die Semantik erhalten?
+    - Tabelle
+    - Spalten- und Zeilenbezeichnung
+
+
 Leider keine 0815 Lösung, welche immer und überall funktioniert. Man wird Kompromisse eingehen müssen.
 
 ---
@@ -557,15 +559,15 @@ Leider keine 0815 Lösung, welche immer und überall funktioniert. Man wird Komp
 
 ## Bilder:
 
-"Visuelles" Bild: <br />`<div style="background-image: url('https://picsum.photos/200/300');"></div>`
+„Visuelles“ Bild: <br />`<div style="background-image: url('https://picsum.photos/200/300');"></div>`
 
 Semantisches Bild: <br /> `<img src="https://picsum.photos/200/300" alt="Random Image" />`
 
 <br />
 
-`<img>` werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS `background-image` kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken. 
+`<img>` werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS `background-image` kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken.
 
-Beim Verwenden des `<img>` muss zwingen ein `alt` Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assitive Technologien. Da Screenreader keine Bilder bzw. Bildinhalte vorlesen, wird der Alt-Text ausgegeben.
+Beim Verwenden des `<img>` muss zwingen ein `alt` Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assistive Technologien. Da Screenreader keine Bilder und Bildinhalte vorlesen, wird der Alt-Text ausgegeben.
 
 
 
@@ -586,11 +588,11 @@ Demo:
 
 ## Formulare
 
-`<form>` zeichnet semantisch ein Formular aus. 
+`<form>` zeichnet semantisch ein Formular aus.
 
 <br />
 
-### Inputs and Labels
+### Inputs und Labels
 
 `<input>` benötigen zwingen ein `<label>`.
 
@@ -622,24 +624,24 @@ Demo:
 
 Links:
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+[MDN - Label Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
 <br />
 
 ### Fieldset (Gruppen)
 
-Fieldset werden verwendet, um Gruppen innerhalb eines Formulars semantisch auszuweisen. 
+Fieldset werden verwendet, um Gruppen innerhalb eines Formulars semantisch auszuweisen.
 
 - Ein `<fieldset>` ist nur innerhalb einer `<form>` valid.
 - Ein `<fieldset>` benötigt zwingen einen `<legend>` als Child-Element.
 
 Links:
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
+[MDN - Fieldset Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
 
 <br />
 
-#### Komplexerre Inputs / Gruppen & Formularabschnitte
+#### Komplexere Inputs / Gruppen & Formularabschnitte
 
 Es gibt verschiedene Arten von Gruppierungen innerhalb eines Formulars. Beide werden mit dem `<fieldset>` und `<legend>` ausgewiesen.
 
@@ -694,7 +696,7 @@ Demo:
 
 Radiobuttons oder Checkboxen setzen sich jeweils zusammen aus einem Input und einem Label. In der Praxis kommen Checkboxen oder Radiobuttons aber vor allem dann zum Einsatz, wenn man eine Auswahl machen muss. Bspw. Farbauswahl eines Smartphones.
 
-Man könnte alle Radiobuttons und Labels einzeln ausgeben und als Label jeweils etwas in der Art wie "Farbe Blau" setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als Farbe Gruppe ausgewiesen sind:
+Man könnte alle Radiobuttons und Labels einzeln ausgeben und als Label jeweils etwas in der Art wie „Farbe Blau“ setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als Farbe Gruppe ausgewiesen sind:
 
 ``` html
 <form>
@@ -726,8 +728,8 @@ Demo:
 - <a target="_blank" href="<%- config.base %>/demo/form-fieldset-group-good">Fieldset Group - Good</a>
 
 
-Links: 
-- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
+Links:
+- [MDN - Fieldset Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
 
 <br />
 
@@ -748,7 +750,7 @@ Müssen alle auch Barrierefrei sein.
 
 Das disabled Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein disabled Attribut gesetzt ist, diese immer als true interpretiert wird. `disabled="false"` ist ungültig!
 
-disabled hat immer den selben Effekt:
+disabled hat immer denselben Effekt:
 
 - `disabled="false"`
 - `disabled="true"`
@@ -760,7 +762,7 @@ disabled hat immer den selben Effekt:
 
 Das readonly Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein readonly Attribut gesetzt ist, diese immer als true interpretiert wird. `readonly="false"` ist ungültig! (Genau wie disabled)
 
-readonly hat immer den selben Effekt:
+readonly hat immer denselben Effekt:
 
 - `readonly="false"`
 - `readonly="true"`
@@ -768,7 +770,7 @@ readonly hat immer den selben Effekt:
 
 <br />
 
-Bei readonly ist zu beachten, dass die nicht auf allen Elementen erwartungsmäss funktioniert! Checkboxen und Radiobuttons können trotz readyonly verändert werden. 
+Bei readonly ist zu beachten, dass die nicht auf allen Elementen erwartungsgemäss funktioniert! Checkboxen und Radiobuttons können trotz readyonly verändert werden.
 
 <br />
 
@@ -784,10 +786,10 @@ Overlays / Dialoge / Modals
 
 aria-label
 
-Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for Attribut) verknüpft, kann es sein, dass das Label nicht mehr vorgelesen wird. 
+Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for Attribut) verknüpft, wird das Label nicht mehr vorgelesen.
 
 Links:
-- [https://w3c.github.io/using-aria/#do](https://w3c.github.io/using-aria/#do)
+- [W3C - Aria (Entwurf)](https://w3c.github.io/using-aria/#do)
 
 <br />
 
@@ -801,15 +803,15 @@ Mit dem `tabindex` Attribut können wir die Fokus-Reihenfolge innerhalb des Doms
 
 - `tabindex="-1"` Das Element ist nicht fokussierbar
 - `tabindex="0"` Das Element ist fokussierbar. Das Element behält seine Position in der Tab-Reihenfolge entsprechend seiner Position in DOM bei.
-- `tabindex="1"` Das Element ist fokussierbar. Das Element verliert seine Position in der Tab-Reihenfolge und wird "hinten angehängt". Dieses Verhalten ist bei allen Werten >= 1. Der Wert des Attributes bestimmt die neue Reihenfolge. Je nachdem, wo man sich auf der Seite befindet, werden die Elemente wie folgt durchgegangen: Fokus auf einem Element in der normalen Tab-Reihenfolge: Zuerst werden alle "normal fokussierbaren" und tabindex="0" Elemente durchgegangen, anschliessen die Reihenfolge entsprechend des Attribut-Wertes. Ist man bspw. im URL-Feld, werden alle tabindex >= 1 durchgegangen.
+- `tabindex="1"` Das Element ist fokussierbar. Das Element verliert seine Position in der Tab-Reihenfolge und wird „hinten angehängt“. Dieses Verhalten ist bei allen Werten >= 1. Der Wert des Attributes bestimmt die neue Reihenfolge. Je nachdem, wo man sich auf der Seite befindet, werden die Elemente wie folgt durchgegangen: Fokus auf einem Element in der normalen Tab-Reihenfolge: Zuerst werden alle „normal fokussierbaren“ und tabindex="0" Elemente durchgegangen, anschliessen die Reihenfolge entsprechend dem Attributwert. Ist man bspw. im URL-Feld, werden alle tabindex >= 1 durchgegangen.
 
- (Sollte man nicht verwenden, macht grundsätzlich eher mehr kaputt als es hilft).
+(Sollte man nicht verwenden, ruiniert grundsätzlich eher mehr als es hilft).
 
 
 
 Links:
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
+[MDN - Tabindex Attribut](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
 
 <br />
 
@@ -823,17 +825,15 @@ CSS hat zum Teil direkten Einfluss auf die Semantik von Elementen, jedoch nicht 
 
 `display: none;` Entfernt das Element für den Screenreader aus dem DOM
 
-`display: block;` Fügt das Element für den Screenreader in dem DOM
+`display: block;` Element ist grundsätzlich sichtbar im DOM für den Screenreader
 
-`visibility: hidden;` Entfernt das Element für den Screenreader aus dem DOM 
+`visibility: hidden;` Entfernt das Element für den Screenreader aus dem DOM
 
-`visibility: visible;` Fügt das Element für den Screenreader in dem DOM
+`visibility: visible;` Element ist grundsätzlich sichtbar im DOM für den Screenreader
 
- `opacity: 1;` -> visible for screen readers
-  
-  `opacity: 0;` -> visible for screen readers
+`opacity: 1;` -> Sichtbar für Screenreader
 
-
+`opacity: 0;` -> Sichtbar für Screenreader
 
 Text Styling wie `text-decoration`, `font-weight`  allerdings keinen Einfluss!
 
@@ -861,7 +861,7 @@ Text Styling wie `text-decoration`, `font-weight`  allerdings keinen Einfluss!
 
 #### Focus Mode
 
-Die Steuerung des Screenreaders wird via "Tab" / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stoppt bzw. fokussiert jedes fokussierbare Element (Tab-Stopp). Fokussierbar sind grundsätzlich alle arten von Eingabefeldern (`<input>`, `<textarea>`, etc.) und Schaltflächen (`<button>`, `<a>`). Zusätzliche Tab-Stopp können via HTML oder JavaScript hinzugefügt werden: Setzen des `tabindex` Attributes. 
+Die Steuerung des Screenreaders wird via „Tab“ / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stoppt bzw. fokussiert jedes fokussierbare Element (Tab-Stopp). Fokussierbar sind grundsätzlich alle Arten von Eingabefeldern (`<input>`, `<textarea>`, etc.) und Schaltflächen (`<button>`, `<a>`). Zusätzliche Tab-Stopps können via HTML oder JavaScript hinzugefügt werden: Setzen des `tabindex` Attributes.
 
 <br />
 
@@ -879,13 +879,13 @@ Sprint von Heading zu Heading
 
 ##### L (Links)
 
-Sprint von Link zu Link
+Springt von Link zu Link
 
-[https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
+[NVDA Keyboard Shortcuts](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
 
 ### Texte nur für Screenreader
 
-Wir müssen den Text visuelle verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. `display: none;` und `visibility: hidden;` können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit einer CSS Klasse lösen könnte.
+Wir müssen den Text visuell verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. `display: none;` und `visibility: hidden;` können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit einer CSS Klasse lösen könnte.
 
 ```css
 .sr-only {
@@ -909,11 +909,11 @@ Wir müssen den Text visuelle verstecken, aber wir müssen ihn für den Screenre
 
 Links:
 
-https://tailwindcss.com/docs/screen-readers
+[Tailwind - Screenreaders](https://tailwindcss.com/docs/screen-readers)
 
 Quellen:
 
-https://tailwindcss.com/docs/screen-readers
+[Tailwind - Screenreaders](https://tailwindcss.com/docs/screen-readers)
 
 
 
@@ -931,5 +931,5 @@ https://tailwindcss.com/docs/screen-readers
 
 ## Weitere Aspekte
 
-- PDF 
+- PDF
 - Multimediale Inhalte (Video)

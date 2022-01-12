@@ -2,7 +2,11 @@
 <html class="text-lg" lang="de">
 	<head>
 		<title>Accessibility / Barrierefreiheit Crash Course</title>
-		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
+		<link href="/assets/css/styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Dario Baumberger">
+		<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 	</head>
 	<body>
 
@@ -15,11 +19,11 @@
 <h2 id="img-tag-with-alt">Img Tag with Alt</h2>
 <div tabindex="0">Tab Stop</div>
 
-<img tabindex="0" src="/accessibility-crash-course/static/images/monitor_november_cover_2019.gif" alt="Rollstuhlfahrer mit Code" />
+<img tabindex="0" src="/assets/images/monitor_november_cover_2019.gif" alt="Rollstuhlfahrer mit Code" />
 
 <br>
 
-<pre><code class="language-html">&lt;img tabindex=&quot;0&quot; src=&quot;&lt;%- config.base %&gt;/static/images/monitor_november_cover_2019.gif&quot; alt=&quot;Rollstuhlfahrer mit Code&quot; /&gt;
+<pre><code class="language-html">&lt;img tabindex=&quot;0&quot; src=&quot;&lt;%- config.base %&gt;/assets/images/monitor_november_cover_2019.gif&quot; alt=&quot;Rollstuhlfahrer mit Code&quot; /&gt;
 </code></pre>
 <hr>
 <p>Demo:</p>
@@ -32,19 +36,27 @@
 
 </div>
 <footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
-    <a href="/accessibility-crash-course/de/presentation/base/images/img-no-alt-1000-words-good" class="p-6 order-1 text-xs">&#8592; Prev</a>
-    <a href="/accessibility-crash-course/de/presentation/base/images/complex-chart-alternative" class="p-6 order-3 text-xs">Next &#8594;</a>
-    <a href="/accessibility-crash-course/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+    <div class="p-6 order-1 text-xs">
+        
+            <a href="/de/presentation/base/images/img-no-alt-1000-words-good" >&#8592; Prev</a>
+         
+    </div>
+    <div class="p-6 order-3 text-xs">
+        
+            <a href="/de/presentation/base/images/complex-chart-alternative" >Next &#8594;</a>
+        
+    </div>
+    <a href="/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
 </footer>
 <script>
     document.addEventListener('keydown', function (event) {
 
         if (event.ctrlKey && event.key === 'ArrowRight') {
-            window.location.href="/accessibility-crash-course/de/presentation/base/images/complex-chart-alternative";
+            window.location.href="/de/presentation/base/images/complex-chart-alternative";
         }
 
         if (event.ctrlKey && event.key === 'ArrowLeft') {
-            window.location.href="/accessibility-crash-course/de/presentation/base/images/img-no-alt-1000-words-good";
+            window.location.href="/de/presentation/base/images/img-no-alt-1000-words-good";
         }
     });
 </script>

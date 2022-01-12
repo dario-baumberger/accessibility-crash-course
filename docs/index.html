@@ -2,7 +2,11 @@
 <html class="text-lg" lang="de">
 	<head>
 		<title>Accessibility / Barrierefreiheit Crash Course</title>
-		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
+		<link href="/assets/css/styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Dario Baumberger">
+		<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 	</head>
 	<body>
 
@@ -10,137 +14,208 @@
 
 <div class="container lg:m-auto mx-6 sm:mx-8 md:mx-16 w-auto py-10 text-center">
     <div class="markdown-body"><h1 id="accessibility-crash-course">Accessibility Crash Course</h1>
-<p>Von Grobabrieb für Einsteiger bis zu fortgeschritteneren Themen.
-Fühl dich frei, dir bekannte Theme zu überspringen.</p>
+<p>Von Grobabrieb für Einsteiger bis zu fortgeschritteneren Themen.</p>
 </div>
 </div>
-<div class="block lg:flex justify-start items-start container lg:m-auto mx-6 sm:mx-8 md:mx-16 w-auto">
-    <aside class="pt-4 lg:pt-16 lg:sticky top-0 mr-0 lg:mr-8">
-        <h1 class="sr-only">Hauptnavigation</h1>
-        <nav class="text-xs">
-            <h2 class="font-bold lg:px-10">Themen</h2>
-            <ul class="js-section-links">
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#tools-für-diesen-crash-kurs">Tools für diesen Crash Kurs</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#wieso-">Wieso</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#für-wen">Für wen</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#wen-betrifft-das">Wen betrifft das</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#farben">Farben</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#html-elements">HTML Elements</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#text--schrift">Text / Schrift</a>
-                    <ul class="h-0 overflow-hidden">
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#schriftarten">Schriftarten</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#schriftgrössen">Schriftgrössen</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#schriftfarben">Schriftfarben</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#headings--überschriften">Headings / Überschriften</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#text--paragraph">Text / Paragraph</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#link">Link</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#boldstrong">Bold/Strong</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#italickursiv">Italic/Kursiv</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#text-styling--css-styles">Text Styling / CSS Styles</a>
-                        </li>
+<div class="block lg:flex gap-4 justify-start items-start container lg:m-auto mx-6 sm:mx-8 md:mx-16 w-auto">
+    <aside class="lg:sticky top-0 mr-0 lg:mr-8">
+        <div class="pt-4 lg:pt-16 h-screen overflow-auto">
+            <h1 class="sr-only">Hauptnavigation</h1>
+                <nav class="text-xs lg:px-5">
+                    <h2 class="font-bold">Themen</h2>
+                    <ul class="js-section-links">
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#tools-für-diesen-crash-kurs">Tools</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#wieso">Wieso</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#für-wen">Für wen</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#wen-betrifft-das">Wen betrifft das</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#farben">Farben</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#html-elements">HTML Elemente</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#text--schrift">Text / Schrift</a>
+                                
+                                <button class="w-2 h-2 ml-2" aria-expanded="false">
+                                    <span class="sr-only">Text / Schrift Untermenü</span>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"></path></svg>
+                                </button>
+                                <ul class="max-h-0 overflow-hidden w-full transition-all duration-300" aria-hidden="true">
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#schriftarten">Schriftarten</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#schriftgrössen">Schriftgrössen</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#schriftfarben">Schriftfarben</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#headings--überschriften">Headings / Überschriften</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#text--paragraph">Text / Paragraph</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#link">Link</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#boldstrong">Bold/Strong</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#italickursiv">Italic/Kursiv</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="##text-styling--css-styles">Text Styling / CSS Styles</a>
+                                        </li>
+                                    
+                                </ul>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#listen">Listen</a>
+                                
+                                <button class="w-2 h-2 ml-2" aria-expanded="false">
+                                    <span class="sr-only">Listen Untermenü</span>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"></path></svg>
+                                </button>
+                                <ul class="max-h-0 overflow-hidden w-full transition-all duration-300" aria-hidden="true">
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#orderd-list-ol">Orderd List</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#unorderd-list-ul">Unorderd List</a>
+                                        </li>
+                                    
+                                </ul>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#tabellen">Tabellen</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#bilder">Bilder</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#formulare">Formulare</a>
+                                
+                                <button class="w-2 h-2 ml-2" aria-expanded="false">
+                                    <span class="sr-only">Formulare Untermenü</span>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"></path></svg>
+                                </button>
+                                <ul class="max-h-0 overflow-hidden w-full transition-all duration-300" aria-hidden="true">
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#inputs-and-labels">Inputs and Labels</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#fieldset-gruppen">Fieldset (Gruppen)</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#komplexerre-inputs--gruppen--formularabschnitte">Komplexerre Inputs / Gruppen &amp; Formularabschnitte</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="py-1 px-4 transition-all duration-300 block" href="#">Disabled</a>
+                                        </li>
+                                    
+                                </ul>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#aria-attribute-role-attribute-und-tabindex-attribut">Attribute</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#tabindex">Tabindex</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#css-einfluss">CSS Einfluss</a>
+                                
+                       </li>
+                    
+                        <li class="flex flex-wrap w-full items-center">
+                           <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#screenreader">Screenreader</a>
+                                
+                       </li>
+                    
                     </ul>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#listen">Listen</a>
-                    <ul class="h-0 overflow-hidden">
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#orderd-list-ol">Orderd List</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#unorderd-list-ul">Unorderd List</a>
-                        </li>
+                    <h2 class="font-bold pt-6">Links</h2>
+                    <ul>
+                        
+                            <li>
+                                <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="/de/presentation/base/generic/cover">Presentation (In Progress)</a>
+                            </li>
+                        
+                            <li>
+                                <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="#">Challenges (Coming soon)</a>
+                            </li>
+                        
                     </ul>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#tabellen">Tabellen</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#bilder">Bilder</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#formulare">Formulare</a>
-                    <ul class="h-0 overflow-hidden">
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#inputs-and-labels">Inputs and Labels</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#fieldset-gruppen">Fieldset (Gruppen)</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#komplexerre-inputs--gruppen--formularabschnitte">Komplexerre Inputs / Gruppen & Formularabschnitte</a>
-                        </li>
-                        <li>
-                            <a class="py-1 px-16 transition-all duration-300 block" href="/accessibility-crash-course/#aria-attribute-role-attribute-und-tabindex-attribut">Disabled</a>
-                        </li>
+                    <h2 class="font-bold pt-6">Sprachen</h2>
+                    <ul>
+                        
+                            <li>
+                                <a class="py-1 transition-all duration-300 block hover:text-teal-700" href="/#">English (Coming soon)</a>
+                            </li>
+                        
                     </ul>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#aria-attribute-role-attribute-und-tabindex-attribut">Aria-Attribute, Role-Attribute und Tabindex-Attribut</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#tabindex">Tabindex</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#css-einfluss">CSS Einfluss</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/#screenreader">Screenreader</a>
-                </li>
-            </ul>
-            <h2 class="font-bold lg:px-10 pt-6">Links</h2>
-            <ul>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course/de/presentation/base/generic/cover.html">Presentation (In Progress)</a>
-                </li>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700">Challenges (Comming soon)</a>
-                </li>
-            </ul>
-            <h2 class="font-bold lg:px-10 pt-6">Sprachen</h2>
-            <ul>
-                <li>
-                    <a class="py-1 lg:px-10 transition-all duration-300 block hover:text-teal-700" href="/accessibility-crash-course">Englisch (Comming soon)</a>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+        </div>
     </aside>
     <main class="lg:w-4/6 pt-16">
         <div class="text-lg">
-        <div class="markdown-body"><h2 id="introduction">Introduction</h2>
+        <div class="markdown-body"><h2 id="einleitung">Einleitung</h2>
+<p>Einführung in das Thema Web Accessibility (A11Y). Das Primäre Ziel dieses Crash-Kurses, ist es ein Verständinis für die Barrierefreiheit zu entwicklen. Im Bereich A11Y ist nicht alles schwarz auf weiss vorgegeben. Für ein Vorhaben gibt es meistens mehrer mögliche Lösungswege. </p>
 <hr>
 <br />
 
-<h2 id="tools-für-diesen-crash-kurs">Tools für diesen Crash Kurs</h2>
+<h2 id="tools-für-diesen-crashkurs">Tools für diesen Crashkurs</h2>
 <p>Die Demos schaust du dir am besten mit folgenden Tools an. Einige Probleme sind nicht immer gleich auf den ersten Blick nur im Browser Fenster ersichtlich.</p>
 <ul>
 <li><a href="https://wave.webaim.org/extension/">Wave Browser Extension</a></li>
@@ -153,7 +228,7 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 <hr>
 <br />
 
-<h2 id="wieso-">Wieso ?!</h2>
+<h2 id="wieso">Wieso</h2>
 <ul>
 <li>Gesetzliche Rahmenbedingungen in der Schweiz<ul>
 <li><a href="https://www.admin.ch/opc/de/classified-compilation/19995395/index.html#a8">Bundesverfassung Art. 8 (BV Art. 8)</a></li>
@@ -163,6 +238,7 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 </li>
 <li><a href="https://www.access-for-all.ch/ch/zertifizierung.html">Zertifikat</a> (Aushängeschild)</li>
 <li>Grössere Zielgruppen</li>
+<li>User Experience</li>
 <li>Eigennutzen</li>
 </ul>
 <br />
@@ -176,7 +252,7 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 </blockquote>
 <p>Quellen:</p>
 <ul>
-<li><a href="https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html">https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html</a></li>
+<li><a href="https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html">Zugang für alle - Gesetz Schweiz</a></li>
 </ul>
 <br />
 
@@ -192,16 +268,16 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 </blockquote>
 <p>Quellen:</p>
 <ul>
-<li><a href="https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html">https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html</a></li>
+<li><a href="https://www.access-for-all.ch/ch/richtlinien-barrierefreiheit/68-gesetz-schweiz.html">Zugang für alle - Gesetz Schweiz</a></li>
 </ul>
-<p>Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online-Shop, könnte durchaus sehr attraktiv sein für bspw. Blinde Personen (gehen wir mal davon aus, das Einkaufen für blind Personen nicht immer ganz einfach ist). Das Zertifikat kann als &quot;Aushängeschild&quot; verwendet werden. Und auch Sie selber können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?</p>
+<p>Für Bund, Bundes-nahe Betriebe, Kantone und Gemeinden ist der Fall klar. Bei Privaten kann sich eine Barrierefreie Internetseite durchaus auch lohnen. Zu den Zahlen der eingeschränkten Personen kommen wir später. Jedoch sind das relativ viele. Denken wir mal an eine Home-Delivery Webseite oder einen Online-Shop, könnte sehr attraktiv sein für bspw. blinde Personen (gehen wir mal davon aus, dass Einkaufen für blinde Personen nicht immer ganz einfach ist). Das Zertifikat kann als „Aushängeschild“ verwendet werden. Und auch Sie selbst können davon profitieren. Schon mal einen Arm oder gar beide gebrochen, nur auf einem Auge gesehen (nach einer Schlägerei), usw. ? Wie bedienen Sie dann Ihren Computer?</p>
 <br />
 
 <hr>
 <br />
 
 <h2 id="für-wen">Für wen?</h2>
-<p>In erster Linie für eingeschränkte Personen. Ja, gut ok, aber wer alles gehört zu eingeschränkten Personen? Unter anderen folgende:</p>
+<p>In erster Linie für eingeschränkte Personen. Soweit so gut, aber was heisst das genau, wer alles gehört zu eingeschränkten Personen? Unter anderem folgende:</p>
 <ul>
 <li>Komplett Blinde Personen</li>
 <li>Personen mit anderen Sehschwächen</li>
@@ -232,21 +308,21 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 <br />
 
 <h2 id="farben">Farben</h2>
-<p>Beginnen wir mit etwas einfacherem, das sollte sicher noch für alle verständlich sein.</p>
-<p>Farben sind nicht nur dekorativ oft helfen sie auch bei der Benutzerführung. Wir alle verbinden automatisch gewisse Farben mit gewissen Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teil intuitiv auf diese Farben (Verkehrsampel). So ist beispielsweise ein grüner Löschen-Button für uns komisch. Ein roter Löschen-Button hingegen ist für uns logisch.</p>
-<p>Demo: </p>
+<p>Beginnen wir mit etwas Einfacherem, das sollte sicher noch für alle verständlich sein.</p>
+<p>Farben sind nicht nur dekorativ, oft helfen sie auch bei der Benutzerführung. Wir alle verbinden automatisch gewisse Farben mit Funktionen. Gewisse Farben bzw. Bedeutungen der Farben haben wir gelernt und reagieren teils intuitiv auf diese Farben (Verkehrsampel). So ist etwa ein grüner Löschen-Button für uns komisch. Ein roter Löschen-Button hingegen ist für uns logisch.</p>
+<p>Demo:</p>
 <ul>
-<li><a target="_blank" href="/accessibility-crash-course/demo/colors-button-empty">Button empty (Bad)</a></li>
+<li><a target="_blank" href="/demo/colors-button-empty">Button empty (Bad)</a></li>
 </ul>
 <br>
 
-<p>Farben alleine reichen jedoch nicht. Beim Beispiel vom Button wird noch ein Text oder ein Icon (benötigt in aller Regel auch noch einen Text) verwendet. </p>
-<p>Demo: </p>
+<p>Farben allein reichen jedoch nicht. Beim Beispiel vom Button wird noch ein Text oder ein Icon (benötigt in aller Regel auch noch einen Text) verwendet.</p>
+<p>Demo:</p>
 <ul>
-<li><a target="_blank" href="/accessibility-crash-course/demo/colors-button-text">Button Color with Text</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/colors-button-icon">Button Icon</a></li>
+<li><a target="_blank" href="/demo/colors-button-text">Button Color with Text</a></li>
+<li><a target="_blank" href="/demo/colors-button-icon">Button Icon</a></li>
 </ul>
-<p>Einerseits wäre die Farbe alleine nicht aussagekräftig genug. Und andererseits können nicht alle Menschen alle Farben wahr nehmen: </p>
+<p>Einerseits wäre die Farbe allein nicht aussagekräftig genug. Und andererseits können nicht alle Menschen alle Farben wahr nehmen:</p>
 <ul>
 <li>Achromasie: Vollständige Farbenblindheit, Betroffene sehen nur Schwarz, Weiss und Graustufen</li>
 <li>Monochromasie: Betroffene nehmen nur eine Farbe wahr</li>
@@ -257,13 +333,13 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 </ul>
 </li>
 <li>Teilweise Blind</li>
-<li>Blind </li>
+<li>Blind</li>
 </ul>
-<p>Stand 2019 gibt es rund 377&#39;000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:</p>
+<p>Stand 2019 gibt es rund 377’000 Menschen mit Sehbehinderungen. Für die verschiedenen Beeinträchtigungen gibt es verschiedene Dinge zu beachten:</p>
 <ul>
 <li>Ausreichende Farbkontraste</li>
-<li>Klare Farben </li>
-<li>Farben alleine reichen nicht</li>
+<li>Klare Farben</li>
+<li>Farben allein reichen nicht</li>
 <li>Text Beschreibungen</li>
 </ul>
 <p><br/><br/></p>
@@ -276,8 +352,8 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 </ul>
 <p>Quellen:</p>
 <ul>
-<li><a href="https://www.augenaerzte-bern.ch/farbsehstoerungen/">https://www.augenaerzte-bern.ch/farbsehstoerungen/</a></li>
-<li><a href="https://www.szblind.ch/fileadmin/pdfs/forschung/Fachheft-Sehbehinderung-Schweiz-2019-de-BF-v01.pdf">https://www.szblind.ch/fileadmin/pdfs/forschung/Fachheft-Sehbehinderung-Schweiz-2019-de-BF-v01.pdf</a></li>
+<li><a href="https://www.augenaerzte-bern.ch/farbsehstoerungen/">Augenärzte Bern - Farbsehstoerungen</a></li>
+<li><a href="https://www.szblind.ch/fileadmin/pdfs/forschung/Fachheft-Sehbehinderung-Schweiz-2019-de-BF-v01.pdf">SZBLIND - Fachheft Sehbehinderung Schweiz 2019</a></li>
 </ul>
 <br />
 
@@ -290,8 +366,8 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 <table>
 <thead>
 <tr>
-<th>Semantic Elements</th>
-<th>Not semantic Elements</th>
+<th>Semantische Elemente</th>
+<th>Nicht semantische Elemente</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -338,9 +414,9 @@ Fühl dich frei, dir bekannte Theme zu überspringen.</p>
 <p>(Nicht abschliessende Liste)</p>
 <ul>
 <li>Semantische Elemente geben dem Element eine Bedeutung.</li>
-<li>Alles, was mit semantischen Elementen gemacht werden kann, ist auch mit nicht semantischen Elementen machbar (man sollte das jedoch nicht tun)</li>
+<li>Alles, was mit semantischen Elementen gemacht werden kann, ist auch mit nicht semantischen Elementen machbar (man sollte das jedoch nicht tun).</li>
 </ul>
-<p>Links: </p>
+<p>Links:</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></li>
 </ul>
@@ -357,13 +433,13 @@ Textinhalten in HTML explizit ausgezeichnet werden. Überschriften als Überschr
 Paragraphen <code>&lt;p&gt;</code>, etc. Speziell blinde Menschen, allgemein aber für die Verwendung jeglicher maschineller
 Assistenztechnologien oder Suchmaschinen, sind darauf angewiesen, dass jegliche visuell sichtbare semantische
 Struktur aus dem HTML-Code ersichtlich ist. Visuelle Hervorhebung umfasst Schriftgrössen, Schriftarten,
-Unterstreichungen, Nummerierungen, Einfärbungen, vergrösserte Abstände aber auch spezielle
-Positionierungen von Inhalten, z.B. durch Info-Kästen.</p>
+Unterstreichungen, Nummerierungen, Einfärbungen, vergrösserte Abstände, aber auch spezielle
+Positionierungen von Inhalten, z. B. durch Info-Kästen.</p>
 <br />
 <br />
 
 <h3 id="schriftarten">Schriftarten</h3>
-<p>Schriften spielen eine wichtige Rolle auf Webseiten. Auch der beste Text kann mit einer unleserlichen Schrift nicht gelesen werden. Schriften sollten gut lesbar sein. </p>
+<p>Schriften spielen eine wichtige Rolle auf Webseiten. Auch der beste Text kann mit einer unleserlichen Schrift nicht gelesen werden. Schriften sollten lesbar sein.</p>
 <p>Demo:</p>
 <ul>
 <li><a href="/accessibility-crash-course/demo/text-font-family">Text Font Family</a></li>
@@ -372,7 +448,7 @@ Positionierungen von Inhalten, z.B. durch Info-Kästen.</p>
 <br />
 
 <h3 id="schriftgrössen">Schriftgrössen</h3>
-<p>Mit der Schriftart alleine ist es allerdings nicht getan. Zu kleine Schriften können nicht von allen Menschen gelesen werden. </p>
+<p>Mit der Schriftart allein ist es allerdings nicht getan. Zu kleine Schriften können nicht von allen Menschen gelesen werden.</p>
 <p>Demo:</p>
 <ul>
 <li><a href="/accessibility-crash-course/demo/text-font-size">Text Font Size (Wave Toolbar)</a></li>
@@ -382,7 +458,7 @@ Positionierungen von Inhalten, z.B. durch Info-Kästen.</p>
 
 <h3 id="schriftfarben">Schriftfarben</h3>
 <p>Auch die Farbe der Schrift spielt eine Rolle (Siehe Farben): grauer Text mit der Farbe <code>#efefef</code> auf weissem Hintergrund <code>#ffffff</code> (Contrast Ratio 1.14:1) ist selbst für gut sehende nicht wirklich lesbar. Bei der Berechnung des Kontrastes spielen nicht nur die Hintergrund- und die Vordergrund-Farbe eine Rolle, sondern auch die Schriftgrösse.</p>
-<p>Demo: </p>
+<p>Demo:</p>
 <ul>
 <li><a href="/accessibility-crash-course/demo/text-colors">Text Colors (Wave Toolbar)</a></li>
 </ul>
@@ -403,9 +479,9 @@ Positionierungen von Inhalten, z.B. durch Info-Kästen.</p>
 <li><code>&lt;h5&gt;</code></li>
 <li><code>&lt;h6&gt;</code></li>
 </ol>
-<p><em>Was ist dabei zu beachten?</em> </p>
+<p><em>Was ist dabei zu beachten?</em></p>
 <ul>
-<li>Mehrere H1 sind ok, sofern in <code>&lt;main&gt;</code> Element ein H1 vorhanden ist. (SEO Spezialisten und Barrierefreiheit Spezialisten sind sich dort teilweise nicht einig. Je nach Applikation bspw. bei einer Anwendung hinter einem Login, spielt SEO wohl keine allzu grosse Rolle mehr.)</li>
+<li>Mehrere H1 sind ok, sofern im <code>&lt;main&gt;</code> Element ein H1 vorhanden ist. (SEO  und Barrierefreiheit können teilweise unterschiedliche Anforderungen haben. Je nach Applikation, bspw. bei einer Anwendung hinter einem Login, spielt SEO in der Regel keine allzu grosse Rolle mehr.)</li>
 <li>Keine Heading Levels überspringen</li>
 </ul>
 <p><em>Wieso ist der Einsatz von korrekten Headings wichtig?</em></p>
@@ -421,9 +497,9 @@ Positionierungen von Inhalten, z.B. durch Info-Kästen.</p>
 
 <h3 id="text--paragraph">Text / Paragraph</h3>
 <p>Leere <code>&lt;p&gt;</code> Elemente werden durch assistive Technologien und Suchmaschinen als leere Paragraphen
-interpretiert und sind somit semantisch besetzt (Teils Screenreader abhängig). Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
+interpretiert und sind somit semantisch besetzt (teils Screenreader abhängig). Nur visuell sind sie nicht als solche erkennbar. HTML dient nicht
 der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.</p>
-<p>Semantisch nicht korrekt: <code>&lt;div&gt;Ich bin ein Text in einem div&lt;/div&gt;</code> </p>
+<p>Semantisch nicht korrekt: <code>&lt;div&gt;Ich bin ein Text in einem div&lt;/div&gt;</code></p>
 <p>Semantisch korrekt: <code>&lt;p&gt;Ich bin ein Text in einem p&lt;p&gt;</code></p>
 <p><code>&lt;p&gt;</code> wird vom Browser, Screenreader etc. als Text erkannt. Ein <code>&lt;div&gt;</code> stellt den Text zwar dar, mehr aber auch nicht.</p>
 <p>Demo:</p>
@@ -437,61 +513,61 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <br />
 
 <h3 id="link">Link:</h3>
-<p><em>Was ist ein Link / Was macht ein Link?</em> </p>
+<p><em>Was ist ein Link / was macht ein Link?</em></p>
 <ul>
-<li>Verlinken von Seiten</li>
+<li>Seiten verlinken</li>
 <li>window.location verändern</li>
 </ul>
 <p><em>Welche Möglichkeiten gibt es, um das zu machen?</em></p>
 <ul>
 <li><code>&lt;a&gt;</code></li>
-<li>Java Script<ul>
+<li>JavaScript<ul>
 <li>Custom</li>
 <li>Framework Handler</li>
 </ul>
 </li>
 </ul>
-<p>Semantisch nicht korrekt: <code>&lt;div onclick=&quot;window.location.href=&#39;/&#39;;&quot;&gt;Klick mich&lt;/div&gt;</code> </p>
+<p>Semantisch nicht korrekt: <code>&lt;div onclick=&quot;window.location.href=&#39;/&#39;;&quot;&gt;Klick mich&lt;/div&gt;</code></p>
 <p>Semantisch korrekt: <code>&lt;a href=&quot;/&quot;&gt;Klick mich&lt;a&gt;</code></p>
-<p><code>&lt;a&gt;</code> wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt . Ein <code>&lt;div&gt;</code> kann auch klickbar gemacht werden, auch das &quot;verlinken&quot; ist möglich. Browser und Screenreader erkennen zudem mit einem <code>&lt;a&gt;</code> Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus Cursor (Pointer). Mit JavaScript und CSS alleine ist nicht alles getan. Die Verwendung, der semantisch korrekten Elemente ist wichtig und bietet oft standard Verhalten, welche wir selber bauen müssten.</p>
-<p>Web Frameworks wie Angular oder React bieten eigene Handlers an. Diese Router Handler fügen in der Regel auch gleich ein &#39;href=&quot;blah&quot;&#39; Attribut auf dem entsprechenden Element ein. Für Screenreader ist so klar, um was es sich handelt: Ein Link mit Ziel XY. Die Browser markieren besuchte Links zusätzlich noch als besucht. Auf diese Informationen kann der Screenreader auch zugreifen.</p>
+<p><code>&lt;a&gt;</code> wird vom Browser, Screenreader etc. als Link erkannt, die Link Funktionalität wird vom Browser zur Verfügung gestellt. Ein <code>&lt;div&gt;</code> kann auch klickbar gemacht werden, auch das „verlinken“ ist möglich. Browser und Screenreader erkennen zudem mit einem <code>&lt;a&gt;</code> Tag welche Links schon besucht wurde. Dazu kommen weiter Dinge wie bspw. der Maus-Cursor (Pointer). Mit JavaScript und CSS allein ist nicht alles getan. Die Verwendung, der semantisch korrekten Elemente ist wichtig und bietet oft Standard Verhalten, welche wir selbst bauen müssten.</p>
+<p>Web Frameworks wie Angular oder React bieten eigene Handlers an. Diese Router Handler fügen in der Regel ein &#39;href=&quot;blah&quot;&#39; Attribut auf dem entsprechenden Element hinzu. Für Screenreader ist so klar, um was es sich handelt: Ein Link mit Ziel XY. Die Browser markieren besuchte Links zusätzlich noch als besucht. Auf diese Informationen kann der Screenreader ebenfalls zugreifen.</p>
 <p><em>Wann ist es ein Link und wann ein Button?</em></p>
 <p>WIP Button</p>
-<p>Demo: </p>
+<p>Demo:</p>
 <p><a href="/accessibility-crash-course/demo/link">Link (Screenreader &amp; Navigieren)</a></p>
 <br />
 <br />
 
 <h3 id="boldstrong">Bold/Strong</h3>
 <ul>
-<li><code>&lt;bold&gt;</code> ist <strong>kein</strong> semantisches HTML Tag. </li>
+<li><code>&lt;bold&gt;</code> ist <strong>kein</strong> semantisches HTML Tag.</li>
 <li><code>&lt;strong&gt;</code> ist <strong>ein</strong> semantisches HTML Tag.</li>
 </ul>
-<p>Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.  </p>
-<p>Demo: </p>
+<p>Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.</p>
+<p>Demo:</p>
 <ul>
 <li><a href="/accessibility-crash-course/demo/text-bold-strong">Text Bold / Strong</a></li>
 </ul>
-<p>Link: </p>
+<p>Link:</p>
 <ul>
-<li><a href="https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/">https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/</a></li>
+<li><a href="https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/">TPGI - screen readers lack emphasis</a></li>
 </ul>
 <br />
 <br />
 
 <h3 id="italickursiv">Italic/Kursiv</h3>
 <ul>
-<li><code>&lt;i&gt;</code> ist <strong>kein</strong> semantisches HTML Tag. </li>
+<li><code>&lt;i&gt;</code> ist <strong>kein</strong> semantisches HTML Tag.</li>
 <li><code>&lt;em&gt;</code> ist <strong>ein</strong> semantisches HTML Tag.</li>
 </ul>
 <p>Leider wird die Bedeutung einiger Elemente noch nicht von allen Screenreadern unterstützt. Die HTML Spezifikation stellt dies klar.</p>
-<p>Demo: </p>
+<p>Demo:</p>
 <ul>
 <li><a href="/accessibility-crash-course/demo/text-italic-cursive">Text Italic / Kursiv</a></li>
 </ul>
-<p>Link: </p>
+<p>Link:</p>
 <ul>
-<li><a href="https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/">https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/</a></li>
+<li><a href="https://developer.paciellogroup.com/blog/2008/02/screen-readers-lack-emphasis/">TPGI - screen readers lack emphasis</a></li>
 </ul>
 <br />
 <br />
@@ -506,7 +582,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <h2 id="listen">Listen</h2>
 <p>Listen werden in der Regel mit Aufzählungszeichen (Punkt, Strich, fortlaufende Nummerierung etc.) hervorgehoben. Diese Hervorhebungen könnte man grundsätzlich auch verstecken oder anders darstellen. Wichtig dabei ist, dass die Liste semantisch als Liste ausgegeben wird. Dafür stehen folgende zwei Tags zur Verfügung:</p>
 <ul>
-<li><code>&lt;ul&gt;</code> ungeordnete Liste </li>
+<li><code>&lt;ul&gt;</code> ungeordnete Liste</li>
 <li><code>&lt;ol&gt;</code> geordnete Liste</li>
 </ul>
 <p>Neben dem korrekten Listen Element benötigen wir auch noch Listenelemente:</p>
@@ -518,7 +594,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <br />
 
 <h3 id="unorderd-list-ul">Unorderd List <code>&lt;ul&gt;</code></h3>
-<p>Mit Bulletpoints. Zu verwenden, wenn die Reihenfolge der Listen Elemente irrelevant ist.</p>
+<p>Mit Aufzählungszeichen. Zu verwenden, wenn die Reihenfolge der Listen Elemente irrelevant ist.</p>
 <p>Navigationen und Menüs müssen neben der Navigations-Rolle oder <code>&lt;nav&gt;</code> auch als Liste ausgewiesen werden.</p>
 <br />
 
@@ -527,51 +603,51 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 
 
 <h3 id="tabellen">Tabellen</h3>
-<p>Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abonnements.</p>
-<p>Tabellen dürfen auf keinen Fall für den Aufbau bzw. Styling für Tabellen verwendet werden. Das ist ein Relikt aus der Vergangenheit (Ausnahme Newsletter)!</p>
-<p>Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut: </p>
+<p>Tabellen sollen immer dann verwendet werden, wenn es darum geht Daten zu vergleichen. Bspw. Preise von verschiedenen Abonnements oder Produkten.</p>
+<p>Tabellen dürfen auf keinen Fall für den Aufbau respektive Strukturierung für Seiten verwendet werden. Das ist ein Relikt aus der Vergangenheit (Ausnahme Newsletter)!</p>
+<p>Einfache Tabellen werden grundsätzlich folgendermassen aufgebaut:</p>
 <pre><code class="language-html">&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Produkt&lt;/th&gt;
-        &lt;th&gt;Preis&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Gala Apfel&lt;/td&gt;
-        &lt;td&gt;CHF 0.85&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Gala Jazz&lt;/td&gt;
-        &lt;td&gt;CHF 0.90&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Gala Diwa&lt;/td&gt;
-        &lt;td&gt;CHF 0.90&lt;/td&gt;
-    &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Produkt&lt;/th&gt;
+      &lt;th&gt;Preis&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Gala Apfel&lt;/td&gt;
+      &lt;td&gt;CHF 0.85&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Gala Jazz&lt;/td&gt;
+      &lt;td&gt;CHF 0.90&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Gala Diwa&lt;/td&gt;
+      &lt;td&gt;CHF 0.90&lt;/td&gt;
+   &lt;/tr&gt;
 &lt;/table&gt;
 </code></pre>
 <ul>
-<li>Eine <code>&lt;table&gt;</code> hat <code>x</code> Tabellenzeilen/Tablerows <code>&lt;tr&gt;</code></li>
-<li>Jede <code>&lt;tr&gt;</code> kann <code>x</code> Spalten <code>&lt;td&gt;</code> beinhalten</li>
+<li>Eine <code>&lt;table&gt;</code> hat <code>x</code> Tabellenzeilen (Table Row) <code>&lt;tr&gt;</code></li>
+<li>Jede <code>&lt;tr&gt;</code> kann <code>x</code> Spalten (Table Data) <code>&lt;td&gt;</code> beinhalten</li>
 <li>Tabellenheader werden innerhalb eines <code>&lt;tr&gt;</code>  als <code>&lt;th&gt;</code> markiert (statt <code>td</code>)</li>
 </ul>
-<p>Tabellen können jedoch mehr als nur eine Zeile mit Tableheadings beinhalten. Bspw. bei Tabellen, in welchen wir die Daten &quot;zwei Dimensional&quot; vergleichen wollen:</p>
+<p>Tabellen können jedoch mehr als nur eine Zeile mit Tableheadings beinhalten. Bspw. bei Tabellen, in welchen wir die Daten „zwei Dimensional“ vergleichen wollen:</p>
 <pre><code class="language-html">&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Produkt&lt;/th&gt;
-        &lt;th&gt;Preis&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Gala Apfel&lt;/th&gt;
-        &lt;td&gt;CHF 0.85&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Gala Jazz&lt;/th&gt;
-        &lt;td&gt;CHF 0.90&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Gala Diwa&lt;/th&gt;
-        &lt;td&gt;CHF 0.90&lt;/td&gt;
-    &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Produkt&lt;/th&gt;
+      &lt;th&gt;Preis&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Gala Apfel&lt;/th&gt;
+      &lt;td&gt;CHF 0.85&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Gala Jazz&lt;/th&gt;
+      &lt;td&gt;CHF 0.90&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Gala Diwa&lt;/th&gt;
+      &lt;td&gt;CHF 0.90&lt;/td&gt;
+   &lt;/tr&gt;
 &lt;/table&gt;
 </code></pre>
 <p>Jede Zeile hat hier ein eigenes Heading. Das führt dazu, dass wir die Daten in der Tabelle besser vergleichen können.</p>
@@ -582,25 +658,25 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <li><code>&lt;tfoot&gt;</code> Fussbereich einer Tabelle, kann mehrere Zeilen beinhalten</li>
 </ul>
 <pre><code class="language-html">&lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Produkt&lt;/th&gt;
-        &lt;th&gt;Preis&lt;/th&gt;
-    &lt;/tr&gt;
+   &lt;thead&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Produkt&lt;/th&gt;
+      &lt;th&gt;Preis&lt;/th&gt;
+   &lt;/tr&gt;
   &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Gala Apfel&lt;/th&gt;
-        &lt;td&gt;CHF 0.85&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Gala Jazz&lt;/th&gt;
-        &lt;td&gt;CHF 0.90&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Gala Diwa&lt;/th&gt;
-        &lt;td&gt;CHF 0.90&lt;/td&gt;
-    &lt;/tr&gt;
+   &lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Gala Apfel&lt;/th&gt;
+      &lt;td&gt;CHF 0.85&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Gala Jazz&lt;/th&gt;
+      &lt;td&gt;CHF 0.90&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Gala Diwa&lt;/th&gt;
+      &lt;td&gt;CHF 0.90&lt;/td&gt;
+   &lt;/tr&gt;
   &lt;/tbody&gt;
   &lt;tfoot&gt;
     &lt;tr&gt;
@@ -610,7 +686,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
   &lt;/tfoot&gt;
 &lt;/table&gt;
 </code></pre>
-<p>Bei Tabellen ist auch noch zu beachten, dass CSS Einfluss auf die Semantik hat. Tabellen sind grundsätzlich <code>display: table;</code>. Ändert man den Display-Wert bspw. auf <code>display: flex;</code>, so handelt es sich nicht mehr um eine Tabelle (Abhängig von der Technologie). </p>
+<p>Bei Tabellen ist auch noch zu beachten, dass CSS Einfluss auf die Semantik hat. Tabellen sind grundsätzlich <code>display: table;</code>. Ändert man den Display-Wert bspw. auf <code>display: flex;</code>, so handelt es sich nicht mehr um eine Tabelle (Abhängig von der Technologie).</p>
 <p>Demo:</p>
 <ul>
 <li><a href="/accessibility-crash-course/demo/table-fake">Table Fake (Bad)</a></li>
@@ -619,8 +695,8 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 </ul>
 <p>Links:</p>
 <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</a></li>
-<li><a href="https://www.w3.org/WAI/tutorials/tables/">https://www.w3.org/WAI/tutorials/tables/</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN - Table Element</a></li>
+<li><a href="https://www.w3.org/WAI/tutorials/tables">W3 - Tables</a></li>
 </ul>
 <p><em>Wie machen wir dann eine Tabelle responsive?!</em></p>
 <p><em>Welche Möglichkeiten gibt es?</em></p>
@@ -629,34 +705,32 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <li>Spalten umbrechen, alles untereinander oder irgendwie sonst darstellen<ul>
 <li>Was passiert mit dem Header?</li>
 <li>Wie bleibt die Semantik erhalten?<ul>
-<li><p>Tabelle</p>
+<li>Tabelle</li>
+<li>Spalten- und Zeilenbezeichnung</li>
+</ul>
 </li>
-<li><p>Spalten- und Zeilenbezeichnung</p>
+</ul>
+</li>
+</ul>
 <p>Leider keine 0815 Lösung, welche immer und überall funktioniert. Man wird Kompromisse eingehen müssen.</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 <hr>
 <br />
 
 
 <h2 id="bilder">Bilder:</h2>
-<p>&quot;Visuelles&quot; Bild: <br /><code>&lt;div style=&quot;background-image: url(&#39;https://picsum.photos/200/300&#39;);&quot;&gt;&lt;/div&gt;</code></p>
+<p>„Visuelles“ Bild: <br /><code>&lt;div style=&quot;background-image: url(&#39;https://picsum.photos/200/300&#39;);&quot;&gt;&lt;/div&gt;</code></p>
 <p>Semantisches Bild: <br /> <code>&lt;img src=&quot;https://picsum.photos/200/300&quot; alt=&quot;Random Image&quot; /&gt;</code></p>
 <br />
 
-<p><code>&lt;img&gt;</code> werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS <code>background-image</code> kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken. </p>
-<p>Beim Verwenden des <code>&lt;img&gt;</code> muss zwingen ein <code>alt</code> Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assitive Technologien. Da Screenreader keine Bilder bzw. Bildinhalte vorlesen, wird der Alt-Text ausgegeben.</p>
+<p><code>&lt;img&gt;</code> werden vom Browser und Screenreader effektiv als Bild und als Seiteninhalt erkannt (werden auch indexiert). CSS <code>background-image</code> kann auch Bilder darstellen, diese dienen aber eher zu dekorativen Zwecken.</p>
+<p>Beim Verwenden des <code>&lt;img&gt;</code> muss zwingen ein <code>alt</code> Attribut mit einem Wert angegeben werden. Dieses Attribut dient als Alternativtext für assistive Technologien. Da Screenreader keine Bilder und Bildinhalte vorlesen, wird der Alt-Text ausgegeben.</p>
 <p>Demo:</p>
 <ul>
-<li><a target="_blank" href="/accessibility-crash-course/demo/image-bg">Background Image</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/image-tag">Img Image</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/image-no-alt">Image no Alt</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/image-with-alt">Image with Alt</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/image-alt-complex">Image Complex</a></li>
+<li><a target="_blank" href="/demo/image-bg">Background Image</a></li>
+<li><a target="_blank" href="/demo/image-tag">Img Image</a></li>
+<li><a target="_blank" href="/demo/image-no-alt">Image no Alt</a></li>
+<li><a target="_blank" href="/demo/image-with-alt">Image with Alt</a></li>
+<li><a target="_blank" href="/demo/image-alt-complex">Image Complex</a></li>
 </ul>
 <br />
 
@@ -665,10 +739,10 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 
 
 <h2 id="formulare">Formulare</h2>
-<p><code>&lt;form&gt;</code> zeichnet semantisch ein Formular aus. </p>
+<p><code>&lt;form&gt;</code> zeichnet semantisch ein Formular aus.</p>
 <br />
 
-<h3 id="inputs-and-labels">Inputs and Labels</h3>
+<h3 id="inputs-und-labels">Inputs und Labels</h3>
 <p><code>&lt;input&gt;</code> benötigen zwingen ein <code>&lt;label&gt;</code>.</p>
 <p>Label und Input können auf zwei Arten miteinander verknüpft werden:</p>
 <pre><code class="language-html">&lt;label for=&quot;inputID&quot;&gt;Text&lt;/label&gt;
@@ -683,23 +757,23 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <p>Labels dienen dazu, um ein Eingabefeld zu beschreiben. Zudem wird bei einem Klick auf ein Label auch gleich ein Klick im auf dem dazugehörigen Eingabefeld ausgelöst.</p>
 <p>Demo:</p>
 <ul>
-<li><a target="_blank" href="/accessibility-crash-course/demo/form-inputs-labels">Inputs with Labels</a></li>
+<li><a target="_blank" href="/demo/form-inputs-labels">Inputs with Labels</a></li>
 </ul>
 <p>Links:</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">MDN - Label Element</a></p>
 <br />
 
 <h3 id="fieldset-gruppen">Fieldset (Gruppen)</h3>
-<p>Fieldset werden verwendet, um Gruppen innerhalb eines Formulars semantisch auszuweisen. </p>
+<p>Fieldset werden verwendet, um Gruppen innerhalb eines Formulars semantisch auszuweisen.</p>
 <ul>
 <li>Ein <code>&lt;fieldset&gt;</code> ist nur innerhalb einer <code>&lt;form&gt;</code> valid.</li>
 <li>Ein <code>&lt;fieldset&gt;</code> benötigt zwingen einen <code>&lt;legend&gt;</code> als Child-Element.</li>
 </ul>
 <p>Links:</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">MDN - Fieldset Element</a></p>
 <br />
 
-<h4 id="komplexerre-inputs--gruppen--formularabschnitte">Komplexerre Inputs / Gruppen &amp; Formularabschnitte</h4>
+<h4 id="komplexere-inputs--gruppen--formularabschnitte">Komplexere Inputs / Gruppen &amp; Formularabschnitte</h4>
 <p>Es gibt verschiedene Arten von Gruppierungen innerhalb eines Formulars. Beide werden mit dem <code>&lt;fieldset&gt;</code> und <code>&lt;legend&gt;</code> ausgewiesen.</p>
 <ul>
 <li>Formularabschnitte</li>
@@ -740,14 +814,14 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 </code></pre>
 <p>Demo:</p>
 <ul>
-<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-section-bad">Fieldset Section - Bad (no fieldset)</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-section-good">Fieldset Section - Good</a></li>
+<li><a target="_blank" href="/demo/form-fieldset-section-bad">Fieldset Section - Bad (no fieldset)</a></li>
+<li><a target="_blank" href="/demo/form-fieldset-section-good">Fieldset Section - Good</a></li>
 </ul>
 <br />
 
 <h4 id="input-gruppen">Input Gruppen</h4>
 <p>Radiobuttons oder Checkboxen setzen sich jeweils zusammen aus einem Input und einem Label. In der Praxis kommen Checkboxen oder Radiobuttons aber vor allem dann zum Einsatz, wenn man eine Auswahl machen muss. Bspw. Farbauswahl eines Smartphones.</p>
-<p>Man könnte alle Radiobuttons und Labels einzeln ausgeben und als Label jeweils etwas in der Art wie &quot;Farbe Blau&quot; setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als Farbe Gruppe ausgewiesen sind:</p>
+<p>Man könnte alle Radiobuttons und Labels einzeln ausgeben und als Label jeweils etwas in der Art wie „Farbe Blau“ setzen. Besser wäre es allerdings, wenn wir alle Radiobuttons als Farbe Gruppe ausgewiesen sind:</p>
 <pre><code class="language-html">&lt;form&gt;
     &lt;fieldset&gt;
         &lt;legend&gt;Jackenfarbe&lt;/legend&gt;
@@ -769,12 +843,12 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <p>Bei einfachen Checkboxen wie bspw. AGB akzeptieren, ist dies nicht nötig - da hat es nur eine Checkbox.</p>
 <p>Demo:</p>
 <ul>
-<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-group-bad">Fieldset Group - Bad (no fieldset)</a></li>
-<li><a target="_blank" href="/accessibility-crash-course/demo/form-fieldset-group-good">Fieldset Group - Good</a></li>
+<li><a target="_blank" href="/demo/form-fieldset-group-bad">Fieldset Group - Bad (no fieldset)</a></li>
+<li><a target="_blank" href="/demo/form-fieldset-group-good">Fieldset Group - Good</a></li>
 </ul>
-<p>Links: </p>
+<p>Links:</p>
 <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">MDN - Fieldset Element</a></li>
 </ul>
 <br />
 
@@ -791,7 +865,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 
 <h3 id="disabled">Disabled</h3>
 <p>Das disabled Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein disabled Attribut gesetzt ist, diese immer als true interpretiert wird. <code>disabled=&quot;false&quot;</code> ist ungültig!</p>
-<p>disabled hat immer den selben Effekt:</p>
+<p>disabled hat immer denselben Effekt:</p>
 <ul>
 <li><code>disabled=&quot;false&quot;</code></li>
 <li><code>disabled=&quot;true&quot;</code></li>
@@ -801,7 +875,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 
 <h3 id="readonly">Readonly</h3>
 <p>Das readonly Attribute kann auf Input Elemente gesetzt werden. Dabei ist zu beachten, sobald ein readonly Attribut gesetzt ist, diese immer als true interpretiert wird. <code>readonly=&quot;false&quot;</code> ist ungültig! (Genau wie disabled)</p>
-<p>readonly hat immer den selben Effekt:</p>
+<p>readonly hat immer denselben Effekt:</p>
 <ul>
 <li><code>readonly=&quot;false&quot;</code></li>
 <li><code>readonly=&quot;true&quot;</code></li>
@@ -809,7 +883,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 </ul>
 <br />
 
-<p>Bei readonly ist zu beachten, dass die nicht auf allen Elementen erwartungsmäss funktioniert! Checkboxen und Radiobuttons können trotz readyonly verändert werden. </p>
+<p>Bei readonly ist zu beachten, dass die nicht auf allen Elementen erwartungsgemäss funktioniert! Checkboxen und Radiobuttons können trotz readyonly verändert werden.</p>
 <br />
 
 <hr>
@@ -818,10 +892,10 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <h2 id="aria-attribute-role-attribute-und-tabindex-attribut">Aria-Attribute, Role-Attribute und Tabindex-Attribut</h2>
 <p>Overlays / Dialoge / Modals</p>
 <p>aria-label</p>
-<p>Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for Attribut) verknüpft, kann es sein, dass das Label nicht mehr vorgelesen wird. </p>
+<p>Kann auf allen fokussierbaren und Text Elementen verwendet werden. Falls ein Label (mittels for Attribut) verknüpft, wird das Label nicht mehr vorgelesen.</p>
 <p>Links:</p>
 <ul>
-<li><a href="https://w3c.github.io/using-aria/#do">https://w3c.github.io/using-aria/#do</a></li>
+<li><a href="https://w3c.github.io/using-aria/#do">W3C - Aria (Entwurf)</a></li>
 </ul>
 <br />
 
@@ -833,11 +907,11 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <ul>
 <li><code>tabindex=&quot;-1&quot;</code> Das Element ist nicht fokussierbar</li>
 <li><code>tabindex=&quot;0&quot;</code> Das Element ist fokussierbar. Das Element behält seine Position in der Tab-Reihenfolge entsprechend seiner Position in DOM bei.</li>
-<li><code>tabindex=&quot;1&quot;</code> Das Element ist fokussierbar. Das Element verliert seine Position in der Tab-Reihenfolge und wird &quot;hinten angehängt&quot;. Dieses Verhalten ist bei allen Werten &gt;= 1. Der Wert des Attributes bestimmt die neue Reihenfolge. Je nachdem, wo man sich auf der Seite befindet, werden die Elemente wie folgt durchgegangen: Fokus auf einem Element in der normalen Tab-Reihenfolge: Zuerst werden alle &quot;normal fokussierbaren&quot; und tabindex=&quot;0&quot; Elemente durchgegangen, anschliessen die Reihenfolge entsprechend des Attribut-Wertes. Ist man bspw. im URL-Feld, werden alle tabindex &gt;= 1 durchgegangen.</li>
+<li><code>tabindex=&quot;1&quot;</code> Das Element ist fokussierbar. Das Element verliert seine Position in der Tab-Reihenfolge und wird „hinten angehängt“. Dieses Verhalten ist bei allen Werten &gt;= 1. Der Wert des Attributes bestimmt die neue Reihenfolge. Je nachdem, wo man sich auf der Seite befindet, werden die Elemente wie folgt durchgegangen: Fokus auf einem Element in der normalen Tab-Reihenfolge: Zuerst werden alle „normal fokussierbaren“ und tabindex=&quot;0&quot; Elemente durchgegangen, anschliessen die Reihenfolge entsprechend dem Attributwert. Ist man bspw. im URL-Feld, werden alle tabindex &gt;= 1 durchgegangen.</li>
 </ul>
-<p> (Sollte man nicht verwenden, macht grundsätzlich eher mehr kaputt als es hilft).</p>
+<p>(Sollte man nicht verwenden, ruiniert grundsätzlich eher mehr als es hilft).</p>
 <p>Links:</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">MDN - Tabindex Attribut</a></p>
 <br />
 
 <hr>
@@ -846,11 +920,11 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <h2 id="css-einfluss">CSS Einfluss</h2>
 <p>CSS hat zum Teil direkten Einfluss auf die Semantik von Elementen, jedoch nicht überall.</p>
 <p><code>display: none;</code> Entfernt das Element für den Screenreader aus dem DOM</p>
-<p><code>display: block;</code> Fügt das Element für den Screenreader in dem DOM</p>
-<p><code>visibility: hidden;</code> Entfernt das Element für den Screenreader aus dem DOM </p>
-<p><code>visibility: visible;</code> Fügt das Element für den Screenreader in dem DOM</p>
-<p> <code>opacity: 1;</code> -&gt; visible for screen readers</p>
-<p>  <code>opacity: 0;</code> -&gt; visible for screen readers</p>
+<p><code>display: block;</code> Element ist grundsätzlich sichtbar im DOM für den Screenreader</p>
+<p><code>visibility: hidden;</code> Entfernt das Element für den Screenreader aus dem DOM</p>
+<p><code>visibility: visible;</code> Element ist grundsätzlich sichtbar im DOM für den Screenreader</p>
+<p><code>opacity: 1;</code> -&gt; Sichtbar für Screenreader</p>
+<p><code>opacity: 0;</code> -&gt; Sichtbar für Screenreader</p>
 <p>Text Styling wie <code>text-decoration</code>, <code>font-weight</code>  allerdings keinen Einfluss!</p>
 <br />
 
@@ -872,7 +946,7 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 
 <h3 id="steuerung">Steuerung</h3>
 <h4 id="focus-mode">Focus Mode</h4>
-<p>Die Steuerung des Screenreaders wird via &quot;Tab&quot; / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stoppt bzw. fokussiert jedes fokussierbare Element (Tab-Stopp). Fokussierbar sind grundsätzlich alle arten von Eingabefeldern (<code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, etc.) und Schaltflächen (<code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>). Zusätzliche Tab-Stopp können via HTML oder JavaScript hinzugefügt werden: Setzen des <code>tabindex</code> Attributes. </p>
+<p>Die Steuerung des Screenreaders wird via „Tab“ / Tabulator ausgeführt. Der Screenreader geht durch den DOM und stoppt bzw. fokussiert jedes fokussierbare Element (Tab-Stopp). Fokussierbar sind grundsätzlich alle Arten von Eingabefeldern (<code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, etc.) und Schaltflächen (<code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>). Zusätzliche Tab-Stopps können via HTML oder JavaScript hinzugefügt werden: Setzen des <code>tabindex</code> Attributes.</p>
 <br />
 
 <h4 id="browse-mode">Browse Mode</h4>
@@ -883,10 +957,10 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <h5 id="h-headings">H (Headings)</h5>
 <p>Sprint von Heading zu Heading</p>
 <h5 id="l-links">L (Links)</h5>
-<p>Sprint von Link zu Link</p>
-<p><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts</a></p>
+<p>Springt von Link zu Link</p>
+<p><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">NVDA Keyboard Shortcuts</a></p>
 <h3 id="texte-nur-für-screenreader">Texte nur für Screenreader</h3>
-<p>Wir müssen den Text visuelle verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. <code>display: none;</code> und <code>visibility: hidden;</code> können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit einer CSS Klasse lösen könnte.</p>
+<p>Wir müssen den Text visuell verstecken, aber wir müssen ihn für den Screenreader zugänglich lassen. <code>display: none;</code> und <code>visibility: hidden;</code> können wir daher nicht nutzen. Dies ist eine Möglichkeit, wie man das mit einer CSS Klasse lösen könnte.</p>
 <pre><code class="language-css">.sr-only {
             position: absolute;
             width: 1px;
@@ -902,9 +976,9 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <pre><code class="language-html">&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Zahlungs&lt;/span&gt; Details &lt;span class=&quot;sr-only&quot;&gt;anzeigen&lt;/span&gt;&lt;/a&gt;
 </code></pre>
 <p>Links:</p>
-<p><a href="https://tailwindcss.com/docs/screen-readers">https://tailwindcss.com/docs/screen-readers</a></p>
+<p><a href="https://tailwindcss.com/docs/screen-readers">Tailwind - Screenreaders</a></p>
 <p>Quellen:</p>
-<p><a href="https://tailwindcss.com/docs/screen-readers">https://tailwindcss.com/docs/screen-readers</a></p>
+<p><a href="https://tailwindcss.com/docs/screen-readers">Tailwind - Screenreaders</a></p>
 <h3 id="texte-vom-screenreader-verbergen">Texte vom Screenreader verbergen</h3>
 <ul>
 <li><code>tabindex=&quot;-1&quot;</code> Attribut</li>
@@ -914,39 +988,88 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 <hr>
 <h2 id="weitere-aspekte">Weitere Aspekte</h2>
 <ul>
-<li>PDF </li>
+<li>PDF</li>
 <li>Multimediale Inhalte (Video)</li>
 </ul>
 </div>
         </div>
-    </div>
+
 
 </div>
 </main>
 <footer class="bg-teal-700 p-10 mt-24 text-white">
-	<a href="https://github.com/dario-baumberger/accessibility-crash-course" target="_blank" class="w-4 h-4 block m-auto mt-10 mb-10">
-		<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-		<span class="sr-only">Github Repository</span>
-	</a>
+	<div class="flex gap-4 m-auto mt-10 mb-10 justify-center">
+		<a href="https://github.com/dario-baumberger/accessibility-crash-course" target="_blank" rel="noopener" class="w-4 h-4 block">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" class="svg-inline--fa fa-mug-hot fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg>
+			<span class="sr-only">Buy me a Coffee</span>
+		</a>
+	</div>
 	<p class="text-center"> 
 		<small>
-			Made by Dario Baumberger 2020
+			Made by Dario Baumberger 2021
 		</small>
 	</p>
 </footer>
+<div class="fixed left-0 right-0 bottom-0 flex p-4 js-cookie-modal" aria-modal="true" role="dialog">
+	<div class="bg-white w-full max-w-3xl mx-auto text-sm shadow-2xl">
+		<div class="p-8 js-cookie-modal-content">
+			<p>Diese Website verwendet Cookies, um die bestmögliche Funktionalität bereitzustellen. Diese Website zeichnet Ihr Verhalten auf, um Ihnen in Zukunft eine noch bessere Erfahrung bieten zu können. Um alle Funktionen der Website fehlerfrei nutzen zu können, empfehlen wir Ihnen, Cookies und Tracking zuzulassen. Lesen Sie mehr zum Datenschutz</p>
+			<div class="flex gap-4 mt-4 flex-row-reverse justify-center">
+				<button class="bg-teal-700 hover:bg-teal-900 transition-all duration-300 p-2 text-white text-sm js-cookies-accept">Zulassen</button>
+				<button class="bg-teal-700 hover:bg-teal-900 transition-all duration-300 p-2 text-white text-sm js-cookies-decline">Ablehnen</button>
+			</div>
+		</div>
+	</div>
+
+</div>
 <script>
 
 	const navLinks = document.querySelectorAll(".js-section-links a");
 
+	const subMenuButtons = document.querySelectorAll(".js-section-links button");
+	const cookiesAccept = document.querySelector('.js-cookies-accept');
+	const cookiesDecline = document.querySelector('.js-cookies-decline');
+	const cookiesModal = document.querySelector('.js-cookie-modal');
+	const cookiesModalContent = document.querySelector('.js-cookie-modal-content');
+	const cookieName = 'cookies';
+	const cookieDuration = 365;
+
+
+
 	for (const link of navLinks) {
-		link.addEventListener("click", clickHandler);
+		link.addEventListener("click", linkClickHandler);
 	}
 
+	for (const button of subMenuButtons) {
+        button.addEventListener("click", buttonClickHandler);
+    }
 
-	function clickHandler(e) {
+    function buttonClickHandler(e){
+        e.preventDefault();
+
+
+
+        const isExpanded = this.getAttribute('aria-expanded') === 'true'
+
+        this.setAttribute('aria-expanded', !isExpanded)
+        this.classList.toggle('rotate-180')
+
+		const subMenuList = this.closest('li').querySelector('ul');
+
+		subMenuList.classList.toggle('max-h-0');
+		subMenuList.setAttribute('aria-hidden', isExpanded)
+
+
+    }
+
+
+	function linkClickHandler(e) {
 		e.preventDefault();
 		const href = this.getAttribute("href").match('\\#(.*)')[0];
-		const offsetTop = document.querySelector(href).offsetTop - 50;
+		const target = document.querySelector(href);
+		target.setAttribute('tabindex', -1);
+		target.focus({preventScroll: true});
+		const offsetTop = target.offsetTop - 50;
 
 		window.location.hash = href;
 
@@ -960,14 +1083,10 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 	let mainHeadings = document.querySelectorAll(".markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6");
 	let headingData = [];
 
-	console.log(window.scrollY)
-
 	mainHeadings.forEach((heading) => {
 		heading.classList.add('js-heading--out')
 		headingData.push({el: heading, y: heading.offsetTop})
 	})
-
-	console.log(headingData)
 
 	window.addEventListener('scroll', function() {
 		mainHeadings.forEach((heading) => {
@@ -975,9 +1094,81 @@ der visuellen Gestaltung, sondern der semantischen Strukturierung von Inhalten.<
 		})
 	});
 
+	function setCookie(name, value, exdays) {
+		const d = new Date();
+		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+		const expires     = "expires=" + d.toUTCString();
+		document.cookie = name + "=" + value + ";" + expires + ";path=/";
+		cookieEvent(value)
+	}
+
+	function getCookie(cname) {
+		const name = cname + "=";
+		const ca   = document.cookie.split(';');
+		for (let i = 0; i < ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) === ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) === 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+
+	function checkCookie() {
+		const cookie = getCookie(cookieName);
+		if (cookie === '') {
+			cookiesModal.classList.remove('hidden');
+			cookiesModalContent.setAttribute('tabindex', '-1');
+			cookiesModalContent.focus();
+		} else {
+			cookiesModal.querySelector('div').classList.add('hidden')
+			const firstHeading = document.querySelector('h1');
+			firstHeading.setAttribute('tabindex', '-1');
+			firstHeading.focus();
+		}
+	}
+
+	function prepareCookie(name, value ){
+		const d = new Date();
+		const duration = d.getTime() + (cookieDuration * 24 * 60 * 60 * 1000);
+		setCookie(name, value, duration);
+		checkCookie();
+	}
+
+	function cookieEvent(value){
+		const event = new CustomEvent('cookie_event', {detail: {value}});
+		document.dispatchEvent(event);
+	}
+
+	cookiesAccept.addEventListener('click', () => {
+		prepareCookie(cookieName, 'accepted')
+	})
+
+	cookiesDecline.addEventListener('click', () => {
+		prepareCookie(cookieName, 'declined')
+	})
+
+
+	checkCookie();
+
+
+
+
+
+
 
 
 </script>
+
+<script>document.addEventListener('cookie_event', (e) => {
+		if(e.detail.value === 'accepted'){
+			console.log(e)
+		}
+	});</script>
+
 </body>
 </html>
 

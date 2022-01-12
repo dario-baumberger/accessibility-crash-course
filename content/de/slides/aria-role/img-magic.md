@@ -1,6 +1,6 @@
 # Aria Attribute, Tabindex & Role Attribute
 
-<img src="<%- config.base %>/static/images/wand.gif" class="w-3/4" />
+<img src="<%- config.base %>/assets/images/wand.gif" class="w-3/4" />
 
 ---
 

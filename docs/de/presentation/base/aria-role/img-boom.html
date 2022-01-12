@@ -2,7 +2,11 @@
 <html class="text-lg" lang="de">
 	<head>
 		<title>Accessibility / Barrierefreiheit Crash Course</title>
-		<link href="/accessibility-crash-course/static/css/styles.css" rel="stylesheet">
+		<link href="/assets/css/styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Dario Baumberger">
+		<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 	</head>
 	<body>
 
@@ -20,19 +24,27 @@
 
 </div>
 <footer class="bg-teal-700 text-white fixed left-0 right-0 bottom-0 h-20 flex justify-center items-center flex justify-between">
-    <a href="/accessibility-crash-course/de/presentation/base/aria-role/tabindex-example-2" class="p-6 order-1 text-xs">&#8592; Prev</a>
-    <a href="/accessibility-crash-course/de/presentation/base/aria-role/tabindex-example-3" class="p-6 order-3 text-xs">Next &#8594;</a>
-    <a href="/accessibility-crash-course/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
+    <div class="p-6 order-1 text-xs">
+        
+            <a href="/de/presentation/base/aria-role/tabindex-example-2" >&#8592; Prev</a>
+         
+    </div>
+    <div class="p-6 order-3 text-xs">
+        
+            <a href="/de/presentation/base/aria-role/tabindex-example-3" >Next &#8594;</a>
+        
+    </div>
+    <a href="/de/" class="text-center order-2 text-xs">Accessibility / Barrierefreiheit</a>
 </footer>
 <script>
     document.addEventListener('keydown', function (event) {
 
         if (event.ctrlKey && event.key === 'ArrowRight') {
-            window.location.href="/accessibility-crash-course/de/presentation/base/aria-role/tabindex-example-3";
+            window.location.href="/de/presentation/base/aria-role/tabindex-example-3";
         }
 
         if (event.ctrlKey && event.key === 'ArrowLeft') {
-            window.location.href="/accessibility-crash-course/de/presentation/base/aria-role/tabindex-example-2";
+            window.location.href="/de/presentation/base/aria-role/tabindex-example-2";
         }
     });
 </script>

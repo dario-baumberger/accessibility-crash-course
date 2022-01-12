@@ -1,26 +1,24 @@
-const fs = require("fs");
-const ejs = require("ejs");
-const marked = require("marked");
-const fse = require("fs-extra");
-const path = require("path");
-const glob = require("glob-all");
-require("dotenv").config({ path: `env/.env.${process.env.NODE_ENV}` });
-
-const presentations = require("./src/configs/presentations/general.json");
+import fs from "fs";
+import ejs from "ejs";
+import fse from "fs-extra";
+import path, { dirname } from "path";
+import glob from "glob-all";
+import dotenv from "dotenv";
+import { md } from "./utils/utils";
+import presentations from "./src/configs/presentations/general.json";
+import navigation from "./src/configs/pages/navigation.json";
+import { fileURLToPath } from "url";
 
 const config = {
   base: process.env.BASE,
 };
 
-console.log(`building ${process.env.NODE_ENV}`);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-// md to html
-let md = function (filename) {
-  const path = __dirname + "/content/" + filename + ".md";
-  const include = fs.readFileSync(path, "utf8");
-  const html = marked(include);
-  return '<div class="markdown-body">' + html + "</div>";
-};
+dotenv.config({ path: `env/.env.${process.env.NODE_ENV}` });
+
+console.log(`building ${process.env.NODE_ENV}`);
 
 function contentEJS(content) {
   return ejs.render(content, { config: config });
@@ -91,8 +89,10 @@ function buildSlides() {
           }
         }
 
+        console.log(slide);
+
         if (slide) {
-          var content = contentEJS(md(`${langKey}/slides/${slide}`));
+          var content = contentEJS(md(__dirname, `${langKey}/slides/${slide}`));
           ejs2html(
             __dirname + "/views/pages/slider.ejs",
             {
@@ -118,7 +118,7 @@ function buildSlides() {
 function buildPages() {
   const files = glob.sync([__dirname + "/content/**/pages/**.md"]);
 
-  for (i = 0; i < files.length; i++) {
+  for (let i = 0; i < files.length; i++) {
     let name = files[i].split(".")[0];
 
     name = name
@@ -128,12 +128,17 @@ function buildPages() {
 
     const lang = name.split("/")[0];
 
-    const header = contentEJS(md(`${lang}/partials/header`));
+    const header = contentEJS(md(__dirname, `${lang}/partials/header`));
 
-    const content = contentEJS(md(name));
+    const content = contentEJS(md(__dirname, name));
     ejs2html(
       __dirname + "/views/pages/index.ejs",
-      { content: content, config: config, header: header },
+      {
+        content: content,
+        config: config,
+        header: header,
+        navigation: navigation,
+      },
       name,
       `${process.env.DIST}`
     );
@@ -147,9 +152,9 @@ function buildDemo() {
     fs.mkdirSync("./docs/demo");
   }
 
-  for (i = 0; i < demos.length; i++) {
+  for (let i = 0; i < demos.length; i++) {
     const name = demos[i].split(".")[0];
-    const content = contentEJS(md("demo/" + name));
+    const content = contentEJS(md(__dirname, "demo/" + name));
     ejs2html(
       __dirname + "/views/pages/demo.ejs",
       { content: content, config: config },
@@ -160,23 +165,13 @@ function buildDemo() {
 }
 
 function copyFiles() {
-  if (!fs.existsSync("./docs/static/images")) {
-    fs.mkdirSync("./docs/static/images", { recursive: true });
+  if (!fs.existsSync("./docs/assets/images")) {
+    fs.mkdirSync("./docs/assets/images", { recursive: true });
   }
 
   fse.copy(
     "./public/images/",
-    `./${process.env.DIST}/static/images/`,
-    function (err) {
-      if (err) {
-        console.error(err);
-      }
-    }
-  );
-
-  fse.copy(
-    `./${process.env.DIST}/de/pages/`,
-    `./${process.env.DIST}/`,
+    `./${process.env.DIST}/assets/images/`,
     function (err) {
       if (err) {
         console.error(err);
