@@ -181,6 +181,16 @@ function copyFiles() {
       }
     }
   );
+
+  fse.copy(
+    `./${process.env.DIST}/de/pages/`,
+    `./${process.env.DIST}/`,
+    function (err) {
+      if (err) {
+        console.error(err);
+      }
+    }
+  );
 }
 
 function init() {
