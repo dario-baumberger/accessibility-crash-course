@@ -9,7 +9,7 @@
     "start": "node --experimental-modules --es-module-specifier-resolution=node app.js",
     "build": "cross-env NODE_ENV=production node --experimental-modules --es-module-specifier-resolution=node build.js",
     "postbuild": "npx tailwindcss -c ./tailwind.config.cjs -i ./src/css/styles.css -o ./docs/assets/css/styles.css",
-    "build:local": "cross-env NODE_ENV=local node build.js",
+    "build:local": "cross-env NODE_ENV=local node --experimental-modules --es-module-specifier-resolution=node build.js",
     "postbuild:local": "npx tailwindcss -c ./tailwind.config.cjs -i ./src/css/styles.css -o ./local-docs/assets/css/styles.css"
   },
   "author": "Dario Baumberger",

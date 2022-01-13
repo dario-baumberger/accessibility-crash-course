@@ -9,18 +9,21 @@ import presentations from "./src/configs/presentations/general.json";
 import navigation from "./src/configs/pages/navigation.json";
 import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+dotenv.config({ path: `./env/.env.${process.env.NODE_ENV}` });
+
+console.log(`building ${process.env.NODE_ENV}`);
+
 const config = {
   base: process.env.BASE,
 };
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-dotenv.config({ path: `env/.env.${process.env.NODE_ENV}` });
-
-console.log(`building ${process.env.NODE_ENV}`);
+console.log(config);
 
 function contentEJS(content) {
+  console.log(config);
   return ejs.render(content, { config: config });
 }
 
